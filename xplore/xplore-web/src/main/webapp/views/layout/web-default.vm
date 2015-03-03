@@ -6,8 +6,8 @@
     #set($cPath = "#cPath")
     <link href="$cPath/resources/css/web.css" rel="stylesheet">
     <script type="text/javascript" src="$cPath/resources/js/common/jquery-1.7.2.min.js"></script>
-<title>xplore</title>
-<link rel="shortcut icon" href="$cPath/resources/img/favicon.ico " type="image/x-icon">
+    <title>xplore</title>
+    <link rel="shortcut icon" href="$cPath/resources/img/favicon.ico " type="image/x-icon">
 
     <script>
 
@@ -24,24 +24,21 @@
 </style>
 <div id="header">
     <div class="header-top">
-        <div class="company-icon"><a href="$cPath"><img src="$cPath/resources/img/logo.png"></a></div>
-        <div style="float:left;margin-left:190px;"><img src="$cPath/resources/img/wenzi.png" style="margin-top:28px">
-        </div>
+        <div class="company-icon"><a href="$cPath"></a></div>
+        <div style="float:left;margin-left:190px;"></div>
 
-        <div class="ads-icon"><img src="$cPath/resources/img/toutu1.png"></div>
+        <div class="ads-icon"></div>
     </div>
     <div class="menu">
         <ul>
-            <li class="menu-contact"><i class="menu-hover hide"></i><a href="$cPath/contact">123</a></li>
-            <li class="menu-suggestion"><i class="menu-hover hide"></i><a href="$cPath/suggestion">在线咨询</a></li>
-            <li class="menu-jianshe"><i class="menu-hover hide"></i><a href="$cPath/jianshe">行业建设</a></li>
-            <li class="menu-culture"><i class="menu-hover hide"></i><a href="$cPath/culture">企业文化</a></li>
-            <li class="menu-picNews"><i class="menu-hover hide"></i><a href="$cPath/picNews">图片新闻</a></li>
-            <li class="menu-service"><i class="menu-hover hide"></i><a href="$cPath/service">服务项目</a></li>
-            <li class="menu-news"><i class="menu-hover hide"></i><a href="$cPath/news">公司动态</a></li>
-            <li class="menu-achieve"><i class="menu-hover hide"></i><a href="$cPath/achieve">公司业绩</a></li>
-            <li class="menu-intro"><i class="menu-hover hide"></i><a href="$cPath/intro">公司概况</a></li>
-            <li class="menu-web"><i class="menu-hover hide"></i><a href="$cPath">网站首页</a></li>
+            <li class="menu-picNews"><i class="menu-hover hide"></i><a href="$cPath/picNews">ALL YEAR ROUND GROUPS</a>
+            </li>
+            <li class="menu-culture"><i class="menu-hover hide"></i><a href="$cPath/culture">SUMMER CAMPS</a></li>
+            <li class="menu-jianshe" style="height:54px"><i class="menu-hover hide"></i><a href="$cPath/jianshe">
+                <p style="margin:-10px 0">TAILOR MADE EDUCATION</p><p style="margin:-33px">asfljdks</p></a></li>
+            <li class="menu-suggestion"><i class="menu-hover hide"></i><a href="$cPath/suggestion">MY CHOICE HIGH SCHOLL
+                PROGRAMS</a></li>
+            <li class="menu-contact"><i class="menu-hover hide"></i><a href="$cPath/contact">AGENTS ZONE</a></li>
         </ul>
     </div>
 </div>
@@ -49,42 +46,52 @@
     $screen_content
 </div>
 <div id="footer">
-    <div class="links">
-        <p class="links-name">友情链接</p>
-        <div class="column">
-            <a target="new" href="http://lhsr.sh.gov.cn">上海市绿化和市容管理局</a>
-            <a target="new"  href="http://www.bssr.gov.cn/website/index.jsp">上海市宝山区绿化和市容管理局</a>
-            <a target="new"  href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">上海市市容环境行业工会</a>
-        </div>
-        <div class="column">
-            <a target="new"  href="http://www.stacaes.com">上海市卫生协会设备专业委员会</a>
-            <a target="new"  href="">上海市城市保洁管理处</a>
-            <a target="new"  href="http://bsq.sh.gov.cn">上海市宝山区政府</a>
-        </div>
+    <div style="margin:0 auto;width:960px;">
+        <div class="links">
+            <div class="column">
+                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <a target="new" href="http://lhsr.sh.gov.cn">12 Bury Street</a>
+                <a target="new" href="http://www.bssr.gov.cn/website/index.jsp">Stowmarket</a>
+                <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">Suffolk, IP14 1HA</a>
+                <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+                <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+                <p class="links-name">T:+44 (0) 1449742700</p>
+            </div>
+            <div class="column">
+                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <a target="new" href="http://www.stacaes.com">Theodorstr, 48</a>
+                <a target="new" href="">22761, Hamburg</a>
+                <a target="new" href="http://bsq.sh.gov.cn">Germany</a>
+                <a target="new" href="http://bsq.sh.gov.cn"></a>
+                <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+                <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+                <p class="links-name">T:+49 (0) 40 429 336 00</p>
+            </div>
 
-    </div>
-    <div class="contact-us">
-        <p class="links-name">联系我们</p>
-
-        <div class="column">
-            <a href="">地址：上海市宝山区联丰路8号</a>
-            <a href="">电话：(+86) 021-56782943</a>
-            <a href="">E-mail：dongchen@18567.cn</a>
         </div>
-        <div class="column">
-            <div style="float:left"><img src="$cPath/resources/img/weixin.png"></div>
-            <div style="margin-left: 10px;float: left;line-height: 20px;margin-top: 42px;">
-                扫 一 扫
-                <br/>
-                关&nbsp;&nbsp;&nbsp;&nbsp;注
-                <br/>
-                东晨微平台
+        <div class="links">
+            <div class="column">
+                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <a target="new" href="http://lhsr.sh.gov.cn">One Town, Square Bvld.</a>
+                <a target="new" href="http://www.bssr.gov.cn/website/index.jsp">Suite 204,</a>
+                <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">Asheville, NC 28803,</a>
+                <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">United States</a>
+                <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+                <p class="links-name">T:+1 (828) 651 8502</p>
+            </div>
+            <div class="column">
+                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <a target="new" href="http://www.stacaes.com">Room 720, 7th Floor, Tagen</a>
+                <a target="new" href="">Chuangye Building, No.7</a>
+                <a target="new" href="http://bsq.sh.gov.cn">Shangbao Road, Futian District,</a>
+                <a target="new" href="http://bsq.sh.gov.cn">Shenzhen, Guangdong, 518034</a>
+                <a target="new" href="http://bsq.sh.gov.cn">China</a>
+                <p class="links-name">T:+1 (828) 651 8502</p>
             </div>
         </div>
     </div>
-    <div class="copyright">上海东晨市容清洁服务有限公司 版权所有</div>
+    <div class="copyright">This site and all contents are copyright @ 2014 Xplore</div>
 </div>
-<div class="dangfeng-banner" style="position:fixed;right:0;top:30%"><a href="$cPath/party"><img src="$cPath/resources/img/dangfeng.png"></a></div>
 </body>
 <script>
 

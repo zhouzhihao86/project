@@ -1,8 +1,76 @@
 #set($layout="layout/web-default.vm")
 #set($cPath = "#cPath")
 <style>
+    .index-top {
+        height: 367px;
+        width: 100%;
+    }
+
+    .index-bottom {
+        height: 365px;
+        width: 100%;
+    }
+
+    .index-top .img-area {
+        width: 730px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .index-top .intro-area {
+        width: 198px;
+        border: 1px solid #BABABA;
+        float: left;
+        padding: 10px;
+    }
+
+    .block {
+        width: 232.5px;
+        float: left;
+        margin-right: 10px;
+        height: 365px;
+    }
+
+    .block:last-child {
+        margin-right: 0px;
+    }
+
+    .block-title {
+        color: #AA0D37;
+        border-bottom: 1px solid #666666;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .index-bottom .block-title{
+        padding:10px;
+        color:#C71041;
+        border-bottom: 1px solid #C71041;
+    }
 
 </style>
 <div class="content">
+
+    <div class="index-top">
+        <div class="img-area">123</div>
+        <div class="intro-area">
+            <p class="block-title">I Dear Parents</p>
+
+            <p style="word-wrap:break-word;overflow:hidden;">Welcome to
+                Xploarel;kajsldfkjslaksjdsla;fslfsaljfsajklfsakljfsajklsalkjfsafkslafjksl;fdsjaklfkjsafjsal</p>
+        </div>
+    </div>
+
+    <div class="index-bottom">
+        <div class="block" style="background: #E5E5E5">
+            <p class="block-title">Booking Online</p>
+
+        </div>
+        <div class="block">234</div>
+        <div class="block">234</div>
+        <div class="block">234</div>
+
+
+    </div>
+
 
 </div>
