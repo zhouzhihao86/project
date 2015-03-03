@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东晨</title>
+    #set($cPath = "#cPath")
+    <link rel="stylesheet" href="$cPath/resources/css/font-awesome.min.css" type="text/css"/>
+    <link href="$cPath/resources/css/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="$cPath/resources/css/pt-base.css" rel="stylesheet">
+    <link href="$cPath/resources/css/admin.css" rel="stylesheet">
+    <script>
+
+        var app = app || {};
+
+        app.cPath = "$cPath" + "/admin";
+
+        window.app = app;
+
+        window.ueditorServerUrl = app.cPath + "/";
+    </script>
+</head>
+<body>
+<div id="header">
+    <a href="javascript:void(0);"><span class="pt-span" style="margin-left:240px;">欢迎你 $!adminInfo.getName()</span></a>
+    <a class="admin-more" href="javascript:void(0)"><span class="pt-span"
+                                                          style="border-left:1px solid #868686;float:right;">账户信息</span></a>
+    <style>
+
+    </style>
+    <div class="admin-card hide">
+        <p class="frame">账户信息</p>
+
+        <p class="item"><i class="fa fa-user"></i><span>$!adminInfo.getRealName()</span></p>
+
+
+        <p class="frame bottom"><a href="$cPath/logout">注销</a></p>
+
+        <div class="reset-cur-pwd hide">
+            <form id="reset-cur-form">
+                <input type="password" name="newPwd" placeholder="新密码">
+                <input type="password" style="padding-bottom:5px;" name="confirmedPwd" placeholder="重复密码">
+            </form>
+            <div class="reset-confirm">确认</div>
+        </div>
+    </div>
+</div>
+<div id="side-bar">
+    <div class="" style="margin-top: -18px;text-align: center;margin-bottom: 27px;">
+        东晨后台管理
+    </div>
+    <ul id="main-nav" class="open-active">
+        #foreach($item in $menu.entrySet())
+
+            <li class="dropdown">
+                <a href="javascript:;">
+                    <i class="fa"></i>
+                    $item.key
+                    <span class="caret"></span>
+                </a>
+                <ul class="sub-nav">
+                    #foreach($i in $item.value)
+                        <li class="menu-$i.getResourceUri()">
+                            <a href="$cPath/admin/$i.getResourceUri()">
+                                <i class="fa"></i>
+                                $i.getResourceName()
+                            </a>
+                        </li>
+                    #end
+                </ul>
+
+            </li>
+
+        #end
+    </ul>
+</div>
+<div id="main-container">
+    $screen_content
+</div>
+<div id="err-hint" class="hide"></div>
+</body>
+
+
+<script>
+
+    app.chartColors = ['#e5412d', '#f0ad4e', '#444', '#888', '#555', '#999', '#bbb', '#ccc', '#eee'];
+
+    app.debounce = function (func, wait, immediate) {
+        var timeout, args, context, timestamp, result;
+        return function () {
+            context = this;
+            args = arguments;
+            timestamp = new Date();
+
+            var later = function () {
+                var last = (new Date()) - timestamp;
+
+                if (last < wait) {
+                    timeout = setTimeout(later, wait - last);
+                } else {
+                    timeout = null;
+                    if (!immediate) result = func.apply(context, args);
+                }
+            };
+
+            var callNow = immediate && !timeout;
+
+            if (!timeout) {
+                timeout = setTimeout(later, wait);
+            }
+
+            if (callNow) result = func.apply(context, args);
+            return result;
+        };
+    }
+
+    $(document).ready(function () {
+
+        $(".dropdown .sub-nav").slideUp().removeClass("opened");
+
+
+        $(".dropdown").click(function () {
+            $(".dropdown .sub-nav").slideUp().removeClass("opened");
+            $(this).find(".sub-nav").slideDown().addClass("opened");
+        })
+
+        var curMenu = window.location.href.replace(window.app.cPath + "/", "");
+
+        var qIdx = curMenu.indexOf("?");
+
+        if(qIdx > 0){
+            curMenu = curMenu.substring(0, qIdx);
+        }
+
+        var idx = curMenu.indexOf("/");
+
+        if (idx > 0) {
+            curMenu = curMenu.substring(0, idx);
+        }
+
+        var menu = $(".menu-" + curMenu).addClass("menu-selected");
+
+        menu.parent().slideDown().addClass("opened");
+
+        var pics = ["fa-dashboard", "fa-location-arrow", "fa-magic", "fa-tasks", "fa-location-arrow", "fa-magic", "fa-desktop", "fa-hand-o-up", "fa-reorder", "fa-asterisk","fa-tasks","fa-chain","fa-square", "fa-desktop"];
+
+        $("#main-nav .fa").each(function (idx, el) {
+
+            $(this).addClass(pics[idx]);
+
+        });
+
+        $(".admin-more").click(function () {
+            $(".admin-card").toggleClass("hide");
+        });
+
+
+        $(".admin-card .reset").click(function(){
+            $(".reset-cur-pwd").toggleClass("hide");
+        })
+
+
+        $(".reset-cur-pwd .reset-confirm").click(function(){
+
+            $.post(window.app.cPath + "/resetCur", $("#reset-cur-form").serialize(), function (response) {
+
+                if (response.respCode != "00") {
+                    protops.base.hint(response.msg);
+                    return;
+                }
+                protops.base.hint("保存成功");
+
+                $(".reset-admin").toggleClass("hide");
+
+
+
+            })
+        });
+    });
+
+</script>
+</html>

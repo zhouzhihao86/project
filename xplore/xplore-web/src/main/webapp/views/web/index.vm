@@ -1,0 +1,168 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+    .scroller_roll{
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .scroller_roll ul{
+        padding: 0px;
+        margin: 0px;
+        float: left;
+    }
+    .scroller_roll ul li{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        float: left;
+        text-align: center;
+        display:inline;
+        overflow: hidden;
+    }
+    .scroller_roll ul li a{
+        text-decoration: none;
+    }
+    .scroller_roll ul li a:hover{
+        text-decoration: underline;
+    }
+    .scroller_roll ul li a img{
+        border: none;
+    }
+</style>
+<div class="content">
+    #parse('web/common/banner.vm')
+    <div class="top-content">
+        <div class="intro">
+            <div class="dc-title">
+                <div class="dc-name">关于东晨</div>
+                <div class="dc-more"><a href="$cPath/intro" style="color:#FFF">MORE ></a></div>
+            </div>
+            <div class="intro-content">
+                <img src="./resources/img/aboutus.jpg" style="width:100%;margin-top:2px;">
+                上海东晨市容清洁服务有限公司前身是宝山区市容清洁服务公司，隶属于宝山区市容管理局，成立于1999年3月，公司是上海市市容环境卫生协会会员，拥有四清作业资格证书和机动车辆清洗保洁管理资格证书。目前，公司拥有职工1041人...
+            </div>
+        </div>
+        <div class="pics-news">
+            <div class="dc-title" style="background:#207FDB;border:none;height:35px">
+                <div class="dc-name">图片新闻</div>
+                <div class="dc-more"><a href="$cPath/intro" style="color:#FFF">MORE ></a></div>
+            </div>
+            <div>
+                <ul class="pics-slider" style="width:420px;float:left">
+                    #foreach($picNews in $sliderRecent)
+                        <li style="width:100%;position:relative"><a href="$picNews.getLink()"><img src="$picNews.getPicUrl()" style="width:420px;height:297px;"><div class="picNews-background"></div><p class="picNews-text" style="">$picNews.getBrief()</p></a></li>
+                    #end
+                </ul>
+                <div id="bx-pager" style="float:left;">
+                    #foreach($picNews in $sliderRecent)
+                        #set($cnt = $velocityCount - 1)
+                        <a data-slide-index="$cnt" href=""><img src="$picNews.getPicUrl()" /></a>
+                    #end
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-content">
+        <div class="news">
+            <div class="dc-title">
+                <div class="dc-name">公司动态</div>
+                <div class="dc-more"><a href="$cPath/news" >MORE ></a></div>
+            </div>
+            <div class="dc-list">
+                <ul>
+                    #foreach($news in $newsRecent)
+                        <li>
+                            <a href="$cPath/news?id=$news.getId()">
+                                <span class="list-one" style="position:relative">$news.getTitle() #if($news.getHasVideo() == 1) <i class="has-video-flag"></i> #end</span>
+                                <span class="list-date">$!news.getDisplayDate()</span>
+                            </a>
+                        </li>
+                    #end
+                </ul>
+            </div>
+        </div>
+        <div class="culture">
+            <div class="dc-title">
+                <div class="dc-name">企业文化</div>
+                <div class="dc-more"><a href="$cPath/culture" >MORE ></a></div>
+            </div>
+<ul class="culture-slider" style="margin:0;font-size:12px;height:100%;width:100%;padding-left:0;">
+                #foreach($culture in $cultureRecent)
+					#if($velocityCount == 6)
+						#break
+					#end
+                    <li style="width:100%;"><a href="$cPath/culture?id=$!culture.getId()"><img src="$culture.getPicUrl()" style="width:264px;height:150px;"><p style="text-align:left;line-height:24px;margin:0;padding:0 20px;">$culture.getTitle()</p></a></li>
+                #end
+            </ul>
+            <div id="culture-pager">
+                #foreach($culture in $cultureRecent)
+					#if($velocityCount == 6)
+						#break
+					#end
+                    #set($cnt = $velocityCount - 1)
+                    <a data-slide-index="$cnt" href="">$velocityCount</a>
+                #end
+            </div>
+        </div>
+        <div class="videos">
+            <div class="dc-title">
+                <div class="dc-name">东晨视角</div>
+                <div class="dc-more"><a href="$cPath/videos" >MORE ></a></div>
+            </div>
+            <div style="font-size:12px;text-align:center">
+                #foreach($video in $videosRecent)
+                    <iframe src="$video.getLink()"  width="215" height="150" allowfullscreen="true" quality="high"  align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" "="" frameborder="0" ></iframe>
+                    <p style="text-align:left;line-height:30px;margin:0;padding:0 20px;">$video.getTitle()</p>
+                #end
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom-content" style="margin-bottom:20px;">
+        <div class="jianshe">
+            <div class="dc-title">
+                <div class="dc-name">行业建设</div>
+                <div class="dc-more"><a href="$cPath/jianshe" >MORE ></a></div>
+            </div>
+            <div class="dc-list" style="font-size:12px;">
+                <ul>
+                    #foreach($jianshe in $jiansheRecent)
+
+                        <li><a href="$cPath/jianshe?id=$jianshe.getId()"><span class="list-one">$jianshe.getTitle()</span></a></li>
+                    #end
+                </ul>
+            </div>
+        </div>
+        <div class="honor" style="width:auto">
+            <div class="dc-title">
+                <div class="dc-name">公司荣誉</div>
+                <div class="dc-more"><a href="javascript:void(0)" >MORE ></a></div>
+            </div>
+            <div id="scroller_roll" class="scroller_roll">
+                <ul style="font-size:12px;">
+                    #foreach($honor in $honorRecent)
+                        <li style="height:184px;"><a href="javascript:void(0)" title="$honor.getTitle()"><img src="$honor.getPicUrl()" style="width:188px;"></a></li>
+                    #end
+                </ul>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="dc-title">
+                <div class="dc-name">服务项目</div>
+                <div class="dc-more"><a href="$cPath/service" >MORE ></a></div>
+            </div>
+            <div class="service-item-list" style="font-size:12px;">
+                <ul>
+                    #foreach($service in $serviceRecent)
+                        <li data-target="$!service.getId()">$service.getTitle()</li>
+                    #end
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</div>

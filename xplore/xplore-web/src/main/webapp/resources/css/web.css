@@ -1,0 +1,616 @@
+body {
+    background: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    font-family: songti, Arial;
+}
+
+a{text-decoration:none;outline: none;border:none}
+img{border:none}
+
+#header {
+    width: 100%;
+    min-width: 1000px;
+    float: left;
+}
+
+#header .menu {
+    height: 30px;
+    float: left;
+    width: 100%;
+    background: #207FDB;
+    background-image: url(../img/jintiao1.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    font-weight: 700;
+}
+
+#header .menu ul{
+    width: 932px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+#header .menu a {
+    color: #FFF
+}
+
+
+#header .menu ul li {
+    list-style-type: none;
+    float: right;
+    width:93px;
+    position: relative;
+    line-height: 30px;
+}
+
+#header .header-top {
+    height: 145px;
+}
+
+a {
+    text-decoration: none;
+    color: #111111
+}
+
+#footer {
+    width: 100%;
+    float: left;
+    background: #207FDB;
+    color: #FFF;
+    min-width: 1000px;
+}
+
+.links {
+    width: 40%;
+    float: left;
+    padding: 20px 5%;
+}
+
+.contact-us {
+    width: 40%;
+    float: left;
+    padding: 20px 5%;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+#footer .links-name {
+    font-size: 20px;
+
+}
+
+#footer .column {
+    float: left;
+    width: 50%;
+}
+
+#footer .column a {
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #FFF;
+}
+
+#main-container {
+    width: 100%;
+    float: left;
+}
+
+.dc-title {
+    width: 100%;
+    height: 33px;
+    position: relative;
+    float: left;
+    border-bottom: 1px solid #FFF
+}
+
+.dc-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    position: absolute;
+    left: -3px;
+    height: 24px;
+    top: 6px;
+    line-height: 23px;
+    padding: 0 10px;
+    background: url("../img/biaotou1.png") no-repeat 0px 0px;
+    width: 98px;
+    text-indent: 10px;
+}
+
+.dc-more {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    top: 5px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.content {
+    width: 932px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.intro {
+    background: #207FDB;
+    color: #FFF;
+    width: 367px;
+    margin-right: 15px;
+    float: left;
+    height: 346px;
+}
+
+.pics-news {
+    width: 535px;
+    border: 7px solid #207FDB;
+    float: left;
+    position: relative;
+    height: 332px;
+    background: #121212;
+}
+
+.pics-slider {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.pics-slider img {
+    width: 599px;
+    height: 332px;
+}
+
+.pics-news .dc-name {
+    left: -10px;
+    z-index: 99999;
+    top:0px;
+}
+
+.top-content .intro-content {
+    padding: 10px;
+    float: left;
+    width: 346px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.news, .honor {
+    float: left;
+    width: 414px;
+    margin-right: 12px;
+    position: relative;
+    height: 218px;
+    background: #FFF;
+    background-image: url(../img/jintiao2.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    border: 1px solid #E2E2E2;
+    border-top: none;
+}
+
+.culture, .jianshe {
+    float: left;
+    width: 264px;
+    margin-right: 12px;
+    position: relative;
+    height: 218px;
+    background: #FFF;
+    border: 1px solid #E2E2E2;
+    border-top: none;
+    background-image: url(../img/jintiao3.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+}
+
+.videos, .service {
+    float: left;
+    width: 224px;
+    position: relative;
+    height: 218px;
+    background: #FFF;
+    border: 1px solid #E2E2E2;
+    border-top: none;
+    background-image: url(../img/jintiao4.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+}
+
+.top-content, .middle-content, .bottom-content {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.middle-content {
+    margin-bottom: 13px;
+}
+
+.jianshe .dc-list {
+    width: 257px;
+}
+
+.jianshe .dc-list ul {
+    float: left;
+    width: 224px
+}
+
+.jianshe .dc-list ul li .list-one {
+    width: 200px;
+    cursor: pointer;
+    display:block;
+}
+
+.news .dc-list {
+    width: 404px;
+}
+
+.dc-list {
+    padding-left: 10px;
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.dc-list ul li:last-child {
+    border-bottom: none;
+}
+
+.dc-list ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 15px;
+    float: left;
+}
+
+.dc-list ul li {
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #121212;
+    float: left;
+    width: 100%;
+}
+
+.dc-list ul li .list-one {
+    overflow: hidden;
+    width: 310px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dc-list ul li .list-date {
+    width: 65px;
+}
+
+.service-item-list ul {
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    line-height: 22px;
+    width: 226px;
+    text-align: left;
+    padding: 0;
+    text-indent:5px;
+    font-size: 14px;
+    background: #F4F4F4
+}
+
+.service-item-list ul li {
+    height: 28px;
+    line-height: 28px;
+    margin: 2px 0;
+    background: #FFF;
+    border-left: 7px solid #207FDB;
+    border-right: 7px solid #207FDB;
+    cursor: pointer;
+}
+
+.service-item-list ul li:hover {
+    background: #207FDB;
+    color: #FFF !important;
+}
+
+.service-item-list ul li:first-child {
+    margin-top: 6px;
+}
+
+.service-item-list ul li:last-child {
+    margin-top: 0px;
+}
+
+.company-intro {
+    background: #FFF;
+    float: left;
+    width: 100%;
+}
+
+.company-content {
+    margin-bottom: 20px;
+    padding: 40px 100px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.dc-detail-header {
+    height: 66px;
+    padding: 0 95px;
+    position: relative;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.dc-detail-line {
+    position: absolute;
+    left: 95px;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background: #207FDB
+}
+
+.dc-detail-title {
+    position: absolute;
+    left: 117px;
+    bottom: 3px;
+    font-size: 22px;
+}
+
+.dc-list-header {
+
+    height: 34px;
+    padding: 0 22px;
+    position: relative;
+    background: #DA2C2C;
+    color: #FFF
+}
+
+.dc-list-line {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: url("../img/jinseshu.png") no-repeat 0px 0px;
+}
+
+.dc-list-title {
+    position: absolute;
+    left: 47px;
+    bottom: 3px;
+    font-size: 16px;
+}
+
+.list-item {
+    height: 126px;
+    padding: 13px 35px;
+    border-bottom: 1px solid #DDDDDD;
+    color: #868686;
+}
+
+.list-item-name {
+    color: #207FDB;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.list-item-wrapper {
+    float: left;
+    float: left;
+    width: 355px;
+    margin-left: 12px;
+}
+
+.list-content {
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.list-item-abstract {
+    margin-bottom: 15px;
+}
+
+.list-area {
+    background: #FFF;
+    width: 645px;
+    float: left;
+}
+
+.mg-bt {
+    margin-bottom: 20px;
+}
+
+.mg-tp {
+    margin-top: 20px;
+}
+
+.picsNews-wrapper {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.picsNews-wrapper .pics-news {
+    width: 631px
+}
+
+.picsNews-wrapper .pics-news {
+    float: none;
+}
+.picsNews-wrapper  .pics-news .bx-wrapper{
+    width: 499px;
+    height: 332px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.right-column {
+    width: 285px;
+    float: left;
+}
+
+.right-column .videos {
+    width: 264px;
+
+}
+
+.pagination {
+    float: left;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.pagination li a {
+    color: #111111;
+    min-width: 16px;
+    display: block;
+    padding: 4px;
+}
+
+.pagination li.disabled, .pagination li.disabled:hover, .pagination li.disabled:focus, .pagination li.disabled:active {
+    background: #f9f9f7
+}
+
+.pagination li {
+    background: #f9f9f7
+}
+
+.pagination li:hover {
+    text-decoration: underline;
+}
+
+.pagination li.active {
+    text-decoration: underline;
+}
+
+.pagination li.disabled a {
+    color: #C8C8C8
+}
+
+.pagination li {
+    float: left;
+    border-right: 1px solid #909090;
+    font-size: 14px;
+    background: #FFFFFF;
+    min-width: 16px;
+    text-align: center;
+}
+
+.pagination li:last-child {
+    border-right: none
+}
+
+.pics-slider .picNews-text {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    right: 0;
+    height: 60px;
+    padding: 4px;
+    color: #FFF;
+    margin: 0;
+}
+.pics-news .pics-slider .picNews-text{
+
+    text-indent:10px;
+    padding-top:10px;
+    height:55px;
+    color:#FFFFFF;
+
+}
+.pics-news .pics-slider .picNews-background{
+    position: absolute;left: 0;bottom: 3px;right: 0;height: 60px;padding: 4px;background: #111111;color: #FFF;margin: 0;filter: alpha(opacity=50);opacity:0.5
+}
+
+.hide {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right
+}
+
+.third-footer {
+    padding: 0 100px;
+    font-size: 12px;
+    border-top: 1px solid #DEDEDE;
+    height: 56px;
+    line-height: 56px;
+}
+
+.third-footer a {
+    cursor: pointer;
+}
+
+.has-video-flag {
+    position: absolute;
+    right: 10px;
+    background: url(../img/hasVideo.png) no-repeat 0px 0px;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}
+
+#bx-pager {
+    width:107px;
+    margin-left:4px;
+    margin-top: 2px;
+}
+#bx-pager img{
+    width:101px;
+    height:63px;
+    margin:3px;
+    border:1px solid transparent;
+}
+#bx-pager a.active img{
+    border:1px solid #FFFFFF
+}
+
+.pics-news .bx-wrapper{width:420px;float:left;height:297px;}
+.pics-news .bx-viewport{height:297px;}
+#culture-pager{
+    position: absolute;
+    bottom: 34px;
+
+    z-index: 99;
+    right: 0px;
+}
+#culture-pager a{
+    float:left;
+    width:16px;
+    height:15px;
+    margin-right:4px;
+    text-align:center;
+    line-height:15px;
+    background: #FFF;
+}
+#culture-pager a.active{
+    background: url(../img/pager.jpg) no-repeat 0px 0px;
+}
+.culture .bx-wrapper{width:264px;height:150px;}
+.culture .bx-viewport{height:150px;}
+
+.banner{
+    color:#6E6E6E;font-size:12px;margin-bottom: 13px;padding: 0 15px;float: left;width: 902px;
+}

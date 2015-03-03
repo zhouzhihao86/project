@@ -1,0 +1,82 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+    .dc-detail-line {
+        background: url("../resources/img/biaozhi.png") no-repeat 0px 0px;
+        width: 75px;
+        height: 65px;
+        left: 45px;
+        top: 14px;
+    }
+
+    .list-area {
+        width: 932px;
+    }
+
+    .avideo {
+        width: 203px;
+        height: 171px;
+        float: left;
+        padding: 4px;
+        position:relative;
+        cursor:pointer;
+        margin-bottom:20px
+    }
+    .avideo .play{
+        position:absolute;
+        left:74px;
+        top:34px;
+    }
+    .avideo:hover{
+        background:#F5F5F5
+    }
+
+    .list-content {
+        padding: 44px;
+        float: left;
+    }
+</style>
+<div class="content">
+    #parse('web/common/banner.vm')
+    <div class="list-area">
+        <div class="dc-detail-header">
+            <div class="dc-detail-line"></div>
+            <div class="dc-detail-title">东晨视角</div>
+        </div>
+        <div class="list-content">
+            #foreach($!domain in $!domainList.getResult())
+                <div class="avideo">
+                    <img src="../resources/img/play.png" class="play hide">
+                    <img src="$!domain.getPicUrl()">
+                    <p style="padding:0 6px">$!domain.getTitle()</p>
+                    <div class="video-link hide">$!domain.getLink()</div>
+                </div>
+            #end
+        </div>
+        <div class="pagination paging-content"></div>
+    </div>
+
+</div>
+<style>
+    .video-iframe{
+margin:0 auto;
+margin-top:147px;
+width:640px;
+
+    }
+    .video-close{
+        position:fixed;
+        top:600px;
+        left:210px;
+        right:210px;
+        text-align:center;
+        color:#FFF;
+        cursor:pointer;
+    }
+</style>
+<div class="video-iframe-wrapper hide" style="position:fixed;left:0px;right:0px;top:0;bottom:0;background:rgba(0,0,0,0.5);">
+    <div class="video-iframe">
+
+    </div>
+    <p class="video-close" >关闭</p>
+</div>

@@ -1,0 +1,26 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+    .content-title{
+        text-align:center;
+        border-bottom:1px solid #DEDEDE
+    }
+</style>
+<div class="content">
+    #parse('web/common/banner.vm')
+    <div class="company-intro">
+        <div class="dc-list-header">
+            <div class="dc-list-line"></div>
+            <div class="dc-list-title"></div>
+        </div>
+        <div class="content-title">
+            <p style="font-size:20px;">$!domain.getTitle()</p>
+            <p style="color:#747474">$!domain.getDisplayDate()</p>
+        </div>
+        <div class="company-content">
+           $!domain.getContent()
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,26 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<div class="content">
+    #parse('web/common/banner.vm')
+    <div class="list-area">
+        <div class="dc-list-header">
+            <div class="dc-list-line"></div>
+            <div class="dc-list-title"></div>
+        </div>
+        <div class="list-content">
+            #foreach($!domain in $!domainList.getResult())
+                <a href="?id=$!domain.getId()" data-target="$!domain.getId()">
+                    <div class="list-item">
+                        <p class="list-item-name">$!domain.getTitle()</p>
+
+                        <p class="list-item-abstract"> $!domain.getBrief()</p>
+
+                        <p class="date">$!domain.getDisplayDate()</p>
+                    </div>
+                </a>
+            #end
+        </div>
+        <div class="pagination paging-content"></div>
+    </div>
+    #parse('web/common/sidebar.vm')
+</div>

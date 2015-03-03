@@ -1,0 +1,46 @@
+#set($layout = "layout/welcomeLayout.vm")
+<div class="welcome-container">
+    <div id="login-card" class="card">
+        <h1>东晨后台管理</h1>
+
+        <form action="login" method="post" id="login-form">
+            <input type="text" class="login-username" name="username" placeholder="用户名"/>
+            <input type="password" class="login-password" name="password" placeholder="密码"/>
+            <input type="submit" id="login-submit" value="登录" style="width:100%">
+
+            <p class="backend-err hide">$!err-msg</p>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <p class="company">东晨市容清洁服务有限公司</p>
+
+            <p class="copyright">
+                <span style="margin-right:20px;">关于</span>
+                <span style="margin-right:20px;">联系我们</span>
+                <span>版权所有2009-2014</span>
+            </p>
+        </div>
+    </div>
+</div>
+#parse('layout/script.vm')
+<script>
+    $(document).ready(function () {
+
+        if ($(".backend-err").text()) {
+            protops.base.hint($(".backend-err").text());
+        }
+
+        $("#login-submit").click(function () {
+            var loginForm = $("#login-form");
+            if (loginForm.find(".login-username").val() == "" || loginForm.find(".login-password").val() == "") {
+                protops.base.hint("用户名或密码错误");
+                return false;
+            }
+
+        });
+
+
+    });
+
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dc-admin</title>
+    #set($cPath = "#cPath")
+    <link rel="stylesheet" href="$cPath/resources/css/font-awesome.min.css" type="text/css"/>
+
+    <link href="$cPath/resources/css/pt-base.css" rel="stylesheet">
+    <link href="$cPath/resources/css/admin.css" rel="stylesheet">
+</head>
+<body style="background: url($cPath/resources/img/contact-bg.png)">
+<div id="welcome-main-container">
+    $screen_content
+</div>
+<div id="err-hint" class="hide"></div>
+</body>
+
+
+</html>

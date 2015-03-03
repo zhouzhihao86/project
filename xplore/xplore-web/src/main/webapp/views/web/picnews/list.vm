@@ -1,0 +1,56 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<div class="content">
+    #parse('web/common/banner.vm')
+    <div class="list-area">
+        <div class="dc-list-header">
+            <div class="dc-list-line"></div>
+            <div class="dc-list-title"></div>
+        </div>
+        <div class="picsNews-wrapper">
+            <div class="pics-news">
+                <div>
+                    <ul class="pics-slider" style="width:499px;float:left">
+                        #foreach($picNews in $sliderRecent)
+                            <li style="width:100%;position:relative">
+                                <a href="$picNews.getLink()">
+                                    <img src="$picNews.getPicUrl()" style="width:499px;height:332px;">
+                                    <div class="picNews-background"></div>
+                                    <p class="picNews-text" style="">$picNews.getBrief()</p>
+                                </a>
+                            </li>
+                        #end
+                    </ul>
+                    <div id="bx-pager" style="float:left;">
+                        #foreach($picNews in $sliderRecent)
+                            #set($cnt = $velocityCount - 1)
+                            <a data-slide-index="$cnt" href=""><img src="$picNews.getPicUrl()" style="width: 120px;height: 74px;"/></a>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-content">
+
+            #foreach($!domain in $!domainList.getResult())
+                <a href="?id=$!domain.getId()">
+                    <div class="list-item">
+                        <div class="fl">
+                            <img src="$!domain.getPicUrl()" style="width:188px;height:126px">
+                        </div>
+                        <div class="list-item-wrapper">
+                            <p class="list-item-name">$!domain.getTitle()</p>
+
+                            <p class="list-item-abstract">
+                                $!domain.getBrief()
+
+                            <p class="date">$!domain.getDisplayDate()</p>
+                        </div>
+                    </div>
+                </a>
+            #end
+        </div>
+        <div class="pagination paging-content"></div>
+    </div>
+    #parse('web/common/sidebar.vm')
+</div>

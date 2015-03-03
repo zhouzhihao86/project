@@ -1,0 +1,48 @@
+<div id="content-header">
+    <h1>$currentResource.getName()</h1>
+</div>
+<style>
+
+</style>
+<div id="operation-container">
+
+    <a href="./list"><span class="oper-btn add">返回列表页</span></a>
+
+</div>
+
+<div id="content-container">
+
+    <form action="edit" method="post" enctype="multipart/form-data">
+        <p>标题</p>
+        <input type="text" placeholder="标题" name="title" value="$!domain.getTitle()">
+        <p>摘要</p>
+        <input type="text" placeholder="摘要" name="brief" value="$!domain.getBrief()">
+        <p>时间</p>
+        <input type="text" placeholder="时间" name="logTime" value="$!domain.getLogTime()">
+        <input type="hidden"  name="picUrl" value="$!domain.getPicUrl()">
+        <p>首页轮播图片上传</p>
+        <input type="file" placeholder="图片上传" name="fileUpload">
+        <input type="hidden"  name="id" value="$!domain.getId()">
+        <!-- 加载编辑器的容器 -->
+        <p>征文</p>
+        <script id="container" name="content" type="text/plain">
+        $domain.getContent()
+
+
+        </script>
+        <p></p>
+        <button class="submit-bottom" style="float:left">提交</button>
+
+    </form>
+</div>
+#parse('layout/script.vm')
+<script type="text/javascript" src="$cPath/resources/js/admin.js"></script>
+<!-- 配置文件 -->
+<script type="text/javascript" src="../../resources/ueeditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="../../resources/ueeditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+
+</script>

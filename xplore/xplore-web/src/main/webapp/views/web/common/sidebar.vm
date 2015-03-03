@@ -1,0 +1,45 @@
+<div class="right-column">
+    <div class="culture mg-bt" style="margin-right:0;float:right">
+        <div class="dc-title">
+            <div class="dc-name">企业文化</div>
+            <div class="dc-more"><a href="$cPath/culture" >MORE ></a></div>
+        </div>
+        <ul class="culture-slider" style="margin:0;font-size:12px;height:100%;width:100%;padding-left:0;">
+            #foreach($culture in $cultureRecent)
+                <li style="width:100%;"><a href="$cPath/culture?id=$!culture.getId()"><img src="$culture.getPicUrl()" style="width:264px;height:150px;"><p style="text-align:left;line-height:24px;margin:0;padding:0 20px;">$culture.getTitle()</p></a></li>
+            #end
+        </ul>
+        <div id="culture-pager">
+            #foreach($culture in $cultureRecent)
+                #set($cnt = $velocityCount - 1)
+                <a data-slide-index="$cnt" href="">$velocityCount</a>
+            #end
+        </div>
+    </div>
+    <div class="jianshe mg-bt" style="margin-right:0;float:right">
+        <div class="dc-title">
+            <div class="dc-name">行业建设</div>
+            <div class="dc-more"><a href="$cPath/jianshe" >MORE ></a></div>
+        </div>
+        <div class="dc-list" style="font-size:12px;">
+            <ul>
+                #foreach($jianshe in $jiansheRecent)
+
+                    <li><a href="$cPath/jianshe?id=$jianshe.getId()"><span class="list-one">$jianshe.getTitle()</span></a></li>
+                #end
+            </ul>
+        </div>
+    </div>
+    <div class="videos mg-bt" style="margin-right:0;float:right">
+        <div class="dc-title">
+            <div class="dc-name">东晨视角</div>
+            <div class="dc-more"><a href="$cPath/videos" >MORE ></a></div>
+        </div>
+        <div style="font-size:12px;text-align:center">
+            #foreach($video in $videosRecent)
+                <iframe src="$video.getLink()"  width="215" height="150" allowfullscreen="true" quality="high"  align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" "="" frameborder="0" ></iframe>
+                <p style="text-align:left;line-height:30px;margin:0;padding:0 20px;">$video.getTitle()</p>
+            #end
+        </div>
+    </div>
+</div>
