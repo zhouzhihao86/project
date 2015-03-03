@@ -29,11 +29,6 @@
                     <property name="baseLocation" value="/admin/"></property>
             </bean>
         </mvc:interceptor>
-        <mvc:interceptor>
-            <mvc:mapping path="/web/**/*"/>
-            <bean class="com.xplore.web.interceptor.IpIntercepter">
-            </bean>
-        </mvc:interceptor>
     </mvc:interceptors>
 
 

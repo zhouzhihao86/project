@@ -1,7 +1,0 @@
-<div class="banner"><div style="margin-top:5px;float:left"><div style="float:left" class="dc-date">&nbsp|&nbsp</div>&nbsp|&nbsp</div><div style="float:left;margin-top:6px" id="weather" ></div>  <div style="margin-top:5px;float:left">&nbsp|&nbsp访问数：$ipCnt</div>
-    <div class="search" style="height:20px;float:right;margin-top:0;position:relative;">
-        <form action="$cPath/search" method="get">
-            <input type="text" name="s" style="width:240px"><button id="doSearch" style="position:absolute;top:0;right:0;background:url($cPath/resources/img/search-16.png) no-repeat 2px 3px;width:21px;height:21px;border:none;border-left:1px solid #999999"></button>
-        </form>
-    </div>
-</div>
