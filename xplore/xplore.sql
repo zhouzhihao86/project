@@ -1,5 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `xplore` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `xplore`;
+-- test fanlin
 -- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: xplore
