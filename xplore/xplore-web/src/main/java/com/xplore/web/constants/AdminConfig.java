@@ -1,7 +1,6 @@
 package com.xplore.web.constants;
 
 import com.xplore.web.domain.Config;
-import com.xplore.web.domain.IpCnt;
 import com.xplore.web.service.ConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
@@ -54,7 +53,6 @@ public class AdminConfig implements ApplicationListener<ContextRefreshedEvent> {
 
         }
 
-        IpCnt.recover(AdminConfig.getInt(AdminConfig.KEY_TOTAL_CNT));
     }
 
     public Integer getSystemId() {
@@ -73,10 +71,4 @@ public class AdminConfig implements ApplicationListener<ContextRefreshedEvent> {
         return Integer.parseInt(get(keyPageNo));
     }
 
-    public void saveIpCnt(Integer ipCnt) {
-
-        configService.saveIpCnt(ipCnt);
-
-
-    }
 }

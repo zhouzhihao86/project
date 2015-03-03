@@ -1,7 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a28cd1b-1fe5-41d2-8ebf-838bf8e02c6e" name="Default" comment="" />
+    <list default="true" id="6a28cd1b-1fe5-41d2-8ebf-838bf8e02c6e" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\AchieveController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\BaseController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\CultureController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\HomeController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\HonorController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\JiansheController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\NewsController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\PartyController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\PicNewsController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\ServiceController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\SliderController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\SuggestionController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\admin\VideosController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\AchieveController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\CultureController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\HonorController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\JiansheController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\NewsController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\PartyController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\PicsNewsController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\ServiceController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\SuggestionController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\controller\web\VideosController.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\AchieveDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\CultureDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\HonorDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\JiansheDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\NewsDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\PartyDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\PicNewsDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\SearchDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\ServiceDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\SliderDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\SuggestionDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\dao\VideosDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Achieve.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Culture.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Honor.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\IpCnt.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Jianshe.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\News.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Party.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\PicNews.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Search.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Service.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Slider.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Suggestion.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\domain\Videos.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\interceptor\IpIntercepter.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\job\FlushJob.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\AchieveService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\CultureService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\HonorService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\JiansheService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\NewsService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\PartyService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\PicNewsService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\SearchService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\ServiceService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\SliderService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\SuggestionService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\java\com\xplore\web\service\VideosService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\resources\js\member.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\culture\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\culture\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\culture\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\honor\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\honor\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\honor\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\news\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\news\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\news\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\picnews\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\picnews\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\picnews\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\slider\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\slider\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\slider\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\suggestion\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\suggestion\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\suggestion\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\videos\add.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\videos\edit.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\admin\videos\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\base\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\base\third.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\common\banner.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\common\sidebar.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\contact.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\intro.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\picnews\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\picnews\third.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\search\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\search\third.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\suggestion.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\videos\list.vm" afterPath="" />
+      <change type="DELETED" beforePath="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\videos\third.vm" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/constants/AdminConfig.java" afterPath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/constants/AdminConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" afterPath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" afterPath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/index.vm" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/index.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml" afterPath="$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore.iml" afterPath="$PROJECT_DIR$/xplore.iml" />
+    </list>
     <ignored path="xplore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/xplore-common/target/" />
@@ -27,22 +137,46 @@
     <favorites_list name="xplore" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/js/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5240642" vertical-offset="0" max-vertical-offset="1029">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml" />
         <option value="$PROJECT_DIR$/xplore-common/src/main/resources/db.context.xml" />
         <option value="$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/exception/DcException.java" />
         <option value="$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/exception/XploreException.java" />
         <option value="$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/constants/LocaleEnum.java" />
-        <option value="$PROJECT_DIR$/config/dev.properties" />
         <option value="$PROJECT_DIR$/config/product.properties" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/default.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/script.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/welcomeLayout.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/dao/AchieveDao.java" />
+        <option value="$PROJECT_DIR$/config/dev.properties" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/index.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/constants/AdminConfig.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/interceptor/IpIntercepter.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/job/FlushJob.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml" />
       </list>
     </option>
   </component>
@@ -75,34 +209,6 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="xplore-web" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="xplore-web" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="xplore-common" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -126,16 +232,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Profiles" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -146,7 +242,7 @@
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -181,6 +277,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -196,14 +316,32 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="web.server" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="250" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="249" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1042" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="250" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="249" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1042" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="SearchEverywhereHistoryKey" value="index.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/index.vm&#10;web.css&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/resources/css/web.css&#10;indexcontroller&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;web-default.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RunManager" selected="Jetty Server.xplore">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -575,7 +713,7 @@
     </configuration>
     <configuration default="false" name="xplore" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 8.1.16.v20140903" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="xplore-web:war exploded">
           <settings DEPLOYMENT_METHOD="contexts" />
@@ -696,6 +834,9 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6a28cd1b-1fe5-41d2-8ebf-838bf8e02c6e" name="Default" comment="" />
@@ -704,77 +845,61 @@
       <updated>1425308176141</updated>
       <workItem from="1425308179252" duration="1883000" />
       <workItem from="1425352174401" duration="690000" />
+      <workItem from="1425358589073" duration="1695000" />
+      <workItem from="1425363752615" duration="3258000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1425363920960</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1425363920960</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1425364015703</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1425364015703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2573000" />
+    <option name="totallyTimeSpent" value="7526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918533" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31201765" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16979052" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39918533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2491731" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2491731" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14585635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39978564" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972376" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -791,9 +916,14 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -807,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34146342" vertical-offset="0" max-vertical-offset="4312">
           <caret line="14" column="67" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3310185" vertical-offset="0" max-vertical-offset="864">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -866,20 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/constants/AdminConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="88" max-vertical-offset="1562">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/interceptor/IpIntercepter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44573644" vertical-offset="474" max-vertical-offset="990">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-common/src/main/resources/db.context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7922607" vertical-offset="675" max-vertical-offset="1166">
@@ -901,13 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3452381" vertical-offset="200" max-vertical-offset="704">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/i18n/placeholder.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2911153" vertical-offset="0" max-vertical-offset="529">
@@ -922,31 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7504726" vertical-offset="219" max-vertical-offset="748">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/welcome.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="1122">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52380955" vertical-offset="0" max-vertical-offset="2464">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/default.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="4114">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -964,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11572">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/welcomeLayout.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.645162" vertical-offset="0" max-vertical-offset="572">
@@ -985,10 +1059,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/admin/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/util/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49905482" vertical-offset="110" max-vertical-offset="748">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.77964324" vertical-offset="1063" max-vertical-offset="2016">
+          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4847849" vertical-offset="0" max-vertical-offset="953">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/index.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6" vertical-offset="0" max-vertical-offset="294">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2142">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/vo/ResetForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50682056" vertical-offset="0" max-vertical-offset="953">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35744682" vertical-offset="0" max-vertical-offset="940">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/constants/AdminConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1512">
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.72" vertical-offset="231" max-vertical-offset="2247">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73320895" vertical-offset="111" max-vertical-offset="672">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5018248" vertical-offset="187" max-vertical-offset="735">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/index.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/admin/base/add.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14689265" vertical-offset="519" max-vertical-offset="1050">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/default.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7" vertical-offset="210" max-vertical-offset="3927">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/admin/base/edit.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.625912" vertical-offset="4473" max-vertical-offset="10143">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/pt-base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.35949" vertical-offset="9828" max-vertical-offset="11949">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38146168" vertical-offset="143" max-vertical-offset="2310">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5240642" vertical-offset="0" max-vertical-offset="1029">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,11 +1274,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xplore-common</last-edited>
+          <last-edited>xplore</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
-       default-lazy-init="false">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"-->
+       <!--default-lazy-init="false">-->
 
-    <bean id="refreshJob" class="com.xplore.web.job.FlushJob"/>
+    <!--<bean id="refreshJob" class="com.xplore.web.job.FlushJob"/>-->
 
-    <bean id="accessTokenRefreshTaskJob"
-          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <property name="targetObject" ref="refreshJob"></property>
-        <property name="targetMethod" value="flush"></property>
-    </bean>
+    <!--<bean id="accessTokenRefreshTaskJob"-->
+          <!--class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--<property name="targetObject" ref="refreshJob"></property>-->
+        <!--<property name="targetMethod" value="flush"></property>-->
+    <!--</bean>-->
 
-    <bean id="accessTokenRefreshTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
-        <property name="jobDetail" ref="accessTokenRefreshTaskJob"/>
-        <property name="cronExpression" value="${cnt_schedule_task_time}"></property>
-    </bean>
+    <!--<bean id="accessTokenRefreshTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">-->
+        <!--<property name="jobDetail" ref="accessTokenRefreshTaskJob"/>-->
+        <!--<property name="cronExpression" value="${cnt_schedule_task_time}"></property>-->
+    <!--</bean>-->
 
-    <bean name="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="default">
-        <property name="autoStartup" value="true"></property>
-        <property name="triggers">
-            <list>
-                <ref bean="accessTokenRefreshTrigger"/>
-            </list>
-        </property>
-    </bean>
+    <!--<bean name="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="default">-->
+        <!--<property name="autoStartup" value="true"></property>-->
+        <!--<property name="triggers">-->
+            <!--<list>-->
+                <!--<ref bean="accessTokenRefreshTrigger"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 
-</beans>
+<!--</beans>-->

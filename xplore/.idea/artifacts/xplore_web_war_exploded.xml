@@ -67,7 +67,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="E:\xplore\xplore\xplore-web\target/MANIFEST.MF" />
+        <element id="file-copy" path="E:\arch\GitHub\project\xplore\xplore-web\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="xplore-web/web/Web" />
     </root>

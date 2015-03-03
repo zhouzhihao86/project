@@ -21,6 +21,6 @@
         <property name="systemId" value="1"></property>
     </bean>
 
-    <import resource="spring/spring-quartz.xml"></import>
+    <!--<import resource="spring/spring-quartz.xml"></import>-->
 
 </beans>
