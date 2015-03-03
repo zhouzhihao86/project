@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 public class AchieveDao extends HibernateBaseDao<Achieve, Integer> {
     public Page pagedList(Page<Achieve> page) {
 
-        String hql = "from Achieve order by id desc1";
+        String hql = "from Achieve order by id desc3";
         return find(page, hql);
 
     }
