@@ -4,7 +4,7 @@
     .index-top {
         height: 367px;
         width: 100%;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
     .index-bottom {
@@ -23,7 +23,7 @@
         border: 1px solid #BABABA;
         float: left;
         padding: 10px;
-        background:url($cPath/resources/img/photo4.jpg) no-repeat 0px 0px;
+        background: url($cPath/resources/img/photo4.jpg) no-repeat 0px 0px;
     }
 
     .block {
@@ -43,42 +43,48 @@
         margin: 0;
         padding: 10px 0;
     }
-    .index-bottom .block-title{
-        padding:9.5px 10px;
-        color:#C71041;
+
+    .index-bottom .block-title {
+        padding: 9.5px 10px;
+        color: #C71041;
         border-bottom: 1px solid #C71041;
     }
-    .index-bottom .block-item{
-        padding:8px 10px 8.5px 10px;
+
+    .index-bottom .block-item {
+        padding: 8px 10px;
         border-bottom: 1px solid #B7B7B7;
-        color:#66666;
-        margin:0;
-    }
-    .index-bottom .block-img-area{
-        height:177px;
-        width:100%;
-        background: red;
-    }
-    .index-bottom .block-img-area.big{
-        height:365px;
-        width:263px;
-    }
-    .index-bottom .block-img-area .title{
-        height:38px;
-        width:100%;
-        position:relative;
-        background:rgba(1,1,1, 0.5)
+        color: #66666;
+        margin: 0;
     }
 
-    .index-bottom .block-img-area .title .name{
-        position:absolute;
-        bottom:5px;
-        left:5px;
-        color:#FFFFFF;
-        font-size:12px
+    .index-bottom .block-img-area {
+        height: 177px;
+        width: 100%;
+        position: relative;
     }
-    .index-bottom .block-img-area img{
-        margin-top:-38px;
+
+    .index-bottom .block-img-area.big {
+        height: 365px;
+        width: 263px;
+    }
+
+    .index-bottom .block-img-area .title {
+        height: 38px;
+        width: 100%;
+        position: absolute;
+        background: #111111;
+        filter: alpha(opacity=50);
+        opacity: 0.5
+    }
+
+    .index-bottom .block-img-area .name {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: #FFFFFF;
+        font-size: 12px;
+        opacity: 1;
+        filter: alpha(opacity=100)
     }
 
 </style>
@@ -97,26 +103,50 @@
     <div class="index-bottom">
         <div class="block" style="background: #E5E5E5;width:227px;">
             <p class="block-title">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
-            <p class="block-title">Booking Online</p>
+
+            <p class="block-title" style="margin-top:10px">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
+
             <p class="block-item">Booking Online</p>
         </div>
         <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
-            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area" style="margin-bottom:10px;">
+                <div class="title"></div>
+                <span class="name">lasdjfslka</span>
+                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area" style="margin-bottom:10px;">
+                <div class="title"></div>
+                <span class="name">lasdjfslka</span>
+                <img src="$cPath/resources/img/index-small-3.jpg"></div>
         </div>
         <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
-            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area" style="margin-bottom:10px;">
+                <div class="title"></div>
+                <span class="name">lasdjfslka</span>
+                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area" style="margin-bottom:10px;">
+                <div class="title"></div>
+                <span class="name">lasdjfslka</span>
+                <img src="$cPath/resources/img/index-small-3.jpg"></div>
         </div>
         <div class="block">
-            <div class="block-img-area big"><div class="title"><span class="name">234242432</span></div><img src="$cPath/resources/img/index-bottom-right.jpg"></div>
+            <div class="block-img-area big">
+                <div class="title"></div>
+                <span class="name">234242432</span>
+                <img src="$cPath/resources/img/index-bottom-right.jpg"></div>
         </div>
 
 
