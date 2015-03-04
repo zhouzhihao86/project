@@ -21,10 +21,31 @@
 </head>
 <body>
 <style>
+    .header-wrapper {
+        margin: 0 auto;
+        width: 960px;
+        padding-top: 20px;
+        height: 97px;
+        position: relative;
+    }
 </style>
 <div id="header">
     <div class="header-top">
-        <div class="company-icon"><a href="$cPath"></a></div>
+        <div class="header-wrapper">
+            <div style="position:absolute;right:0;top:20px;">
+                <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">选择一种语言</span>
+                <img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;">
+                <img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;">
+            </div>
+            <div style="position:absolute;right:0;bottom:10px;">
+                <span style="float:left;font-size:14px;color:#838486;margin-top:1px;font-weight:700">+44 (0)1449 742700</span>
+                <img src="$cPath/resources/img/SJ1.png" style="margin-left:10px;">
+                <img src="$cPath/resources/img/SJ2.png" style="margin-left:10px;">
+                <img src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
+            </div>
+
+            <a href="$cPath"><img src="$cPath/resources/img/logo.png"></a>
+        </div>
         <div style="float:left;margin-left:190px;"></div>
 
         <div class="ads-icon"></div>
@@ -35,7 +56,9 @@
             </li>
             <li class="menu-culture"><i class="menu-hover hide"></i><a href="$cPath/culture">SUMMER CAMPS</a></li>
             <li class="menu-jianshe" style="height:54px"><i class="menu-hover hide"></i><a href="$cPath/jianshe">
-                <p style="margin:-10px 0">TAILOR MADE EDUCATION</p><p style="margin:-33px">asfljdks</p></a></li>
+                <p style="margin:-10px 0">TAILOR MADE EDUCATION</p>
+
+                <p style="margin:-33px">asfljdks</p></a></li>
             <li class="menu-suggestion"><i class="menu-hover hide"></i><a href="$cPath/suggestion">MY CHOICE HIGH SCHOLL
                 PROGRAMS</a></li>
             <li class="menu-contact"><i class="menu-hover hide"></i><a href="$cPath/contact">AGENTS ZONE</a></li>
@@ -55,6 +78,7 @@
                 <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">Suffolk, IP14 1HA</a>
                 <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
                 <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+
                 <p class="links-name">T:+44 (0) 1449742700</p>
             </div>
             <div class="column">
@@ -65,6 +89,7 @@
                 <a target="new" href="http://bsq.sh.gov.cn"></a>
                 <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
                 <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+
                 <p class="links-name">T:+49 (0) 40 429 336 00</p>
             </div>
 
@@ -77,6 +102,7 @@
                 <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">Asheville, NC 28803,</a>
                 <a target="new" href="http://www.sshhg.org.cn/sites/hanghui/web/open_page.aspx">United States</a>
                 <a target="new" href="http://bsq.sh.gov.cn" style="color:transparent">placeholder</a>
+
                 <p class="links-name">T:+1 (828) 651 8502</p>
             </div>
             <div class="column">
@@ -86,6 +112,7 @@
                 <a target="new" href="http://bsq.sh.gov.cn">Shangbao Road, Futian District,</a>
                 <a target="new" href="http://bsq.sh.gov.cn">Shenzhen, Guangdong, 518034</a>
                 <a target="new" href="http://bsq.sh.gov.cn">China</a>
+
                 <p class="links-name">T:+1 (828) 651 8502</p>
             </div>
         </div>
