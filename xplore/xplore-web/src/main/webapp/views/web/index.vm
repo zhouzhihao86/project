@@ -13,20 +13,21 @@
     }
 
     .index-top .img-area {
-        width: 717.5px;
+        width: 686px;
         float: left;
         margin-right: 10px;
     }
 
     .index-top .intro-area {
-        width: 210px;
+        width: 242px;
         border: 1px solid #BABABA;
         float: left;
         padding: 10px;
+        background:url($cPath/resources/img/photo4.jpg) no-repeat 0px 0px;
     }
 
     .block {
-        width: 232.5px;
+        width: 220px;
         float: left;
         margin-right: 10px;
         height: 365px;
@@ -60,6 +61,7 @@
     }
     .index-bottom .block-img-area.big{
         height:365px;
+        width:263px;
     }
     .index-bottom .block-img-area .title{
         height:38px;
@@ -75,14 +77,17 @@
         color:#FFFFFF;
         font-size:12px
     }
+    .index-bottom .block-img-area img{
+        margin-top:-38px;
+    }
 
 </style>
 <div class="content">
 
     <div class="index-top">
-        <div class="img-area" style="background:red;height:366px;">123</div>
+        <div class="img-area" style="height:366px;"><img src="$cPath/resources/img/index-1.jpg"></div>
         <div class="intro-area" style="height:344px;">
-            <p class="block-title">I Dear Parents</p>
+            <p class="block-title" style="border-bottom:none">I Dear Parents</p>
 
             <p style="word-wrap:break-word;overflow:hidden;">Welcome to
                 Xploarel;kajsldfkjslaksjdsla;fslfsaljfsajklfsakljfsajklsalkjfsafkslafjksl;fdsjaklfkjsafjsal</p>
@@ -90,7 +95,7 @@
     </div>
 
     <div class="index-bottom">
-        <div class="block" style="background: #E5E5E5">
+        <div class="block" style="background: #E5E5E5;width:227px;">
             <p class="block-title">Booking Online</p>
             <p class="block-item">Booking Online</p>
             <p class="block-item">Booking Online</p>
@@ -103,15 +108,15 @@
             <p class="block-item">Booking Online</p>
         </div>
         <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div></div>
-            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div></div>
+            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
         </div>
         <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div></div>
-            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div></div>
+            <div class="block-img-area" style="margin-bottom:10px;"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
+            <div class="block-img-area"><div class="title"><span class="name">lasdjfslka</span></div><img src="$cPath/resources/img/index-small-3.jpg"></div>
         </div>
         <div class="block">
-            <div class="block-img-area big"><div class="title"><span class="name">lasdjfslka</span></div></div>
+            <div class="block-img-area big"><div class="title"><span class="name">234242432</span></div><img src="$cPath/resources/img/index-bottom-right.jpg"></div>
         </div>
 
 
