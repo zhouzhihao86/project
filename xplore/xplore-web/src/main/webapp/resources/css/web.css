@@ -7,6 +7,10 @@ body {
 a{text-decoration:none;outline: none;border:none}
 img{border:none}
 
+.hide{
+    display:none;
+}
+
 #header {
     width: 100%;
     min-width: 960px;
