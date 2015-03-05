@@ -23,14 +23,11 @@ img{border:none}
     float: left;
     width: 100%;
     background: #AA0D37;
-    background-image: url(../img/jintiao1.png);
-    background-repeat: repeat-x;
-    background-position: 0px 0px;
     line-height:54px;
     font-size:14px;
 }
 
-#header .menu ul{
+#header .menu .menu-wrapper{
     width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -42,16 +39,15 @@ img{border:none}
 }
 
 
-#header .menu ul li {
+#header .menu .menu-item {
     list-style-type: none;
     float: left;
-    position: relative;
     line-height: 54px;
     padding:0 10px;
-    border-right:1px solid #FFFFFF
+    border-right:1px solid #FFFFFF;
 }
 
-#header .menu ul li:last-child {
+#header .menu .menu-item:last-child {
     border-right:none
 }
 

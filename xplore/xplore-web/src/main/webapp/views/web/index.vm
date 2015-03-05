@@ -58,10 +58,12 @@
         margin: 0;
         cursor:pointer;
     }
-    .index-bottom .block-item:hover{
+
+    .block-bar a .block-item:hover{
         background:#C71041;
-        color：#FFFFFF;
+        color：#FFFFFF !important;
     }
+
 
     .index-bottom .block-img-area {
         height: 177px;
@@ -173,26 +175,21 @@
     </div>
 
     <div class="index-bottom">
-        <div class="block" style="background: #E5E5E5;width:227px;">
+        <div class="block block-bar" style="background: #E5E5E5;width:227px;">
             <p class="block-title">Booking Online</p>
 
-            <p class="block-item">Booking Online</p>
+            <a href=""><p class="block-item">Booking Online</p></a>
 
-            <p class="block-item">Booking Online</p>
-
-            <p class="block-item">Booking Online</p>
-
-            <p class="block-item">Booking Online</p>
+            <a href=""><p class="block-item">Booking Online</p></a>
+            <a href=""><p class="block-item">Booking Online</p></a>
+            <a href=""><p class="block-item">Booking Online</p></a>
 
             <p class="block-title" style="margin-top:10px">Booking Online</p>
 
-            <p class="block-item">Booking Online</p>
-
-            <p class="block-item">Booking Online</p>
-
-            <p class="block-item">Booking Online</p>
-
-            <p class="block-item">Booking Online</p>
+            <a href=""><p class="block-item">Booking Online</p></a>
+            <a href=""><p class="block-item">Booking Online</p></a>
+            <a href=""><p class="block-item">Booking Online</p></a>
+            <a href=""><p class="block-item">Booking Online</p></a>
         </div>
         <div class="block">
             <div class="block-img-area" style="margin-bottom:10px;">
@@ -253,6 +250,18 @@
 
         },function(){
             $(this).find(".overlay").toggleClass("hide")
+        })
+
+        $(".block-img-area").click(function(){
+            window.location.href = window.app.cPath + "/web";
+        })
+
+
+        $(".block-item").hover(function(){
+            $(this).css("color", "#FFFFFF")
+
+        },function(){
+            $(this).css("color", "#666666")
         })
 
     });
