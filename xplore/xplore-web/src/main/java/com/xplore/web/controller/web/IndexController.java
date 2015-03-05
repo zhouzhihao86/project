@@ -22,9 +22,9 @@ public class IndexController extends BaseController {
         return "web/index";
     }
 
-    @RequestMapping(value = "intro", method = RequestMethod.GET)
+    @RequestMapping(value = "groups", method = RequestMethod.GET)
     public String intro(Model model) {
-        return "web/intro";
+        return "web/groups";
     }
 
     @RequestMapping(value = "contact", method = RequestMethod.GET)
