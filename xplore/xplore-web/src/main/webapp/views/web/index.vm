@@ -16,6 +16,7 @@
         width: 686px;
         float: left;
         margin-right: 10px;
+        position:relative;
     }
 
     .index-top .intro-area {
@@ -53,14 +54,42 @@
     .index-bottom .block-item {
         padding: 8px 10px;
         border-bottom: 1px solid #B7B7B7;
-        color: #66666;
+        color: #666666;
         margin: 0;
+        cursor:pointer;
+    }
+    .index-bottom .block-item:hover{
+        background:#C71041;
+        color：#FFFFFF;
     }
 
     .index-bottom .block-img-area {
         height: 177px;
         width: 100%;
         position: relative;
+    }
+    .index-bottom .block-img-area .overlay{
+        position:absolute;
+        top:38px;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    .index-bottom .block-img-area .overlay .overlay-content{
+        background: #111111;
+        background: rgba(1,1,1,0.5);
+        filter: alpha(opacity=50);
+        color:#FFFFFF;
+        *zoom:1;
+        position:static;
+        float:left;
+        width:210px;
+        height:129px;
+        font-size:10px;
+        padding:5px;
+    }
+    .index-bottom .block-img-area .overlay .overlay-content span{
+        position:relative;
     }
 
     .index-bottom .block-img-area.big {
@@ -86,12 +115,55 @@
         opacity: 1;
         filter: alpha(opacity=100)
     }
-
+    .bxslider{
+        margin:0
+    }
+    .bx-pager{
+        position:absolute;
+        bottom:0;
+    }
+    .bx-pager a{
+        float:left;
+        width:137px;
+        height:53px;
+        background: red;
+        line-height:53px;
+        text-align: center;
+        background: #111111;
+        background: rgba(1,1,1,0.5);
+        filter: alpha(opacity=50);
+        color:#FFFFFF;
+        *zoom:1;
+        position:static;
+    }
+    .bx-pager a.active{
+        background:#C71041;
+        filter:alpha(opacity=100);
+        *zoom:1;
+    }
+    .bx-pager a span{
+        position:relative;
+    }
 </style>
 <div class="content">
 
     <div class="index-top">
-        <div class="img-area" style="height:366px;"><img src="$cPath/resources/img/index-1.jpg"></div>
+        <div class="img-area" style="height:366px;">
+            <ul class="bxslider">
+                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+            </ul>
+            <div class="bx-pager">
+                <a data-slide-index="0" href=""><span>234</span></a>
+                <a data-slide-index="1" href=""><span>2341</span></a>
+                <a data-slide-index="2" href=""><span>2344</span></a>
+                <a data-slide-index="3" href=""><span>23425</span></a>
+                <a data-slide-index="4" href=""><span>232344</span></a>
+            </div>
+        </div>
         <div class="intro-area" style="height:344px;">
             <p class="block-title" style="border-bottom:none">I Dear Parents</p>
 
@@ -126,21 +198,29 @@
             <div class="block-img-area" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
             <div class="block-img-area" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
         </div>
         <div class="block">
             <div class="block-img-area" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
             <div class="block-img-area" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg"></div>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
         </div>
         <div class="block">
             <div class="block-img-area big">
@@ -154,3 +234,26 @@
 
 
 </div>
+<script>
+
+    $(document).ready(function () {
+
+        $('.bxslider').bxSlider({
+            pagerCustom: '.bx-pager',
+            pager:true,
+            controls:false,
+            auto:true
+        });
+
+
+
+        $(".block-img-area").hover(function(){
+            $(this).find(".overlay").toggleClass("hide")
+
+
+        },function(){
+            $(this).find(".overlay").toggleClass("hide")
+        })
+
+    });
+</script>
