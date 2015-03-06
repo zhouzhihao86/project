@@ -5,8 +5,8 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tbl_plate")
-public class Plate {
+@Table(name = "tbl_plate_cn")
+public class PlateChinese {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

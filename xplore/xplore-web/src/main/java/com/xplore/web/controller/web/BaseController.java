@@ -1,9 +1,11 @@
 package com.xplore.web.controller.web;
 
 import com.xplore.web.service.PlateService;
+import com.xplore.web.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * Created by damen on 2014/12/26.
@@ -14,12 +16,16 @@ public class BaseController {
     PlateService plateService;
 
     @ModelAttribute("sidebar")
-    public void getSideBarData(Model model) {
+    public void getSideBarData(@PathVariable String lan, Model model) {
 
-        model.addAttribute("plateRecent1", plateService.getPlate(1));
-        model.addAttribute("plateRecent2", plateService.getPlate(2));
-        model.addAttribute("plateRecent3", plateService.getPlate(3));
-        model.addAttribute("plateRecent4", plateService.getPlate(4));
+        boolean useChineseFlags = true;
+        if(lan.equals("en"))
+            useChineseFlags = false;
+
+        model.addAttribute("plateRecent1", plateService.getPlate(1, useChineseFlags));
+        model.addAttribute("plateRecent2", plateService.getPlate(2, useChineseFlags));
+        model.addAttribute("plateRecent3", plateService.getPlate(3, useChineseFlags));
+        model.addAttribute("plateRecent4", plateService.getPlate(4, useChineseFlags));
 
     }
 
