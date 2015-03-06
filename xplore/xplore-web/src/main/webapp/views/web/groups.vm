@@ -1,0 +1,56 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+    .detail {
+        width: 684px;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid #E5E5E5;
+        padding:10px;
+    }
+    .detail-wrapper{
+        background:#E5E5E5;
+        padding:10px;
+    }
+    .nav-name{
+
+    }
+</style>
+<div class="content">
+    <div class="detail">
+        <div class="detail-wrapper">
+            <div class="nav-name">Summer/Centres</div>
+            <div><img src="$cPath/resources/img/PHT.jpg"></div>
+            <p class="" style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">SUMMER CAMPS</p>
+            <p style="font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">Centres<i style="display:block;width:41px;height:43px;position:absolute;right:0;top:0;background:url($cPath/resources/img/XXX.jpg) no-repeat 0 0;"></i></p>
+        </div>
+
+
+
+
+    </div>
+    <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
+        <p class="block-title">Booking Online</p>
+
+        <a href=""><p class="block-item">Booking Online</p></a>
+
+        <a href=""><p class="block-item">Booking Online</p></a>
+        <a href=""><p class="block-item">Booking Online</p></a>
+        <a href=""><p class="block-item">Booking Online</p></a>
+
+        <p class="block-title" style="margin-top:10px">Booking Online</p>
+
+        <a href=""><p class="block-item">Booking Online</p></a>
+        <a href=""><p class="block-item">Booking Online</p></a>
+        <a href=""><p class="block-item">Booking Online</p></a>
+        <a href=""><p class="block-item">Booking Online</p></a>
+    </div>
+
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+    });
+</script>
