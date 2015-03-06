@@ -24,9 +24,12 @@ public class IndexController extends BaseController {
         return getVm("index", lan);
     }
 
-    @RequestMapping(value = "groups", method = RequestMethod.GET)
-    public String intro(@PathVariable String lan, Model model) {
-        return getVm("index", lan);
+    @RequestMapping(value = "{plateId}", method = RequestMethod.GET)
+    public String intro(@PathVariable Integer plateId, @PathVariable String lan, Model model) {
+
+        model.addAttribute("current", model.asMap().get("plateRecent"+plateId));
+
+        return getVm("groups", lan);
     }
 
     @RequestMapping(value = "contact", method = RequestMethod.GET)

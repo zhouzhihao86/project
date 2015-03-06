@@ -16,10 +16,10 @@ public class BaseController {
     @ModelAttribute("sidebar")
     public void getSideBarData(Model model) {
 
-        model.addAttribute("plate1Recent", plateService.getPlate(1));
-        model.addAttribute("plate2Recent", plateService.getPlate(2));
-        model.addAttribute("plate3Recent", plateService.getPlate(3));
-        model.addAttribute("plate4Recent", plateService.getPlate(4));
+        model.addAttribute("plateRecent1", plateService.getPlate(1));
+        model.addAttribute("plateRecent2", plateService.getPlate(2));
+        model.addAttribute("plateRecent3", plateService.getPlate(3));
+        model.addAttribute("plateRecent4", plateService.getPlate(4));
 
     }
 

@@ -101,7 +101,7 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plate1Recent)
+                                #foreach($plate in $plateRecent1)
 			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
 			                    #end
                             </ul>
@@ -125,7 +125,7 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plate2Recent)
+                                #foreach($plate in $plateRecent2)
 			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
 			                    #end
                             </ul>
@@ -151,7 +151,7 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plate3Recent)
+                                #foreach($plate in $plateRecent3)
 			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
 			                    #end
                             </ul>
@@ -178,7 +178,7 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plate4Recent)
+                                #foreach($plate in $plateRecent4)
 			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
 			                    #end
                             </ul>

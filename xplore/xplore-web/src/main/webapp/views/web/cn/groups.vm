@@ -45,14 +45,9 @@
                 asdljfsassajfs
             </div>
             <div class="detail-nav">
-                <span class="detail-nav-item">asfsaf</span>
-                <span class="detail-nav-item">asdssdfsssssfsfsafsaf</span>
-                <span class="detail-nav-item">asdssdsfdfdaf</span>
-                <span class="detail-nav-item">asdssdfs</span>
-                <span class="detail-nav-item">asds</span>
-                <span class="detail-nav-item">asdssdfsssssfsfsafsaf</span>
-                <span class="detail-nav-item">asds</span>
-                <span class="detail-nav-item">asds</span>
+                #foreach($a in $current)
+                    <span class="detail-nav-item">$a.getTitle()</span>
+                #end
             </div>
         </div>
     </div>
