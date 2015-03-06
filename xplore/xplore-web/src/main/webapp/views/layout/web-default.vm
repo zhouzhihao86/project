@@ -101,12 +101,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
+                                #foreach($plate in $plate1Recent)
+			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                    #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">
@@ -128,12 +125,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
+                                #foreach($plate in $plate2Recent)
+			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                    #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">
@@ -157,12 +151,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
+                                #foreach($plate in $plate3Recent)
+			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                    #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">
@@ -187,12 +178,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
-                                <li class="article"><a  href="">akljfdksjlsjk</a></li>
+                                #foreach($plate in $plate4Recent)
+			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                    #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">
