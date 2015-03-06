@@ -18,29 +18,22 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping(value = "web/{lan}")
 public class IndexController extends BaseController {
 
-	@Autowired
-	PlateService plateService;
-
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String welcome(@PathVariable String lan, HttpServletRequest request, Model model) {
 
-    	model.addAttribute("plate1Recent", plateService.getPlate(1));
-    	model.addAttribute("plate2Recent", plateService.getPlate(2));
-    	model.addAttribute("plate3Recent", plateService.getPlate(3));
-    	model.addAttribute("plate4Recent", plateService.getPlate(4));
-    	
-        return "web/"+ lan +"/index";
+        return getVm("index", lan);
     }
 
     @RequestMapping(value = "groups", method = RequestMethod.GET)
-    public String intro(Model model) {
-        return "web/groups";
+    public String intro(@PathVariable String lan, Model model) {
+        return getVm("index", lan);
     }
 
     @RequestMapping(value = "contact", method = RequestMethod.GET)
     public String contact(Model model) {
         return "web/contact";
     }
+
 
 
 }
