@@ -18,9 +18,8 @@ public class BaseController {
     @ModelAttribute("sidebar")
     public void getSideBarData(@PathVariable String lan, Model model) {
 
-        boolean useChineseFlags = true;
-        if(lan.equals("en"))
-            useChineseFlags = false;
+
+        boolean useChineseFlags = isChinese(lan);
 
         model.addAttribute("plateRecent1", plateService.getPlate(1, useChineseFlags));
         model.addAttribute("plateRecent2", plateService.getPlate(2, useChineseFlags));
@@ -32,5 +31,13 @@ public class BaseController {
     public String getVm(String vmName, String lan) {
         StringBuilder sb = new StringBuilder();
         return sb.append("web/").append(lan).append("/").append(vmName).toString();
+    }
+
+    public boolean isChinese(String lan){
+        boolean useChineseFlags = true;
+        if(lan.equals("en")){
+            useChineseFlags = false;
+        }
+        return useChineseFlags;
     }
 }

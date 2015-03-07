@@ -1,13 +1,12 @@
 package com.xplore.web.controller.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.xplore.web.domain.PlateChinese;
+import com.xplore.web.domain.PlateEnglish;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.xplore.web.service.PlateService;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,16 +17,36 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping(value = "web/{lan}")
 public class IndexController extends BaseController {
 
+
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String welcome(@PathVariable String lan, HttpServletRequest request, Model model) {
 
         return getVm("index", lan);
     }
 
-    @RequestMapping(value = "{plateId}", method = RequestMethod.GET)
-    public String intro(@PathVariable Integer plateId, @PathVariable String lan, Model model) {
+    @RequestMapping(value = "articles/{articleId}", method = RequestMethod.GET)
+    public String intro(@PathVariable Integer articleId, @PathVariable String lan, Model model) {
 
-        model.addAttribute("current", model.asMap().get("plateRecent"+plateId));
+        boolean useChineseFlags = isChinese(lan);
+
+        Object plate = plateService.getById(articleId, useChineseFlags);
+
+        if (useChineseFlags) {
+
+            PlateChinese plateChinese = (PlateChinese) plate;
+
+            model.addAttribute("current", model.asMap().get(plateChinese.getParentUrl()));
+
+        } else {
+
+            PlateEnglish plateEnglish = (PlateEnglish) plate;
+
+            model.addAttribute("current", model.asMap().get(plateEnglish.getParentUrl()));
+
+        }
+
+        model.addAttribute("article", plate);
+
 
         return getVm("groups", lan);
     }
@@ -36,7 +55,6 @@ public class IndexController extends BaseController {
     public String contact(Model model) {
         return "web/contact";
     }
-
 
 
 }

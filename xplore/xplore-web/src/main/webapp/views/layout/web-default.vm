@@ -102,7 +102,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent1)
-			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
 			                    #end
                             </ul>
                         </div>
@@ -126,7 +126,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent2)
-			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
 			                    #end
                             </ul>
                         </div>
@@ -152,7 +152,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent3)
-			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
 			                    #end
                             </ul>
                         </div>
@@ -179,7 +179,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent4)
-			                        <li class="article" data-target="$!plate.getId()">$plate.getTitle()</li>
+			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
 			                    #end
                             </ul>
                         </div>
