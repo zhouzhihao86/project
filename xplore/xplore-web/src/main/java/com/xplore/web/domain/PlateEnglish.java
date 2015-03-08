@@ -16,7 +16,7 @@ public class PlateEnglish {
 	private String parentUrl;
 
 	@Column(name="plate_id")
-	private String plateId;
+	private Integer plateId;
 
 	@Column(name="title")
 	private String title;
@@ -103,11 +103,11 @@ public class PlateEnglish {
 		this.parentUrl = parentUrl;
 	}
 
-	public String getPlateId() {
-		return plateId;
-	}
+    public Integer getPlateId() {
+        return plateId;
+    }
 
-	public void setPlateId(String plateId) {
-		this.plateId = plateId;
-	}
+    public void setPlateId(Integer plateId) {
+        this.plateId = plateId;
+    }
 }

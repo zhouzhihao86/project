@@ -35,13 +35,13 @@ public class IndexController extends BaseController {
 
             PlateChinese plateChinese = (PlateChinese) plate;
 
-            model.addAttribute("current", model.asMap().get(plateChinese.getParentUrl()));
+            model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
 
         } else {
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
-            model.addAttribute("current", model.asMap().get(plateEnglish.getParentUrl()));
+            model.addAttribute("current", model.asMap().get("plateRecent"+plateEnglish.getPlateId()));
 
         }
 
