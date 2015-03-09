@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
-        #parse("/layout/sidebarCN.vm")
+        #parse("/layout/sidebarEN.vm")
     </div>
 
 

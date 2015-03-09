@@ -12,7 +12,7 @@ public class PlateEnglish {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(name="parentUrl")
+	@Column(name="parent_url")
 	private String parentUrl;
 
 	@Column(name="plate_id")
