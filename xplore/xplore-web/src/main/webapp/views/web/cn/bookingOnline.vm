@@ -1,0 +1,28 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+
+</style>
+<div class="content">
+    <div class="detail">
+        <div class="detail-wrapper">
+            <img src="$cPath/resources/img/zaixian-01.png" style="margin-left:52px;">
+            <div style="width:684px;margin:0 -10px;position:relative;margin-bottom:25px;">
+                <img src="$cPath/resources/img/zaixian-06.png" style="width:100%;">
+                <img src="$cPath/resources/img/tututu.png" style="position:absolute;right:40px;top:-50px;">
+            </div>
+            <img src="$cPath/resources/img/zaixian-02.png" style="margin-left:52px;">
+        </div>
+    </div>
+    <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
+        #parse("/layout/sidebarCN.vm")
+    </div>
+
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+    });
+</script>
