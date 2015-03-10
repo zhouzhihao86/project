@@ -41,7 +41,7 @@ public class IndexController extends BaseController {
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
-            model.addAttribute("current", model.asMap().get("plateRecent"+plateEnglish.getPlateId()));
+            model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
 
         }
 
@@ -56,5 +56,9 @@ public class IndexController extends BaseController {
         return "web/contact";
     }
 
+    @RequestMapping(value = "bookingOnline", method = RequestMethod.GET)
+    public String bookingOnline(@PathVariable String lan, Model model) {
+        return getVm("bookingOnline", lan);
+    }
 
 }

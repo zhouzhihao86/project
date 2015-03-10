@@ -176,6 +176,7 @@ a {
     color: #666666;
     margin: 0;
     cursor:pointer;
+    font-size:10px;
 }
 
 .block-bar a .block-item:hover{
@@ -264,4 +265,41 @@ a {
 }
 .bx-pager a span{
     position:relative;
+}
+
+.detail {
+    width: 684px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #E5E5E5;
+    padding:10px;
+}
+.detail-wrapper{
+    background:#E5E5E5;
+    padding:10px;
+    float:left;
+}
+
+.nav-name{
+
+}
+.detail-nav{
+    width:100%;
+    float:left;
+
+}
+.detail-nav .detail-nav-item{
+    float:left;
+    word-wrap:break-word;overflow:hidden;
+    text-align:center;
+    line-height:40px;
+    margin-top:25px;
+    border-top:1px solid #C71041;
+    border-bottom:1px solid #C71041;
+
+}
+.detail-nav-item a{
+    border-right:1px solid #111111;
+    padding:0 20px;
+    color:#666666;
 }

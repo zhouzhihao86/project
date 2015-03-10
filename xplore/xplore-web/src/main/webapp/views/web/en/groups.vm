@@ -1,7 +1,41 @@
 #set($layout="layout/web-default.vm")
 #set($cPath = "#cPath")
 <style>
+    .detail {
+        width: 684px;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid #E5E5E5;
+        padding:10px;
+    }
+    .detail-wrapper{
+        background:#E5E5E5;
+        padding:10px;
+        float:left;
+    }
+    .nav-name{
 
+    }
+    .detail-nav{
+        width:100%;
+        float:left;
+
+    }
+    .detail-nav .detail-nav-item{
+        float:left;
+        word-wrap:break-word;overflow:hidden;
+        text-align:center;
+        line-height:40px;
+        margin-top:25px;
+        border-top:1px solid #C71041;
+        border-bottom:1px solid #C71041;
+
+    }
+    .detail-nav-item a{
+        border-right:1px solid #111111;
+        padding:0 20px;
+        color:#666666;
+    }
 </style>
 <div class="content">
     <div class="detail">
@@ -23,7 +57,7 @@
         </div>
     </div>
     <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
-        #parse("/layout/sidebarCN.vm")
+        #parse("/layout/sidebarEN.vm")
     </div>
 
 
