@@ -61,4 +61,30 @@ public class IndexController extends BaseController {
         return getVm("bookingOnline", lan);
     }
 
+    @RequestMapping(value = "campus/britain", method = RequestMethod.GET)
+    public String britain(@PathVariable String lan, @PathVariable String nation, Model model) {
+        return getVm("britain", lan);
+    }
+
+    @RequestMapping(value = "campus/america", method = RequestMethod.GET)
+    public String america(@PathVariable String lan, @PathVariable String nation, Model model) {
+        return getVm("america", lan);
+    }
+
+    @RequestMapping(value = "campus/germany", method = RequestMethod.GET)
+    public String germany(@PathVariable String lan, @PathVariable String nation, Model model) {
+        return getVm("germany", lan);
+    }
+
+    @RequestMapping(value = "campus/china", method = RequestMethod.GET)
+    public String china(@PathVariable String lan, @PathVariable String nation, Model model) {
+        return getVm("china", lan);
+    }
+
+    @RequestMapping(value = "campus/{country}/{id}", method = RequestMethod.GET)
+    public String campusDetail(@PathVariable String lan, @PathVariable String country, @PathVariable Integer id, Model model) {
+        return getVm("campusDetail", lan);
+    }
+
+
 }

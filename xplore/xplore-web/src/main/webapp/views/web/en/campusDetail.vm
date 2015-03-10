@@ -1,0 +1,91 @@
+#set($layout="layout/web-default.vm")
+#set($cPath = "#cPath")
+<style>
+    .detail{
+        border:transparent;
+    }
+
+    .banner{
+        width:100%;
+        height:38px;
+        line-height: 38px;
+        color:#FFFFFF;
+        font-size:18px;
+        text-align:right;
+        background-repeat: no-repeat;
+        background-position: right;
+        float:right;
+        position:relative;
+        float:left;
+    }
+    .banner-img{
+        width:100%;
+        float:left;
+        text-align: right;
+    }
+    .campus-name{
+        color:#C71041;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
+    }
+    .campus-detail-area{
+        width:662px;
+        float:left;
+        margin-bottom:25px;
+        padding:10px;
+    }
+    .campus-title{
+        float:left;
+        width:100%;
+        line-height:30px;
+        height:30px;
+        background:#C71041;
+        color:#FFFFFF;
+        text-indent: 10px;
+    }
+    .campus-content{
+        width:642px;
+        padding:10px;
+        float:left;
+    }
+</style>
+<div class="content">
+    <div class="campus detail">
+        <div class="banner" style="background-image:url($cPath/resources/img/T-UK.png);">
+            <span style="margin-right:10px;">UNITED_KINDOM(UK)</span>
+            <img src="$cPath/resources/img/UK.png" style="position:absolute;left:-14px;bottom:-30px;">
+        </div>
+        <div class="banner-img">
+            <img src="$cPath/resources/img/tu1.jpg">
+        </div>
+        <p class="campus-name">asdsfafsafsafsdafsdaf</p>
+        <div class="campus-detail-area">
+            <div class="campus-title">School Profile</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+        <div class="campus-detail-area">
+            <div class="campus-title">School Facts</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+        <div class="campus-detail-area">
+            <div class="campus-title">Curriculum</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+
+    </div>
+    <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
+        #parse("/layout/sidebarEN.vm")
+    </div>
+
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+    });
+</script>
