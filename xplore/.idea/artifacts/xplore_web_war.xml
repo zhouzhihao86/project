@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="xplore-web:war">
-    <output-path>$PROJECT_DIR$/xplore-web/target</output-path>
-    <root id="archive" name="xplore-web.war">
-      <element id="artifact" artifact-name="xplore-web:war exploded" />
-    </root>
-  </artifact>
-</component>
