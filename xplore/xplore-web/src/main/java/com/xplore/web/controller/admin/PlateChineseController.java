@@ -76,6 +76,7 @@ public class PlateChineseController extends BaseController {
     @RequestMapping(value = "edit", method = RequestMethod.GET)
     public String edit(@RequestParam(value = "id", required = false) Integer id, Model model) {
 
+
         PlateChinese plateChinese = (PlateChinese)plateService.getById(id, true);
         model.addAttribute("domain", plateChinese);
         return "admin/base/edit";

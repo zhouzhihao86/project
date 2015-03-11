@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.xplore.web.dao.MenuDao;
 import com.xplore.web.dao.PlateEnglishDao;
+import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,4 +70,9 @@ public class PlateService {
 		else
 			plateEnglishDao.delete(id);
 	}
+
+    public Menu getMenuByPlateId(String plateId, boolean useChineseFlags) {
+
+        return null;
+    }
 }

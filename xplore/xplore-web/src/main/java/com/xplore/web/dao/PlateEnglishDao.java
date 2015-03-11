@@ -39,8 +39,10 @@ public class PlateEnglishDao extends HibernateBaseDao<PlateEnglish, Serializable
 
 	public List<PlateEnglish> getPlate(Integer plateId, int maxResults) {
 
-		String hql = "from PlateEnglish where menu.id = ? order by weight desc";
+		Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
+		criteria.setMaxResults(maxResults);
+		criteria.addOrder(Order.desc("weight"));
 
-		return findLatest(hql, maxResults, plateId);
+		return criteria.list();
 	}
 }

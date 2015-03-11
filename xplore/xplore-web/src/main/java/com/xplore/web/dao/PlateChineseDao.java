@@ -38,8 +38,10 @@ public class PlateChineseDao extends HibernateBaseDao<PlateChinese, Serializable
 
 	public List<PlateChinese> getPlate(Integer plateId, int maxResults) {
 
-		String hql = "from PlateChinese where menu.id = ? order by weight desc";
-		return findLatest(hql, maxResults, plateId);
+		Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
+		criteria.setMaxResults(maxResults);
+		criteria.addOrder(Order.desc("weight"));
+		return criteria.list();
 	}
 	
 	

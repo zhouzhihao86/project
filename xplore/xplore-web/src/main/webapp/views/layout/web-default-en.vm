@@ -21,9 +21,7 @@
 </head>
 <body>
 <style>
-    .menu-item{
-        width:163px;
-    }
+
 </style>
 <div id="header">
     <div class="header-top">
@@ -49,7 +47,7 @@
     <div class="menu">
         <ul class="menu-wrapper">
             <li class="menu-item">
-                <a href="javascript:void(0)">常规全年活动</a>
+                <a href="javascript:void(0)">ALL YEAR ROUND GROUPS</a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
@@ -73,7 +71,7 @@
                 </div>
             </li>
             <li class="menu-item">
-                <a href="javascript:void(0)">夏令营</a>
+                <a href="javascript:void(0)">SUMMER CAMPS</a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
@@ -97,8 +95,9 @@
                 </div>
             </li>
             <li class="menu-item" style="height:54px">
-                <a href="javascript:void(0)">量身定制</a>
-
+                <a href="javascript:void(0)">
+                <p style="margin:-10px 0">TAILOR MADE EDUCATION</p>
+                <p style="margin:-33px">PACKAGES FOR GROUPS</p></a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
@@ -121,22 +120,22 @@
                     </div>
                 </div>
             </li>
-            <li class="menu-item" style="height:54px;padding:0 30px 0 10px">
+            <li class="menu-item" style="">
                 <a href="javascript:void(0)">
-                    中学
+                    MY CHOICE HIGH SCHOLL PROGRAMS
                 </a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plateRecent3)
+                                #foreach($plate in $plateRecent1)
                                     <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
                                 #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">
                             <div class="menu-absract" style="">
-                                224323lafslkjflsdsjdfsjaklfsdaljkfsdkfdsakfdsfjsa<br/>
+                                lafslkjflsdsjdfsjaklfsdaljkfsdkfdsakfdsfjsa<br/>
                                 sasjklfsjfslfjsafa<br/>
                                 ssajfklsafjslfsjalskfsdjf
                             </div>
@@ -148,7 +147,7 @@
                 </div>
             </li>
             <li class="menu-item">
-                <a href="javascript:void(0)">代理专区</a>
+                <a href="javascript:void(0)">AGENTS ZONE</a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">

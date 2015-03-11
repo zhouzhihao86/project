@@ -1,5 +1,6 @@
 package com.xplore.web.controller.web;
 
+import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
 import org.springframework.stereotype.Controller;
@@ -35,13 +36,17 @@ public class IndexController extends BaseController {
 
             PlateChinese plateChinese = (PlateChinese) plate;
 
-            model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getMenu().getId()));
+            model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
+
+            Menu menu = plateService.getMenuByPlateId(plateChinese.getPlateId(), useChineseFlags);
 
         } else {
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
-            model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getMenu().getId()));
+            model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
+
+            Menu menu = plateService.getMenuByPlateId(plateEnglish.getPlateId(), useChineseFlags);
 
         }
 

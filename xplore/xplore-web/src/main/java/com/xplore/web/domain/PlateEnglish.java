@@ -12,9 +12,8 @@ public class PlateEnglish {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name="plate_id")
-	private Menu menu;
+	@Column(name="plate_id")
+    private String plateId;
 
 
 	@Column(name="title")
@@ -94,11 +93,12 @@ public class PlateEnglish {
 		this.createTime = createTime;
 	}
 
-	public Menu getMenu() {
-		return menu;
-	}
 
-	public void setMenu(Menu menu) {
-		this.menu = menu;
-	}
+    public String getPlateId() {
+        return plateId;
+    }
+
+    public void setPlateId(String plateId) {
+        this.plateId = plateId;
+    }
 }
