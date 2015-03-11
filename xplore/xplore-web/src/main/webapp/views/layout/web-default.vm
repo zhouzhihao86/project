@@ -146,7 +146,7 @@
             <li class="menu-item" style="height:54px">
                 <a href="javascript:void(0)">
                 <p style="margin:-10px 0">TAILOR MADE EDUCATION</p>
-                <p style="margin:-33px">asfljdks</p></a>
+                <p style="margin:-33px">PACKAGES FOR GROUPS</p></a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
@@ -169,8 +169,11 @@
                     </div>
                 </div>
             </li>
-            <li class="menu-item">
-                <a href="javascript:void(0)">MY CHOICE HIGH SCHOLL PROGRAMS</a>
+            <li class="menu-item" style="height:54px;padding:0 30px 0 10px">
+                <a href="javascript:void(0)">
+                    <p style="margin:-10px 0">MY CHOICE HIGH </p>
+                    <p style="margin:-33px;margin-left:-11px">SCHOLL PROGRAMS</p>
+                </a>
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0)">AGENTS ZONE</a>

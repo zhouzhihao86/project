@@ -26,6 +26,8 @@ public class BaseController {
         model.addAttribute("plateRecent3", plateService.getPlate(3, useChineseFlags));
         model.addAttribute("plateRecent4", plateService.getPlate(4, useChineseFlags));
 
+        model.addAttribute("lan", lan);
+
     }
 
     public String getVm(String vmName, String lan) {

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm" line="23" />
+    <bookmark url="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm" line="27" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a28cd1b-1fe5-41d2-8ebf-838bf8e02c6e" name="Default" comment="">
+    <list default="true" id="6a28cd1b-1fe5-41d2-8ebf-838bf8e02c6e" name="Default" comment="detail">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/img/xuanzeback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/britain.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/britain.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/country.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" afterPath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" afterPath="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/groups.vm" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/groups.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/campusDetail.vm" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/campusDetail.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" afterPath="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,7 +42,20 @@
     <favorites_list name="xplore" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="britain.vm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/britain.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.447541" vertical-offset="0" max-vertical-offset="1491">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -60,13 +79,26 @@
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/dispatch-servlet.xml" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/resources/spring/spring-quartz.xml" />
-        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/index.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/groups.vm" />
-        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/domain/PlateEnglish.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/sidebar.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/js/index.js" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/index.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/bookingOnline.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/groups.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/sidebarEN.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/bookingOnline.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/groups.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/country.vm" />
         <option value="$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/britain.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/campusDetail.vm" />
+        <option value="$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/britain.vm" />
       </list>
     </option>
   </component>
@@ -201,6 +233,192 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xplore-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -219,7 +437,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
@@ -240,15 +458,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1042" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="indexcon&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;web.css&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/resources/css/web.css&#10;groups&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/cn/groups.vm&#10;web&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm&#10;index.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/index.vm&#10;web-de&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm&#10;index&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/index.vm&#10;indexcontroller&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;web-default.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm" />
+    <property name="SearchEverywhereHistoryKey" value="web.css&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/resources/css/web.css&#10;indexcon&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;basecon&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java&#10;campus&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/en/campusDetail.vm&#10;web-de&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm&#10;index&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;web-default&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm&#10;index.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/cn/index.vm&#10;platechin&#9;PSI&#9;JAVA://com.xplore.web.domain.PlateChinese&#10;plateen&#9;PSI&#9;JAVA://com.xplore.web.domain.PlateEnglish&#10;groups&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/web/cn/groups.vm&#10;plate&#9;PSI&#9;JAVA://com.xplore.web.domain.Plate&#10;web&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm&#10;indexcontroller&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java&#10;web-default.vm&#9;FILE&#9;file://E:/arch/GitHub/project/xplore/xplore-web/src/main/webapp/views/layout/web-default.vm" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\en" />
       <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\resources\img" />
+      <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\cn" />
+      <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\layout" />
       <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\resources\img" />
       <recent name="E:\arch\GitHub\project\xplore\xplore-web\src\main\webapp\views\web\cn" />
     </key>
   </component>
@@ -760,7 +982,11 @@
       <workItem from="1425457137106" duration="608000" />
       <workItem from="1425520713092" duration="12031000" />
       <workItem from="1425543909175" duration="2392000" />
-      <workItem from="1425619317555" duration="6021000" />
+      <workItem from="1425619317555" duration="8750000" />
+      <workItem from="1425878702220" duration="2022000" />
+      <workItem from="1425881274603" duration="710000" />
+      <workItem from="1425889603027" duration="4272000" />
+      <workItem from="1425973039907" duration="13399000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1425363920960</created>
@@ -822,11 +1048,41 @@
       <option name="project" value="LOCAL" />
       <updated>1425620569063</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="detail">
+      <created>1425627380600</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1425627380600</updated>
+    </task>
+    <task id="LOCAL-00012" summary="detail">
+      <created>1425631806759</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1425631806759</updated>
+    </task>
+    <task id="LOCAL-00013" summary="detail">
+      <created>1425881956472</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1425881956472</updated>
+    </task>
+    <task id="LOCAL-00014" summary="detail">
+      <created>1425891733370</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1425891733370</updated>
+    </task>
+    <task id="LOCAL-00015" summary="detail">
+      <created>1425977753860</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1425977753860</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36214000" />
+    <option name="totallyTimeSpent" value="59346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -855,7 +1111,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39918533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.305499" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -877,7 +1133,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39918533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.305499" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -917,142 +1173,168 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="3" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore-web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore-web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="webapp" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore-web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="webapp" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="views" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore-web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="webapp" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="views" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore-web" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="xplore" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5733">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="6132">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3402">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="2856">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2646">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3402">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="2856">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2646">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34146342" vertical-offset="0" max-vertical-offset="4312">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18487395" vertical-offset="0" max-vertical-offset="595">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/dao/ConfigDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.702521" vertical-offset="0" max-vertical-offset="704">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/exception/XploreException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5546219" vertical-offset="0" max-vertical-offset="595">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/util/HibernateBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71705425" vertical-offset="6142" max-vertical-offset="14938">
-          <caret line="338" column="55" selection-start-line="338" selection-start-column="55" selection-end-line="338" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/constants/LocaleEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54064274" vertical-offset="726" max-vertical-offset="2816">
-          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/java/com/xplore/web/util/RegexUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46899223" vertical-offset="0" max-vertical-offset="1408">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/product.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74858224" vertical-offset="0" max-vertical-offset="748">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-common/src/main/resources/db.context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7922607" vertical-offset="675" max-vertical-offset="1166">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/resources/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="902">
@@ -1071,20 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2911153" vertical-offset="0" max-vertical-offset="529">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/admin/common/UeeditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="26" max-vertical-offset="1606">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/welcome.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1167,13 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/admin/base/add.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14689265" vertical-offset="519" max-vertical-offset="1050">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/default.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7" vertical-offset="210" max-vertical-offset="3927">
@@ -1209,13 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/index.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/img/index-small-3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1226,70 +1480,251 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/welcome.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="6132">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.054171182" vertical-offset="118" max-vertical-offset="1071">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm">
+    <entry file="jar://$PROJECT_DIR$/../../../repo/org/springframework/spring-web/3.2.8.RELEASE/spring-web-3.2.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.8" vertical-offset="408" max-vertical-offset="2688">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="-20.56" vertical-offset="2846" max-vertical-offset="3486">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css">
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/domain/PlateChinese.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3928" max-vertical-offset="5712">
-          <caret line="210" column="1" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.19295558" vertical-offset="0" max-vertical-offset="1680">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/domain/PlateEnglish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35375193" vertical-offset="0" max-vertical-offset="1701">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/service/PlateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6462481" vertical-offset="355" max-vertical-offset="1008">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/dao/PlateEnglishDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7427259" vertical-offset="208" max-vertical-offset="861">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/admin/base/add.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1050">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/sidebarCN.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="399">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71056664" vertical-offset="124" max-vertical-offset="777">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/img/zaixian-06.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/img/zaixian-01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/bookingOnline.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.525" vertical-offset="0" max-vertical-offset="693">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/sidebarEN.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.8" vertical-offset="0" max-vertical-offset="420">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/index.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/groups.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5017065" vertical-offset="378" max-vertical-offset="1848">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="861">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/dao/PlateDao.java">
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/index.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state vertical-scroll-proportion="-11.866667" vertical-offset="778" max-vertical-offset="1701">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/service/PlateService.java">
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/bookingOnline.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="693">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="693">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/index.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.8" vertical-offset="0" max-vertical-offset="1659">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/groups.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.7" vertical-offset="0" max-vertical-offset="861">
+          <caret line="21" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/utils/FileUploadUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4659091" vertical-offset="126" max-vertical-offset="1197">
+          <caret line="61" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/admin/common/UeeditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7375" vertical-offset="641" max-vertical-offset="1533">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/web-default.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.023076924" vertical-offset="3087" max-vertical-offset="5943">
+          <caret line="146" column="14" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/img/tututu.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/layout/country.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="252">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24239245" vertical-offset="0" max-vertical-offset="953">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xplore-web/src/main/java/com/xplore/web/controller/web/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59496325" vertical-offset="0" max-vertical-offset="953">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1974">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2255#2256#0" expanded="true" />
+            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#2441#2442#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/resources/css/web.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6760" max-vertical-offset="7497">
+          <caret line="351" column="1" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/cn/britain.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="945">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/campusDetail.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2" vertical-offset="252" max-vertical-offset="1218">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xplore-web/src/main/webapp/views/web/en/britain.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.447541" vertical-offset="0" max-vertical-offset="1491">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
