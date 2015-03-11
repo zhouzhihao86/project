@@ -2,6 +2,7 @@ package com.xplore.web.service;
 
 import java.util.List;
 
+import com.xplore.web.dao.MenuDao;
 import com.xplore.web.dao.PlateEnglishDao;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
@@ -20,6 +21,9 @@ public class PlateService {
 
 	@Autowired
 	PlateEnglishDao plateEnglishDao;
+
+	@Autowired
+	MenuDao menuDao;
 	
 	public Object getById(Integer id, boolean useChineseFlags){
 		if(useChineseFlags)

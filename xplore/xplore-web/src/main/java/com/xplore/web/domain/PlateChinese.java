@@ -11,28 +11,26 @@ public class PlateChinese {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	
-	@Column(name="parent_url")
-	private String parentUrl;
 
-	@Column(name="plate_id")
-	private Integer plateId;
-	
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name="plate_id")
+	private Menu menu;
+
 	@Column(name="title")
 	private String title;
-	
+
 	@Column(name="brief")
 	private String brief;
-	
+
 	@Column(name="url")
 	private String url;
-	
+
 	@Column(name="content")
 	private String content;
-	
+
 	@Column(name="weight")
 	private Integer weight;
-	
+
 	@Column(name="create_time")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createTime;
@@ -94,19 +92,12 @@ public class PlateChinese {
 		this.createTime = createTime;
 	}
 
-	public String getParentUrl() {
-		return parentUrl;
+
+	public Menu getMenu() {
+		return menu;
 	}
 
-	public void setParentUrl(String parentUrl) {
-		this.parentUrl = parentUrl;
+	public void setMenu(Menu menu) {
+		this.menu = menu;
 	}
-
-    public Integer getPlateId() {
-        return plateId;
-    }
-
-    public void setPlateId(Integer plateId) {
-        this.plateId = plateId;
-    }
 }

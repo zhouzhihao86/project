@@ -3,6 +3,7 @@ package com.xplore.web.dao;
 import java.io.Serializable;
 import java.util.List;
 
+import com.xplore.web.domain.PlateChinese;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -17,7 +18,7 @@ public class PlateEnglishDao extends HibernateBaseDao<PlateEnglish, Serializable
 
 	public Page pagedList(Page<PlateEnglish> page){
 		
-		String hql = "from PlateEN order by id desc";
+		String hql = "from PlateEnglish order by id desc";
 		return find(page, hql);
 	}
 
@@ -31,15 +32,15 @@ public class PlateEnglishDao extends HibernateBaseDao<PlateEnglish, Serializable
 
 	public int getTotalCount() {
 		
-		String hql = "select count(*) from PlateEN";
+		String hql = "select count(*) from PlateEnglish";
 		
 		return findLong(hql).intValue();
 	}
 
 	public List<PlateEnglish> getPlate(Integer plateId, int maxResults) {
-		Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
-		criteria.setMaxResults(maxResults);
-		criteria.addOrder(Order.desc("weight"));
-		return criteria.list();
-	}	
+
+		String hql = "from PlateEnglish where menu.id = ? order by weight desc";
+
+		return findLatest(hql, maxResults, plateId);
+	}
 }
