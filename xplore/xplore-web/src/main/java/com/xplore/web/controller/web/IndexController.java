@@ -32,13 +32,15 @@ public class IndexController extends BaseController {
 
         Object plate = plateService.getById(articleId, useChineseFlags);
 
+        Menu menu = null;
+
         if (useChineseFlags) {
 
             PlateChinese plateChinese = (PlateChinese) plate;
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
 
-            Menu menu = plateService.getMenuByPlateId(plateChinese.getPlateId(), useChineseFlags);
+            menu = plateService.getMenuByPlateId(plateChinese.getPlateId());
 
         } else {
 
@@ -46,12 +48,13 @@ public class IndexController extends BaseController {
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
 
-            Menu menu = plateService.getMenuByPlateId(plateEnglish.getPlateId(), useChineseFlags);
+            menu = plateService.getMenuByPlateId(plateEnglish.getPlateId());
 
         }
 
         model.addAttribute("article", plate);
 
+        model.addAttribute("menu", menu);
 
         return getVm("groups", lan);
     }

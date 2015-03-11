@@ -13,7 +13,7 @@ public class PlateChinese {
 	private Integer id;
 
 	@Column(name="plate_id")
-    private String plateId;
+    private Integer plateId;
 
 	@Column(name="title")
 	private String title;
@@ -91,12 +91,11 @@ public class PlateChinese {
 		this.createTime = createTime;
 	}
 
+	public Integer getPlateId() {
+		return plateId;
+	}
 
-    public String getPlateId() {
-        return plateId;
-    }
-
-    public void setPlateId(String plateId) {
-        this.plateId = plateId;
-    }
+	public void setPlateId(Integer plateId) {
+		this.plateId = plateId;
+	}
 }

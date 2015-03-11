@@ -6,10 +6,15 @@
 <div class="content">
     <div class="detail">
         <div class="detail-wrapper">
-            <div class="nav-name">$article.getMenu().getEnName()/$article.getTitle()</div>
+            <div class="nav-name">$menu.getEnName()/$article.getTitle()</div>
             <div><img src="$cPath/resources/img/PHT.jpg"></div>
-            <p class="" style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$article.getMenu().getEnName()</p>
-            <p style="font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">$article.getTitle()<i style="display:block;width:41px;height:43px;position:absolute;right:0;top:0;background:url($cPath/resources/img/XXX.jpg) no-repeat 0 0;"></i></p>
+            <p class=""
+               style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$menu.getEnName()</p>
+
+            <p style="font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">$article.getTitle()
+                <i style="display:block;width:41px;height:43px;position:absolute;right:0;top:0;background:url($cPath/resources/img/XXX.jpg) no-repeat 0 0;"></i>
+            </p>
+
             <div class="detail-content">
                 $article.getContent()
             </div>
@@ -28,9 +33,4 @@
 
 
 </div>
-<script>
-
-    $(document).ready(function () {
-
-    });
-</script>
+<script type="text/javascript" src="$cPath/resources/js/index.js"></script>

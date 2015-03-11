@@ -13,7 +13,7 @@ public class PlateEnglish {
 	private Integer id;
 
 	@Column(name="plate_id")
-    private String plateId;
+    private Integer plateId;
 
 
 	@Column(name="title")
@@ -94,11 +94,11 @@ public class PlateEnglish {
 	}
 
 
-    public String getPlateId() {
-        return plateId;
-    }
+	public Integer getPlateId() {
+		return plateId;
+	}
 
-    public void setPlateId(String plateId) {
-        this.plateId = plateId;
-    }
+	public void setPlateId(Integer plateId) {
+		this.plateId = plateId;
+	}
 }

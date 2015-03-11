@@ -71,8 +71,8 @@ public class PlateService {
 			plateEnglishDao.delete(id);
 	}
 
-    public Menu getMenuByPlateId(String plateId, boolean useChineseFlags) {
+    public Menu getMenuByPlateId(Integer plateId) {
 
-        return null;
+		return menuDao.get(plateId);
     }
 }

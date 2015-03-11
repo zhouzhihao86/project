@@ -29,4 +29,22 @@ $(document).ready(function () {
         $(this).css("color", "#666666")
     })
 
+    var prevHeight = 0;
+    $(".detail-nav .detail-nav-item").each(function () {
+
+        var height = $(this).offset().top;
+
+        if (prevHeight != height && prevHeight != 0) {
+
+            $(this).prev().find("a").css("border-right", "1px solid transparent");
+
+        }
+
+        prevHeight = height;
+
+
+    })
+
+    $(".detail-nav .detail-nav-item:last").find("a").css("border-right", "1px solid transparent");
+
 });
