@@ -1,6 +1,8 @@
 package com.xplore.web.controller.admin;
 
+import com.xplore.web.service.MenuService;
 import com.xplore.web.vo.AdminSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -11,6 +13,9 @@ import javax.servlet.http.HttpSession;
  */
 public class BaseController {
 
+    @Autowired
+    MenuService menuService;
+
     @ModelAttribute("adminSession")
     public AdminSession getAdminSession(HttpSession httpSession, Model model){
 
@@ -20,6 +25,7 @@ public class BaseController {
         model.addAttribute("adminInfo", adminSession.getAdmin());
         model.addAttribute("currentResource", adminSession.getCurrentResource());
         model.addAttribute("currentPerm", adminSession.getCurrentPerm());
+        model.addAttribute("menuList", menuService.getAll());
 
         return adminSession;
     }

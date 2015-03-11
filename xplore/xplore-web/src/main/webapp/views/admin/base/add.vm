@@ -17,8 +17,13 @@
         <input type="text" placeholder="标题" name="title">
         <p>摘要</p>
         <input type="text" placeholder="标题" name="brief" style="width:98%">
-        <p>时间</p>
-        <input type="text" placeholder="时间" name="logTime" value="">
+        <p>所属菜单</p>
+        <select name="plate_id">
+            <option value=""></option>
+            #foreach($a in $menuList)
+                <option value="$a.getId()">$a.getCnName()</option>
+            #end
+        </select>
         <p>正文</p>
         <!-- 加载编辑器的容器 -->
         <script id="container" name="content" type="text/plain">

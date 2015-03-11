@@ -38,20 +38,15 @@ public class IndexController extends BaseController {
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
 
-            Menu menu = plateService.getMenuByPlateId(plateChinese.getPlateId(), useChineseFlags);
-
         } else {
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
 
-            Menu menu = plateService.getMenuByPlateId(plateEnglish.getPlateId(), useChineseFlags);
-
         }
 
         model.addAttribute("article", plate);
-
 
         return getVm("groups", lan);
     }

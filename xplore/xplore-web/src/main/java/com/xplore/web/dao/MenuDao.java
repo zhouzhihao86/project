@@ -15,5 +15,7 @@ import java.util.List;
 @Repository
 public class MenuDao extends HibernateBaseDao<Menu, Serializable>{
 
-	
+	public List<Menu> getAll(){
+        return super.getAll();
+    }
 }

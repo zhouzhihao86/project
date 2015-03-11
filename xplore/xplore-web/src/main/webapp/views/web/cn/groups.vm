@@ -16,8 +16,6 @@
             <div class="detail-nav">
                 #foreach($a in $current)
                     <span class="detail-nav-item"><a href="$cPath/web/cn/articles/$a.getId()">$a.getTitle()</a></span>
-                    <span class="detail-nav-item"><a href="$cPath/web/cn/articles/$a.getId()">$a.getTitle()</a></span>
-                    <span class="detail-nav-item"><a href="$cPath/web/cn/articles/$a.getId()">$a.getTitle()</a></span>
                 #end
             </div>
         </div>
