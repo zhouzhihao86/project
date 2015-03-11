@@ -23,6 +23,14 @@ public class FileUploadUtil {
 
     public static final String UPLOAD_RELATIVE_PATH = "resources/img/uploads/";
 
+    private static String processFilename(String filename){
+
+        int index = filename.lastIndexOf("\\");
+        filename = filename.substring(index + 1, filename.length());
+
+        return filename;
+    }
+
     public static String Upload(HttpServletRequest request) {
 
         ServletFileUpload sfUpload = new ServletFileUpload(new DiskFileItemFactory());
@@ -43,7 +51,7 @@ public class FileUploadUtil {
                     continue;
                 }
 
-                String path = Constants.APP_REAL_PATH + UPLOAD_RELATIVE_PATH + fileitemStream.getName();
+                String path = Constants.APP_REAL_PATH + UPLOAD_RELATIVE_PATH + processFilename(fileitemStream.getName());
                 FileUtils.copyInputStreamToFile(stream, new File(path));
 
                 stream.close();

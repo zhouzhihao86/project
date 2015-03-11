@@ -21,9 +21,9 @@
             <option value=""></option>
             #foreach($a in $menuList)
                 #if("$a.getId()" == "$!domain.getPlateId()")
-                    <option selected="selected" value="$a.getId()">$a.getCnName()</option>
+                    <option selected="selected" value="$a.getId()">$a.getCnName() : $a.getEnName()</option>
                 #else
-                    <option value="$a.getId()">$a.getCnName()</option>
+                    <option value="$a.getId()">$a.getCnName() : $a.getEnName()</option>
                 #end
             #end
         </select>

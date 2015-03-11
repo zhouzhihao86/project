@@ -21,7 +21,9 @@
         <select name="plate_id">
             <option value=""></option>
             #foreach($a in $menuList)
-                <option value="$a.getId()">$a.getCnName()</option>
+                <option value="$a.getId()">
+                    $a.getCnName() : $a.getEnName()
+                </option>
             #end
         </select>
         <p>正文</p>

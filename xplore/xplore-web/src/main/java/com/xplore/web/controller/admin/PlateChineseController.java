@@ -32,10 +32,8 @@ public class PlateChineseController extends BaseController {
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public String list(@RequestParam(value = "p", required = false) Integer pageNo, @RequestParam(value = "id", required = false) Integer id, Model model) {
 
-        boolean useChineseFlags = true;
-
         if (id != null) {
-            Object adminVo = plateService.getById(id, useChineseFlags);
+            PlateChinese adminVo = (PlateChinese) plateService.getById(id, true);
             model.addAttribute("domain", adminVo);
             return "admin/base/third";
         }
@@ -52,7 +50,7 @@ public class PlateChineseController extends BaseController {
             page.setPageNo(pageNo);
         }
 
-        Page detailList = plateService.pagedList(page, useChineseFlags);
+        Page detailList = plateService.pagedList(page, true);
 
         model.addAttribute("domainList", detailList);
 
@@ -76,14 +74,14 @@ public class PlateChineseController extends BaseController {
     @RequestMapping(value = "edit", method = RequestMethod.GET)
     public String edit(@RequestParam(value = "id", required = false) Integer id, Model model) {
 
-
-        PlateChinese plateChinese = (PlateChinese)plateService.getById(id, true);
+        PlateChinese plateChinese = (PlateChinese) plateService.getById(id, true);
         model.addAttribute("domain", plateChinese);
         return "admin/base/edit";
     }
 
     @RequestMapping(value = "edit", method = RequestMethod.POST)
     public String doEdit(@ModelAttribute("form") PlateChinese plateChinese) {
+
         plateService.save(plateChinese);
 
         return "redirect:list";

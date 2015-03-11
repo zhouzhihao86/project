@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Controller
 @RequestMapping(value = "admin/plateEnglish")
-public class PlateEnglishController extends BaseController{
+public class PlateEnglishController extends BaseController {
 
     @Autowired
     PlateService plateService;
@@ -33,15 +33,13 @@ public class PlateEnglishController extends BaseController{
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public String list(@RequestParam(value = "p", required = false) Integer pageNo, @RequestParam(value = "id", required = false) Integer id, Model model) {
 
-        boolean useChineseFlags = false;
-
         if (id != null) {
-            Object adminVo = plateService.getById(id, useChineseFlags);
+            PlateEnglish adminVo = (PlateEnglish) plateService.getById(id, false);
             model.addAttribute("domain", adminVo);
             return "admin/base/third";
         }
 
-        Page page = new Page();
+        Page<PlateEnglish> page = new Page<PlateEnglish>();
 
         Integer pageSize = AdminConfig.getInt(AdminConfig.KEY_PAGE_SIZE);
 
@@ -53,7 +51,7 @@ public class PlateEnglishController extends BaseController{
             page.setPageNo(pageNo);
         }
 
-        Page detailList = plateService.pagedList(page, useChineseFlags);
+        Page detailList = plateService.pagedList(page, false);
 
         model.addAttribute("domainList", detailList);
 
@@ -77,8 +75,9 @@ public class PlateEnglishController extends BaseController{
     @RequestMapping(value = "edit", method = RequestMethod.GET)
     public String edit(@RequestParam(value = "id", required = false) Integer id, Model model) {
 
-        PlateChinese plateChinese = (PlateChinese)plateService.getById(id, true);
-        model.addAttribute("domain", plateChinese);
+        PlateEnglish plateEnglish = (PlateEnglish) plateService.getById(id, false);
+        model.addAttribute("domain", plateEnglish);
+
         return "admin/base/edit";
     }
 
@@ -101,7 +100,7 @@ public class PlateEnglishController extends BaseController{
                 throw new AdminException(ResponseCodes.KEY_DEL_ADMIN_FAILED);
             }
 
-            plateService.del(id, true);
+            plateService.del(id, false);
         } catch (AdminException e) {
             ResponseCodesHelper.buildErrResponse(e, ajaxResponse);
         }
