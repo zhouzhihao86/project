@@ -11,28 +11,25 @@ public class PlateChinese {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	
-	@Column(name="parent_url")
-	private String parentUrl;
 
 	@Column(name="plate_id")
-	private Integer plateId;
-	
+    private String plateId;
+
 	@Column(name="title")
 	private String title;
-	
+
 	@Column(name="brief")
 	private String brief;
-	
+
 	@Column(name="url")
 	private String url;
-	
+
 	@Column(name="content")
 	private String content;
-	
+
 	@Column(name="weight")
 	private Integer weight;
-	
+
 	@Column(name="create_time")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createTime;
@@ -94,19 +91,12 @@ public class PlateChinese {
 		this.createTime = createTime;
 	}
 
-	public String getParentUrl() {
-		return parentUrl;
-	}
 
-	public void setParentUrl(String parentUrl) {
-		this.parentUrl = parentUrl;
-	}
-
-    public Integer getPlateId() {
+    public String getPlateId() {
         return plateId;
     }
 
-    public void setPlateId(Integer plateId) {
+    public void setPlateId(String plateId) {
         this.plateId = plateId;
     }
 }

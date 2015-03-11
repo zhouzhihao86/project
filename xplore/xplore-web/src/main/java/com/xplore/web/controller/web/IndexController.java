@@ -1,5 +1,6 @@
 package com.xplore.web.controller.web;
 
+import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
 import org.springframework.stereotype.Controller;
@@ -37,11 +38,15 @@ public class IndexController extends BaseController {
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
 
+            Menu menu = plateService.getMenuByPlateId(plateChinese.getPlateId(), useChineseFlags);
+
         } else {
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
             model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
+
+            Menu menu = plateService.getMenuByPlateId(plateEnglish.getPlateId(), useChineseFlags);
 
         }
 
@@ -60,5 +65,34 @@ public class IndexController extends BaseController {
     public String bookingOnline(@PathVariable String lan, Model model) {
         return getVm("bookingOnline", lan);
     }
+
+    @RequestMapping(value = "campus/britain", method = RequestMethod.GET)
+    public String britain(@PathVariable String lan, Model model) {
+        return getVm("britain", lan);
+    }
+
+    @RequestMapping(value = "campus/america", method = RequestMethod.GET)
+    public String america(@PathVariable String lan,Model model) {
+        return getVm("america", lan);
+    }
+
+    @RequestMapping(value = "campus/germany", method = RequestMethod.GET)
+    public String germany(@PathVariable String lan, Model model) {
+        return getVm("germany", lan);
+    }
+
+    @RequestMapping(value = "campus/china", method = RequestMethod.GET)
+    public String china(@PathVariable String lan, Model model) {
+        return getVm("china", lan);
+    }
+
+    @RequestMapping(value = "campus/{country}/{id}", method = RequestMethod.GET)
+    public String campusDetail(@PathVariable String lan, @PathVariable String country, @PathVariable Integer id, Model model) {
+
+        model.addAttribute("country", country);
+
+        return getVm("campusDetail", lan);
+    }
+
 
 }

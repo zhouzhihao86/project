@@ -1,48 +1,14 @@
-#set($layout="layout/web-default.vm")
+#set($layout="layout/web-default-en.vm")
 #set($cPath = "#cPath")
 <style>
-    .detail {
-        width: 684px;
-        float: left;
-        margin-right: 10px;
-        border: 1px solid #E5E5E5;
-        padding:10px;
-    }
-    .detail-wrapper{
-        background:#E5E5E5;
-        padding:10px;
-        float:left;
-    }
-    .nav-name{
 
-    }
-    .detail-nav{
-        width:100%;
-        float:left;
-
-    }
-    .detail-nav .detail-nav-item{
-        float:left;
-        word-wrap:break-word;overflow:hidden;
-        text-align:center;
-        line-height:40px;
-        margin-top:25px;
-        border-top:1px solid #C71041;
-        border-bottom:1px solid #C71041;
-
-    }
-    .detail-nav-item a{
-        border-right:1px solid #111111;
-        padding:0 20px;
-        color:#666666;
-    }
 </style>
 <div class="content">
     <div class="detail">
         <div class="detail-wrapper">
-            <div class="nav-name">$article.getParentUrl()/$article.getTitle()</div>
+            <div class="nav-name">$article.getMenu().getEnName()/$article.getTitle()</div>
             <div><img src="$cPath/resources/img/PHT.jpg"></div>
-            <p class="" style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$article.getParentUrl()</p>
+            <p class="" style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$article.getMenu().getEnName()</p>
             <p style="font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">$article.getTitle()<i style="display:block;width:41px;height:43px;position:absolute;right:0;top:0;background:url($cPath/resources/img/XXX.jpg) no-repeat 0 0;"></i></p>
             <div class="detail-content">
                 $article.getContent()

@@ -2,8 +2,11 @@ package com.xplore.web.service;
 
 import java.util.List;
 
+import com.xplore.web.dao.MenuDao;
 import com.xplore.web.dao.PlateEnglishDao;
+import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
+import com.xplore.web.domain.PlateEnglish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +22,9 @@ public class PlateService {
 
 	@Autowired
 	PlateEnglishDao plateEnglishDao;
+
+	@Autowired
+	MenuDao menuDao;
 	
 	public Object getById(Integer id, boolean useChineseFlags){
 		if(useChineseFlags)
@@ -47,4 +53,26 @@ public class PlateService {
 			return plateEnglishDao.getPlate(plateId, 5);
 	}
 
+	public void save(PlateChinese plateChinese) {
+
+		plateChineseDao.save(plateChinese);
+	}
+
+	public void save(PlateEnglish plateEnglish){
+
+		plateEnglishDao.save(plateEnglish);
+	}
+
+	public void del(Integer id, boolean useChineseFlags) {
+
+		if(useChineseFlags)
+			plateChineseDao.delete(id);
+		else
+			plateEnglishDao.delete(id);
+	}
+
+    public Menu getMenuByPlateId(String plateId, boolean useChineseFlags) {
+
+        return null;
+    }
 }

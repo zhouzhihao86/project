@@ -1,0 +1,53 @@
+#set($layout="layout/web-default-en.vm")
+#set($cPath = "#cPath")
+<style>
+    .detail{
+        border:transparent;
+    }
+
+</style>
+<div class="content">
+    <div class="campus detail">
+        <div class="banner" style="background-image:url($cPath/resources/img/T-UK.png);">
+            <span style="margin-right:10px;">UNITED_KINDOM(UK)</span>
+            <img src="$cPath/resources/img/UK.png" style="position:absolute;left:-14px;bottom:-30px;">
+        </div>
+        <div class="banner-img" style="margin-top:4px;">
+            <img src="$cPath/resources/img/tu2.jpg">
+        </div>
+        <p class="campus-name">asdsfafsafsafsdafsdaf</p>
+        <div class="campus-detail-area">
+            <div class="campus-title">School Profile</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+        <div class="campus-detail-area">
+            <div class="campus-title">School Facts</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+        <div class="campus-detail-area">
+            <div class="campus-title">Curriculum</div>
+            <div class="campus-content">
+                asfdsasfsaf
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="$cPath/resources/img/tu1.jpg">
+        </div>
+        #parse("/layout/country.vm")
+    </div>
+    <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
+        #parse("/layout/sidebarEN.vm")
+    </div>
+
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+    });
+</script>

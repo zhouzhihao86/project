@@ -37,6 +37,7 @@ public class PlateChineseDao extends HibernateBaseDao<PlateChinese, Serializable
 	}
 
 	public List<PlateChinese> getPlate(Integer plateId, int maxResults) {
+
 		Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
 		criteria.setMaxResults(maxResults);
 		criteria.addOrder(Order.desc("weight"));

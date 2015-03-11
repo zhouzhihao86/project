@@ -303,3 +303,101 @@ a {
     padding:0 20px;
     color:#666666;
 }
+
+
+.banner{
+    width:100%;
+    height:38px;
+    line-height: 38px;
+    color:#FFFFFF;
+    font-size:18px;
+    text-align:right;
+    background-repeat: no-repeat;
+    background-position: right;
+    float:right;
+    position:relative;
+    float:left;
+}
+.banner-img{
+    width:100%;
+    float:left;
+    text-align: right;
+}
+.campus-name{
+    color:#C71041;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
+}
+.campus-detail-area{
+    width:662px;
+    float:left;
+    margin-bottom:25px;
+    padding:10px;
+}
+.campus-title{
+    float:left;
+    width:100%;
+    line-height:30px;
+    height:30px;
+    background:#C71041;
+    color:#FFFFFF;
+    text-indent: 10px;
+}
+.campus-content{
+    width:642px;
+    padding:10px;
+    float:left;
+}
+.country-pin{
+    position:absolute;
+    top:40px;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 20px;
+    height: 97px;
+    position: relative;
+}
+.dropdown-menu{
+    position:absolute;
+    top:171px;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+.dropdown-menu-inner-wrapper{
+    width:940px;
+    margin:0 auto;
+    background:#E5E5E5;
+    height:178px;
+    padding:10px;
+}
+.dropdown-menu-content-wrapper{
+    float:left;
+    position:relative;
+
+}
+.dropdown-menu-content-wrapper.middle{
+    padding:0 10px;width:504px;height:171px;
+}
+.dropdown-menu-content-wrapper.middle .menu-absract{
+    position:absolute;bottom:0;left:10px;right:10px;line-height:20px;text-align: left;color:#666666
+}
+.dropdown-menu-content-wrapper .article{
+    float:left;
+    width:100%;
+    height:29px;
+    line-height: 29px;
+    text-decoration: none;
+    text-align: left;
+}
+.dropdown-menu-content-wrapper ul{
+    list-style-position:inside;
+    list-style-type: disc;
+    margin:0;
+    padding:0;
+}
+.dropdown-menu-content-wrapper .article a{
+    color:#666666 !important;
+    font-weight: 700;
+}
