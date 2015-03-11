@@ -1,4 +1,4 @@
-#set($cPath = "http://121.42.45.249:8010/dc-web")
+#set($cPath = "#cPath")
 <div id="content-header">
     <h1>$currentResource.getName()</h1>
 </div>
