@@ -1,5 +1,7 @@
 package com.xplore.web.controller.web;
 
+import com.xplore.web.domain.CampusChinese;
+import com.xplore.web.service.CampusService;
 import com.xplore.web.service.PlateService;
 import com.xplore.web.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,9 @@ public class BaseController {
 
     @Autowired
     PlateService plateService;
+
+    @Autowired
+    CampusService campusService;
 
     @ModelAttribute("sidebar")
     public void getSideBarData(@PathVariable String lan, Model model) {

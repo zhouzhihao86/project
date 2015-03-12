@@ -27,17 +27,11 @@ public class PlateEnglishController extends BaseController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String defaultList(@RequestParam(value = "p", required = false) Integer pageNo, Model model) {
 
-        return list(pageNo, null, model);
+        return list(pageNo, model);
     }
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public String list(@RequestParam(value = "p", required = false) Integer pageNo, @RequestParam(value = "id", required = false) Integer id, Model model) {
-
-        if (id != null) {
-            PlateEnglish adminVo = (PlateEnglish) plateService.getById(id, false);
-            model.addAttribute("domain", adminVo);
-            return "admin/base/third";
-        }
+    public String list(@RequestParam(value = "p", required = false) Integer pageNo, Model model) {
 
         Page<PlateEnglish> page = new Page<PlateEnglish>();
 

@@ -92,10 +92,14 @@ public class IndexController extends BaseController {
     @RequestMapping(value = "campus/{country}/{id}", method = RequestMethod.GET)
     public String campusDetail(@PathVariable String lan, @PathVariable String country, @PathVariable Integer id, Model model) {
 
+        boolean useChineseFlags = isChinese(lan);
+
+        Object detail = campusService.getById(id, useChineseFlags);
+
         model.addAttribute("country", country);
+
+        model.addAttribute("detail", detail);
 
         return getVm("campusDetail", lan);
     }
-
-
 }

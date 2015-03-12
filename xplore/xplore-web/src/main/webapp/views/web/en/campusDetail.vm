@@ -19,19 +19,19 @@
         <div class="campus-detail-area">
             <div class="campus-title">School Profile</div>
             <div class="campus-content">
-                asfdsasfsaf
+                $!detail.getProfile()
             </div>
         </div>
         <div class="campus-detail-area">
             <div class="campus-title">School Facts</div>
             <div class="campus-content">
-                asfdsasfsaf
+                $!detail.getFacts()
             </div>
         </div>
         <div class="campus-detail-area">
             <div class="campus-title">Curriculum</div>
             <div class="campus-content">
-                asfdsasfsaf
+                $!detail.getCurriculum()
             </div>
         </div>
         <div class="banner-img">

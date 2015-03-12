@@ -8,12 +8,13 @@ import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.xplore.web.dao.PlateChineseDao;
 import com.xplore.web.util.Page;
 
-@org.springframework.stereotype.Service
+@Service
 @Transactional
 public class PlateService {
 
