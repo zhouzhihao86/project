@@ -96,10 +96,10 @@
                     </div>
                 </div>
             </li>
-            <li class="menu-item" style="height:54px">
+            <li class="menu-item" style="height:54px;line-height:15px;padding-top:13px;">
                 <a href="javascript:void(0)">
-                <p style="margin:-10px 0">TAILOR MADE EDUCATION</p>
-                <p style="margin:-33px">PACKAGES FOR GROUPS</p></a>
+                TAILOR MADE EDUCATION</br>
+                PACKAGES FOR GROUPS</a>
                 <div class="dropdown-menu hide">
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">

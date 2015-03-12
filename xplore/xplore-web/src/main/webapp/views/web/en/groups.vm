@@ -11,7 +11,7 @@
             <p class=""
                style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$menu.getEnName()</p>
 
-            <p style="font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">$article.getTitle()
+            <p style="width:654px;font-size:18px;height:33px;margin:0;background:#C71041;line-height:33px;padding:5px;color:#FFFFFF;position:relative">$article.getTitle()
                 <i style="display:block;width:41px;height:43px;position:absolute;right:0;top:0;background:url($cPath/resources/img/XXX.jpg) no-repeat 0 0;"></i>
             </p>
 

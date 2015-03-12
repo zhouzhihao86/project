@@ -1,7 +1,5 @@
 <p class="block-title">Booking Online</p>
 
-<a href="$cPath/web/$lan/bookingOnline"><p class="block-item">Booking Online</p></a>
-
 <a href="$cPath/web/$lan/bookingOnline"><p class="block-item">Language & Activity Camps</p></a>
 <a href="$cPath/web/$lan/bookingOnline"><p class="block-item">Tailor Made Education Packages for Groups</p></a>
 <a href="$cPath/web/$lan/bookingOnline"><p class="block-item">My choice High School Programs</p></a>

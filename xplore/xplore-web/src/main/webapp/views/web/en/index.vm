@@ -1,6 +1,9 @@
 #set($layout="layout/web-default-en.vm")
 #set($cPath = "#cPath")
 <style>
+    .block-item{
+        padding:9px 10px;
+    }
 </style>
 <div class="content">
 
