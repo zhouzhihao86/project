@@ -18,7 +18,7 @@
         <p>摘要</p>
         <input type="text" placeholder="标题" name="brief" style="width:98%">
         <p>所属菜单</p>
-        <select name="plate_id">
+        <select name="plateId">
             <option value=""></option>
             #foreach($a in $menuList)
                 <option value="$a.getId()">

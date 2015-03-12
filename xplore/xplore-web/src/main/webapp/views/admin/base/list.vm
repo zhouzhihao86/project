@@ -18,6 +18,7 @@
             <th>标题</th>
             <th>摘要</th>
             <th>日期</th>
+            <th>所属板块</th>
             <th>操作</th>
         </tr>
         </thead>
@@ -27,7 +28,8 @@
                 <td>$!domain.getId()</td>
                 <td>$!domain.getTitle()</td>
                 <td>$!domain.getBrief()</td>
-                <td>$!domain.getDisplayDate()</td>
+                <td>$!domain.getCreateTime()</td>
+                <td>$!domain.getPlateId()</td>
                 <td>
                     <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
                             class="fa fa-chevron-right"></i></a>

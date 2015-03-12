@@ -1,7 +1,13 @@
 #################
 ## Eclipse
 #################
-
+xplore/xplore-web/target
+xplore/xplore-web/xplore-web.iml
+xplore/xplore-common/target
+xplore/.idea
+xplore/xplore.iml
+xplore/config
+*.class
 *.pydevproject
 .project
 .metadata

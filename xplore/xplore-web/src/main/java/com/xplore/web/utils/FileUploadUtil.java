@@ -38,6 +38,7 @@ public class FileUploadUtil {
 
         FileItemIterator iterator;
         FileItemStream fileitemStream = null;
+        String filename = "";
         try {
             iterator = sfUpload.getItemIterator(request);
 
@@ -51,7 +52,8 @@ public class FileUploadUtil {
                     continue;
                 }
 
-                String path = Constants.APP_REAL_PATH + UPLOAD_RELATIVE_PATH + processFilename(fileitemStream.getName());
+                filename = processFilename(fileitemStream.getName());
+                String path = Constants.APP_REAL_PATH + UPLOAD_RELATIVE_PATH + filename;
                 FileUtils.copyInputStreamToFile(stream, new File(path));
 
                 stream.close();
@@ -64,7 +66,7 @@ public class FileUploadUtil {
         }
 
         if (fileitemStream != null)
-            return fileitemStream.getName();
+            return filename;
         else
             return "";
     }
