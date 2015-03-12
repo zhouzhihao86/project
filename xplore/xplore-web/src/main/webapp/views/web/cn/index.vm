@@ -14,11 +14,11 @@
                 <li><img src="$cPath/resources/img/index-1.jpg"></li>
             </ul>
             <div class="bx-pager">
-                <a data-slide-index="0" href=""><span>234</span></a>
-                <a data-slide-index="1" href=""><span>2341</span></a>
-                <a data-slide-index="2" href=""><span>2344</span></a>
-                <a data-slide-index="3" href=""><span>23425</span></a>
-                <a data-slide-index="4" href=""><span>232344</span></a>
+                <a data-slide-index="0" href=""><span>常规全年活动</span></a>
+                <a data-slide-index="1" href=""><span>夏令营</span></a>
+                <a data-slide-index="2" href=""><span>量身定制</span></a>
+                <a data-slide-index="3" href=""><span>MY CHOICE 中学</span></a>
+                <a data-slide-index="4" href=""><span>代理专区</span></a>
             </div>
         </div>
         <div class="intro-area" style="height:344px;">
@@ -34,37 +34,37 @@
             #parse("/layout/sidebarCN.vm")
         </div>
         <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;">
+            <div class="block-img-area" data-ref="0" style="margin-bottom:10px;">
                 <div class="title"></div>
-                <span class="name">lasdjfslka</span>
+                <span class="name">常规全年活动</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
                 <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
             </div>
-            <div class="block-img-area" style="margin-bottom:10px;">
+            <div class="block-img-area" data-ref="2" style="margin-bottom:10px;">
                 <div class="title"></div>
-                <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
-            </div>
-        </div>
-        <div class="block">
-            <div class="block-img-area" style="margin-bottom:10px;">
-                <div class="title"></div>
-                <span class="name">lasdjfslka</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
-            </div>
-            <div class="block-img-area" style="margin-bottom:10px;">
-                <div class="title"></div>
-                <span class="name">lasdjfslka</span>
+                <span class="name">量身定制</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
                 <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
             </div>
         </div>
         <div class="block">
-            <div class="block-img-area big">
+            <div class="block-img-area" data-ref="1" style="margin-bottom:10px;">
                 <div class="title"></div>
-                <span class="name">234242432</span>
+                <span class="name">夏令营</span>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
+            <div class="block-img-area" data-ref="4" style="margin-bottom:10px;">
+                <div class="title"></div>
+                <span class="name">代理专区</span>
+                <img src="$cPath/resources/img/index-small-3.jpg">
+                <div class="overlay hide"><div class="overlay-content"><span>2343232423</span></div></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-img-area big" data-ref="3">
+                <div class="title"></div>
+                <span class="name">MY CHOICE 中学</span>
                 <img src="$cPath/resources/img/index-bottom-right.jpg"></div>
         </div>
 

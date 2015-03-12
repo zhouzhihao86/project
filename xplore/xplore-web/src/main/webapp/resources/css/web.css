@@ -189,6 +189,7 @@ a {
     height: 177px;
     width: 100%;
     position: relative;
+    cursor: pointer;
 }
 .index-bottom .block-img-area .overlay{
     position:absolute;
@@ -230,7 +231,7 @@ a {
 
 .index-bottom .block-img-area .name {
     position: absolute;
-    top: 5px;
+    top: 20px;
     left: 5px;
     color: #FFFFFF;
     font-size: 12px;
@@ -245,6 +246,7 @@ a {
     bottom:0;
 }
 .bx-pager a{
+    font-size:12px;
     float:left;
     width:137px;
     height:53px;

@@ -18,7 +18,13 @@ $(document).ready(function () {
     })
 
     $(".block-img-area").click(function(){
-        window.location.href = window.app.cPath + "/web";
+
+        var widget = $(".dropdown-menu-inner-wrapper").get($(this).attr("data-ref"));
+
+        var url = $(widget).find(".article a:first").attr("href");
+
+        window.location.href = url;
+
     })
 
 
