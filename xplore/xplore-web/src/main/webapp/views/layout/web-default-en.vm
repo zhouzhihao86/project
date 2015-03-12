@@ -130,6 +130,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
+                                <li class="article" data-target=""><a href="$cPath/web/en/campus/england">England</a></li>
+                                <li class="article" data-target=""><a href="$cPath/web/en/campus/america">America</a></li>
+                                <li class="article" data-target=""><a href="$cPath/web/en/campus/china">China</a></li>
                                 #foreach($plate in $plateRecent1)
                                     <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/en/articles/$plate.getId()">$plate.getTitle()</a></li>
                                 #end
