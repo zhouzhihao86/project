@@ -17,6 +17,8 @@
         <input type="text" placeholder="标题" name="title">
         <p>摘要</p>
         <input type="text" placeholder="标题" name="brief" style="width:98%">
+        <p>权重</p>
+        <input type="text" placeholder="权重" name="weight">
         <p>所属菜单</p>
         <select name="plateId">
             <option value=""></option>
