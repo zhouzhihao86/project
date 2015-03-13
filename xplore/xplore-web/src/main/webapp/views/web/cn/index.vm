@@ -1,6 +1,15 @@
 #set($layout="layout/web-default.vm")
 #set($cPath = "#cPath")
 <style>
+    *{font-weight:700}
+    .bx-pager a, .index-bottom .block-img-area .name{
+        font-size:14px;
+        top:15px;
+    }
+    .block-item{
+        padding:7px 10px;
+        font-size:14px;
+    }
 </style>
 <div class="content">
 
@@ -25,12 +34,12 @@
             <p class="block-title" style="border-bottom:none">尊敬的家长朋友：</p>
 
             <p style="word-wrap:break-word;overflow:hidden;font-size:12px;">
-                欢迎光临Xplore，我们在青少年旅行方面拥有丰富的经验，并致力于为青少年在安全、愉快的环境中提供精彩有趣且充满互动的语言学习活动。</br></br>
+                欢迎光临Xplore，我们在青少年旅行方面拥有丰富的经验，并致力于为青少年在安全、愉快的环境中提供精彩有趣且充满互动的语言学习活动。</br>
 
                 我们的目标是为学生提供一个令人兴奋且多样化的语言学习体验，将来自各国的学生融入小班学习，同时为他们提供一流的支持和关怀。在我们的营地中学习英语，学生们会完全沉浸于周围的文化和历史氛围中，与当地学生一起尽享丰富多彩的团队活动。这种结合了运动课程、精彩的晚间娱乐节目、名胜古迹游览以及学校访问的行程，让英语变得更加生动，创造一种独特的方式去体会语言的美妙。</br></br>
-                我们期待在不久的将来，您小朋友的光临！</br></br>
+                我们期待在不久的将来，您小朋友的光临！</br>
 
-                致以最美好的祝愿，</br></br>
+                致以最美好的祝愿，</br>
                 <span style="float:right;">Xplore团队</span>
 
             </p>
