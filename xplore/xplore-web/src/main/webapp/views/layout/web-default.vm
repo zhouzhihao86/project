@@ -176,17 +176,17 @@
     <div style="margin:0 auto;width:960px;">
         <div class="links">
             <div class="column">
-                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Suffolk</span></p>
                 <a target="new" href="javascript:void(0)">12 Bury Street</a>
                 <a target="new" href="javascript:void(0)">Stowmarket</a>
                 <a target="new" href="javascript:void(0)">Suffolk, IP14 1HA</a>
                 <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
                 <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
 
-                <p class="links-name">T:+44 (0) 1449742700</p>
+                <p class="links-name tel">T:+44 (0) 1449742700</p>
             </div>
             <div class="column">
-                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Hamburg, Berlin & Cologne</span></p>
                 <a target="new" href="javascript:void(0)">Theodorstr, 48</a>
                 <a target="new" href="javascript:void(0)">22761, Hamburg</a>
                 <a target="new" href="javascript:void(0)">Germany</a>
@@ -194,30 +194,30 @@
                 <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
                 <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
 
-                <p class="links-name">T:+49 (0) 40 429 336 00</p>
+                <p class="links-name tel">T:+49 (0) 40 429 336 00</p>
             </div>
 
         </div>
         <div class="links">
             <div class="column">
-                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Asheville, N.Carolina</span></p>
                 <a target="new" href="javascript:void(0)">One Town, Square Bvld.</a>
                 <a target="new" href="javascript:void(0)">Suite 204,</a>
                 <a target="new" href="javascript:void(0)">Asheville, NC 28803,</a>
                 <a target="new" href="javascript:void(0)">United States</a>
                 <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
 
-                <p class="links-name">T:+1 (828) 651 8502</p>
+                <p class="links-name tel">T:+1 (828) 651 8502</p>
             </div>
             <div class="column">
-                <p class="links-name">Xplore(UK)</br>Suffolk</p>
+                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Shenzhen</span></p>
                 <a target="new" href="javascript:void(0)">Room 720, 7th Floor, Tagen</a>
                 <a target="new" href="javascript:void(0)">Chuangye Building, No.7</a>
                 <a target="new" href="javascript:void(0)">Shangbao Road, Futian District,</a>
                 <a target="new" href="javascript:void(0)">Shenzhen, Guangdong, 518034</a>
                 <a target="new" href="javascript:void(0)">China</a>
 
-                <p class="links-name">T:+1 (828) 651 8502</p>
+                <p class="links-name tel">T:+1 (828) 651 8502</p>
             </div>
         </div>
     </div>

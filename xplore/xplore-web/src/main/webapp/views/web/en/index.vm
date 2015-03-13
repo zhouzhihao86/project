@@ -2,7 +2,12 @@
 #set($cPath = "#cPath")
 <style>
     .block-item{
-        padding:9px 10px;
+        padding:7.5px 10px;
+    }
+    #header .menu .menu-item{
+        padding:0 20px;
+        font-size:12px;
+        font-weight:700;
     }
 </style>
 <div class="content">
@@ -35,13 +40,13 @@
 
             <p style="word-wrap:break-word;overflow:hidden;font-size:12px;">
 
-                Wecome to Xplore,a youth travel provider experienced and dedicated in organising fun-packed, interactive language activity programs in a safe in a safe and enjoyable environment.</br></br>
+                Wecome to Xplore,a youth travel provider experienced and dedicated in organising fun-packed, interactive language activity programs in a safe in a safe and enjoyable environment.</br>
 
-                At Xplore we pride ourselves in our flexible and dedicated group travel service, creating and inspiring opportunities for young people to discover, From schools looking for class based education and culture tours to agents requiring a variety of travel packages, cultural and learning experience!</br></br>
+                At Xplore we pride ourselves in our flexible and dedicated group travel service, creating and inspiring opportunities for young people to discover, From schools looking for class based education and culture tours to agents requiring a variety of travel packages, cultural and learning experience!</br>
 
-                We look forward to welcoming your child in the very near future!</br></br>
+                We look forward to welcoming your child in the very near future!</br>
 
-                Beat  wishes,</br></br>
+                Beat  wishes,</br>
 
                 <span style="float:right;">Xplore Team</span>
 
@@ -59,13 +64,13 @@
                 <div class="title"></div>
                 <span class="name">ALL YEAR ROUND GROUPS</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.</span></div></div>
+                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over ...</span></div></div>
             </div>
             <div class="block-img-area"  data-ref="2" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name" style="top:5px">TAILOR MADE EDUCATION </br>PACKAGES FOR GROUPS</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>At Xplore we pride ourselves in our flexible and dedicated group travel service, creating and inspiring opportunities for young people to discover, learn and share. Using our knowledge and experience we work alongside clients to design itineraries suited to their specific requirements. From schools looking for class based education and culture tours to agents requiring a variety of travel packages, the Xplore group travel team is here to help provide the ultimate travel, cultural and learning experience!</span></div></div>
+                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>At Xplore we pride ourselves in our flexible and dedicated group travel service, creating and inspiring opportunities for young people to discover, learn and share. Using our knowledge and experience we work alongside clients to design itineraries suited to their ...</span></div></div>
             </div>
         </div>
         <div class="block">
@@ -73,13 +78,13 @@
                 <div class="title"></div>
                 <span class="name">SUMMER CAMPS</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.</span></div></div>
+                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over ...</span></div></div>
             </div>
             <div class="block-img-area"  data-ref="4" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">AGENTS ZONE</span>
                 <img src="$cPath/resources/img/index-small-3.jpg">
-                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>At Xplore we are always looking to expand and develop new programmes and are keen to build new partnerships within our industry. We hope this brochure inspires you to get in contact with us as we would very much like to hear from you to discuss either one of our existing programmes or indeed something new!</span></div></div>
+                <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>At Xplore we are always looking to expand and develop new programmes and are keen to build new partnerships within our industry. We hope this brochure inspires you to get in contact with us as we would very much like to hear from you to discuss ...</span></div></div>
             </div>
         </div>
         <div class="block">

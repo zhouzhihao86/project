@@ -7,8 +7,6 @@
 <a href="$cPath/web/$lan/bookingOnline"><p class="block-item">代理专区</p></a>
 
 <p class="block-title" style="margin-top:10px">关于Xplore</p>
-
-<a href=""><p class="block-item">Xplore历史</p></a>
-<a href=""><p class="block-item">Xplore团队</p></a>
-<a href=""><p class="block-item">Xplore办事处</p></a>
-<a href=""><p class="block-item">Xplore愿景</p></a>
+#foreach($plate in $plateRecent7)
+<a href="$cPath/web/cn/articles/$plate.getId()"><p class="block-item">$plate.getTitle()</p></a>
+#end
