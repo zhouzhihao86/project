@@ -30,6 +30,9 @@ public class BaseController {
         model.addAttribute("plateRecent2", plateService.getPlate(2, useChineseFlags));
         model.addAttribute("plateRecent3", plateService.getPlate(3, useChineseFlags));
         model.addAttribute("plateRecent4", plateService.getPlate(4, useChineseFlags));
+        model.addAttribute("plateRecent5", plateService.getPlate(5, useChineseFlags));
+        model.addAttribute("plateRecent6", plateService.getPlate(6, useChineseFlags));
+        model.addAttribute("plateRecent7", plateService.getPlate(7, useChineseFlags));
 
         model.addAttribute("lan", lan);
 
