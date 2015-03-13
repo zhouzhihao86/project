@@ -16,8 +16,10 @@
         <input type="text" placeholder="标题" name="title" value="$domain.getTitle()">
         <p>摘要</p>
         <input type="text" placeholder="标题" name="brief" style="width:98%" value="$!domain.getBrief()">
+        <p>权重</p>
+        <input type="text" placeholder="权重" name="weight" value="$!domain.getWeight()">
         <p>所属菜单</p>
-        <select name="plateId">
+        <select name="plateId" >
             <option value=""></option>
             #foreach($a in $menuList)
                 #if("$a.getId()" == "$!domain.getPlateId()")

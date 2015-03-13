@@ -139,10 +139,10 @@ a {
 }
 
 .index-top .intro-area {
-    width: 242px;
+    width: 232px;
     border: 1px solid #BABABA;
     float: left;
-    padding: 10px;
+    padding: 10px 15px;
     background: url(../img/photo4.jpg) no-repeat 0px 0px;
 }
 
@@ -171,12 +171,12 @@ a {
 }
 
 .block-item {
-    padding: 7.3px 10px;
+    padding: 9.8px 10px;
     border-bottom: 1px solid #B7B7B7;
     color: #666666;
     margin: 0;
     cursor:pointer;
-    font-size:10px;
+    font-size:12px;
 }
 
 .block-bar a .block-item:hover{
@@ -207,9 +207,10 @@ a {
     position:static;
     float:left;
     width:210px;
-    height:129px;
-    font-size:10px;
+    height:130px;
+    font-size:12px;
     padding:5px;
+    line-height: 15px;
 }
 .index-bottom .block-img-area .overlay .overlay-content span{
     position:relative;
@@ -395,7 +396,7 @@ a {
     padding:0 10px;width:504px;height:171px;
 }
 .dropdown-menu-content-wrapper.middle .menu-absract{
-    position:absolute;bottom:0;left:10px;right:10px;line-height:20px;text-align: left;color:#666666
+    position:absolute;bottom:0;left:10px;right:10px;line-height:23px;text-align: left;color:#666666;
 }
 .dropdown-menu-content-wrapper .article{
     float:left;

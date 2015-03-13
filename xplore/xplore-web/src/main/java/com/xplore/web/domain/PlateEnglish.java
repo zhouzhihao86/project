@@ -15,16 +15,12 @@ public class PlateEnglish {
 	@Column(name="plate_id")
     private Integer plateId;
 
-
 	@Column(name="title")
 	private String title;
 	
 	@Column(name="brief")
 	private String brief;
-	
-	@Column(name="url")
-	private String url;
-	
+
 	@Column(name="content")
 	private String content;
 	
@@ -59,14 +55,6 @@ public class PlateEnglish {
 
 	public void setBrief(String brief) {
 		this.brief = brief;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
 	}
 
 	public String getContent() {

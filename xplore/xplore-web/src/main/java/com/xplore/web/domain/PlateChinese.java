@@ -21,9 +21,6 @@ public class PlateChinese {
 	@Column(name="brief")
 	private String brief;
 
-	@Column(name="url")
-	private String url;
-
 	@Column(name="content")
 	private String content;
 
@@ -57,14 +54,6 @@ public class PlateChinese {
 
 	public void setBrief(String brief) {
 		this.brief = brief;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
 	}
 
 	public String getContent() {
