@@ -29,4 +29,12 @@ public class BaseController {
 
         return adminSession;
     }
+
+    public boolean isChinese(String lan){
+        boolean useChineseFlags = true;
+        if(lan.equals("en")){
+            useChineseFlags = false;
+        }
+        return useChineseFlags;
+    }
 }

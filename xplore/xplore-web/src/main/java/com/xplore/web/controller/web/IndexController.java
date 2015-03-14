@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * Created by damen on 2014/12/14.
@@ -69,8 +70,15 @@ public class IndexController extends BaseController {
         return getVm("bookingOnline", lan);
     }
 
-    @RequestMapping(value = "campus/england", method = RequestMethod.GET)
+    @RequestMapping(value = "campus/britain", method = RequestMethod.GET)
     public String britain(@PathVariable String lan, Model model) {
+
+        boolean useChineseFlags = isChinese(lan);
+
+        List campusList = campusService.getList(1, useChineseFlags);
+
+        model.addAttribute("campusList", campusList);
+
         return getVm("britain", lan);
     }
 
@@ -92,7 +100,6 @@ public class IndexController extends BaseController {
         Object detail = campusService.getById(id, useChineseFlags);
 
         model.addAttribute("country", country);
-
         model.addAttribute("detail", detail);
 
         return getVm("campusDetail", lan);

@@ -128,9 +128,6 @@
                                 <li class="article" data-target=""><a href="$cPath/web/en/campus/england">英国</a></li>
                                 <li class="article" data-target=""><a href="$cPath/web/en/campus/america">美国</a></li>
                                 <li class="article" data-target=""><a href="$cPath/web/en/campus/china">中国</a></li>
-                                #foreach($plate in $plateRecent3)
-                                    <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
-                                #end
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">

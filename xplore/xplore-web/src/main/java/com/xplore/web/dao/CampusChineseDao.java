@@ -1,7 +1,6 @@
 package com.xplore.web.dao;
 
 import com.xplore.web.domain.CampusChinese;
-import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.util.HibernateBaseDao;
 import com.xplore.web.util.Page;
 import org.hibernate.Criteria;
@@ -39,9 +38,11 @@ public class CampusChineseDao extends HibernateBaseDao<CampusChinese, Serializab
         return findLong(hql).intValue();
     }
 
-    public List<CampusChinese> getPlate(Integer plateId, int maxResults) {
-
-        Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
+    public List<CampusChinese> getAllListByCountry(int countryId, int maxResults) {
+        return getListByCountry(countryId, Integer.MAX_VALUE);
+    }
+    public List<CampusChinese> getListByCountry(int countryId, int maxResults) {
+        Criteria criteria = createCriteria(Restrictions.eq("countryId", countryId));
         criteria.setMaxResults(maxResults);
         criteria.addOrder(Order.desc("weight"));
         return criteria.list();

@@ -14,8 +14,8 @@ public class CampusChinese {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column(name = "region_id")
-    private Integer regionId;
+    @Column(name = "country_id")
+    private Integer countryId;
 
     @Column(name = "title")
     private String title;
@@ -45,11 +45,11 @@ public class CampusChinese {
     }
 
     public Integer getRegionId() {
-        return regionId;
+        return countryId;
     }
 
     public void setRegionId(Integer regionId) {
-        this.regionId = regionId;
+        this.countryId = regionId;
     }
 
     public String getTitle() {

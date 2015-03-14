@@ -40,14 +40,9 @@
         </div>
         <div class="campus-detail-area list" style="">
             <ul class="campus-list" >
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
-                <li><a>dsfafsafsafsa<i class="line"></i></a></li>
+                #foreach($campus in $campusList)
+                    <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
+                #end
             </ul>
         </div>
         #parse("/layout/country.vm")

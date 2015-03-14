@@ -15,7 +15,7 @@
         <div class="banner-img" style="margin-top:4px;">
             <img src="$cPath/resources/img/tu2.jpg">
         </div>
-        <p class="campus-name">asdsfafsafsafsdafsdaf</p>
+        <p class="campus-name">$!detail.getTitle()</p>
         <div class="campus-detail-area">
             <div class="campus-title">School Profile</div>
             <div class="campus-content">

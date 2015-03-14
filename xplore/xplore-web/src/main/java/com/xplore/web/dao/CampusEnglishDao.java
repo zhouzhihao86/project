@@ -20,7 +20,7 @@ public class CampusEnglishDao extends HibernateBaseDao<CampusEnglish, Serializab
 
     public Page pagedList(Page<CampusEnglish> page){
 
-        String hql = "from CampusChinese order by id desc";
+        String hql = "from CampusEnglish order by id desc";
         return find(page, hql);
     }
 
@@ -39,9 +39,12 @@ public class CampusEnglishDao extends HibernateBaseDao<CampusEnglish, Serializab
         return findLong(hql).intValue();
     }
 
-    public List<CampusEnglish> getPlate(Integer plateId, int maxResults) {
+    public List<CampusEnglish> getAllListByCountry(int countryId, int maxResults) {
+        return getListByCountry(countryId, Integer.MAX_VALUE);
+    }
 
-        Criteria criteria = createCriteria(Restrictions.eq("plateId", plateId));
+    public List<CampusEnglish> getListByCountry(int countryId, int maxResults) {
+        Criteria criteria = createCriteria(Restrictions.eq("countryId", countryId));
         criteria.setMaxResults(maxResults);
         criteria.addOrder(Order.desc("weight"));
         return criteria.list();
