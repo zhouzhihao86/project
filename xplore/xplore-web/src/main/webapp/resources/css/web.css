@@ -186,6 +186,16 @@ a {
     font-size:12px;
 }
 
+.en .block-item{
+    padding:7.5px 10px;
+}
+
+.cn .block-item{
+    padding:7px 10px;
+    font-size:14px;
+    font-weight:700;
+}
+
 .block-bar a .block-item:hover{
     background:#C71041;
     color:#FFFFFF !important;
@@ -422,4 +432,43 @@ a {
 .dropdown-menu-content-wrapper .article a{
     color:#666666 !important;
     font-weight: 700;
+}
+
+
+.campus-detail-area.list{
+    padding: 10px 0 0 0;
+    border-top: 1px solid #E5E5E5;
+    width: 682px;
+    margin-top: 10px;
+    min-height:250px;
+    background:url(../img/xditu.jpg) no-repeat right;
+}
+
+.campus-list{
+    margin:0;color:#C71041;
+    padding-left:0;
+}
+.campus-list li{
+    height:33px;
+    line-height:33px;
+    list-style-position: inside;
+    width:345px;
+    padding-left:5px;
+}
+.campus-list li:hover{
+    background:#C71042;
+    color:#FFFFFF;
+
+}
+.campus-list li:hover a{
+    color:#FFFFFF;
+}
+.campus-list li a{
+    padding-right:20px;
+    position:relative;
+}
+.campus-list i{
+    height:1px;left:-22px;width:342px;position:absolute;background: #C71041;bottom:-7px;
+    /*right:-20px;*/
+    /*left:-14px;*/
 }

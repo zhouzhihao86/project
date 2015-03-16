@@ -1,0 +1,22 @@
+#set($layout="layout/web-default-en.vm")
+#set($cPath = "#cPath")
+<style>
+    .detail{
+        border:transparent;
+    }
+
+</style>
+<div class="content en" style="min-height:400px;">
+
+    <div class="hint cn " style="color:#666666">
+        <p style="text-align:center;font-size:32px;margin-top:100px;">这个页面被外星人带走啦</p>
+        <p style="text-align:center;font-size:24px;"><a href="$cPath/web/en" style="color:#666666;text-decoration: underline">回家</a></p>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+
+
+    });
+</script>

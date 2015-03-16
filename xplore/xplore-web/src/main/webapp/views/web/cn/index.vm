@@ -6,10 +6,7 @@
         font-size:14px;
         top:15px;
     }
-    .block-item{
-        padding:7px 10px;
-        font-size:14px;
-    }
+
 </style>
 <div class="content">
 

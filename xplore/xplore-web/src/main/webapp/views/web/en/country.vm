@@ -5,34 +5,11 @@
         border:transparent;
     }
 
-    .campus-detail-area.list{
-        padding: 0;
-        border-top: 1px solid #E5E5E5;
-        width: 682px;
-        margin-top: 10px;
-    }
-
-    .campus-list{
-        margin:0;color:#C71041;
-        padding-left:0;
-    }
-    .campus-list li{
-        height：33px;
-        line-height:33px;
-        list-style-position: inside;
-    }
-    .campus-list li a{
-        padding-right:20px;
-        position:relative;
-    }
-    .campus-list i{
-        height:1px;left:-14px;right:-20px;position:absolute;background: #C71041;bottom:-7px;
-    }
 </style>
-<div class="content">
+<div class="content en">
     <div class="campus detail">
         <div class="banner" style="background-image:url($cPath/resources/img/T-UK.png);">
-            <span style="margin-right:10px;">UNITED_KINDOM(UK)</span>
+            <span style="margin-right:10px;">$countryName</span>
             <img src="$cPath/resources/img/UK.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">

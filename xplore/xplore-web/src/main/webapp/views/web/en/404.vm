@@ -1,0 +1,21 @@
+#set($layout="layout/web-default-en.vm")
+#set($cPath = "#cPath")
+<style>
+    .detail{
+        border:transparent;
+    }
+
+</style>
+<div class="content en" style="min-height:400px;">
+    <div class="hint en " style="color:#666666">
+        <p style="text-align:center;font-size:32px;margin-top:100px;">This page has been taken by Alien</p>
+        <p style="text-align:center;font-size:24px;"><a href="$cPath/web/en" style="color:#666666;text-decoration: underline">GO HOME</a></p>
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+    });
+</script>

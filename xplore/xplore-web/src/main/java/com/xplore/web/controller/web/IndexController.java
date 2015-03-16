@@ -1,5 +1,6 @@
 package com.xplore.web.controller.web;
 
+import com.xplore.web.constants.enums.Country;
 import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
@@ -70,26 +71,22 @@ public class IndexController extends BaseController {
         return getVm("bookingOnline", lan);
     }
 
-    @RequestMapping(value = "campus/britain", method = RequestMethod.GET)
-    public String britain(@PathVariable String lan, Model model) {
+    @RequestMapping(value = "campus/{country}", method = RequestMethod.GET)
+    public String britain(@PathVariable Country country, @PathVariable String lan, Model model) {
 
         boolean useChineseFlags = isChinese(lan);
 
-        List campusList = campusService.getList(1, useChineseFlags);
+        Integer countryId = country.getCountryId();
+
+        List campusList = campusService.getList(countryId, useChineseFlags);
 
         model.addAttribute("campusList", campusList);
 
-        return getVm("britain", lan);
-    }
+        model.addAttribute("country", country);
 
-    @RequestMapping(value = "campus/america", method = RequestMethod.GET)
-    public String america(@PathVariable String lan,Model model) {
-        return getVm("america", lan);
-    }
+        model.addAttribute("countryName", country.display(lan));
 
-    @RequestMapping(value = "campus/china", method = RequestMethod.GET)
-    public String china(@PathVariable String lan, Model model) {
-        return getVm("china", lan);
+        return getVm("country", lan);
     }
 
     @RequestMapping(value = "campus/{country}/{id}", method = RequestMethod.GET)

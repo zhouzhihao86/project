@@ -6,28 +6,26 @@
     }
 
 </style>
-<div class="content">
+<div class="content cn">
     <div class="campus detail">
         <div class="banner" style="background-image:url($cPath/resources/img/T-UK.png);">
-            <span style="margin-right:10px;">UNITED_KINDOM(UK)</span>
+            <span style="margin-right:10px;">$countryName</span>
             <img src="$cPath/resources/img/UK.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">
             <img src="$cPath/resources/img/tu2.jpg">
         </div>
-        <p class="campus-name">asdsfafsafsafsdafsdaf</p>
-        <div class="campus-detail-area">
-
-asdfsafsdafsa
-
-        </div>
-        <div class="banner-img">
-            <img src="$cPath/resources/img/tu1.jpg">
+        <div class="campus-detail-area list $counrty" style="">
+            <ul class="campus-list" >
+                #foreach($campus in $campusList)
+                    <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
+                #end
+            </ul>
         </div>
         #parse("/layout/country.vm")
     </div>
     <div class="block block-bar" style="float:left;background: #E5E5E5;width:227px;">
-        #parse("/layout/sidebarEN.vm")
+        #parse("/layout/sidebarCN.vm")
     </div>
 
 

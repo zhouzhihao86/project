@@ -125,9 +125,9 @@
                     <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article" data-target=""><a href="$cPath/web/en/campus/england">英国</a></li>
-                                <li class="article" data-target=""><a href="$cPath/web/en/campus/america">美国</a></li>
-                                <li class="article" data-target=""><a href="$cPath/web/en/campus/china">中国</a></li>
+                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/england">英国</a></li>
+                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/america">美国</a></li>
+                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/china">中国</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-menu-content-wrapper middle">

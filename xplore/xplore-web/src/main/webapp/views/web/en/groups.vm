@@ -3,7 +3,7 @@
 <style>
 
 </style>
-<div class="content">
+<div class="content en">
     <div class="detail">
         <div class="detail-wrapper">
             <div class="nav-name">$menu.getEnName()/$article.getTitle()</div>

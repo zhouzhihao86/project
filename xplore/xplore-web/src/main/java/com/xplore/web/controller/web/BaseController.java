@@ -6,8 +6,12 @@ import com.xplore.web.service.PlateService;
 import com.xplore.web.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by damen on 2014/12/26.
@@ -50,4 +54,24 @@ public class BaseController {
         }
         return useChineseFlags;
     }
+
+    /**
+     * 统一异常处理
+     */
+    @ExceptionHandler
+    public String exp(HttpServletRequest request, Exception ex) {
+
+        request.setAttribute("ex", ex);
+
+        ex.printStackTrace();
+
+        String uri = request.getRequestURI();
+
+        if(uri != null && uri.indexOf("cn") != -1){
+            return "web/cn/404";
+        }else{
+            return "web/en/404";
+        }
+    }
+
 }

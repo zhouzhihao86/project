@@ -1,16 +1,13 @@
 #set($layout="layout/web-default-en.vm")
 #set($cPath = "#cPath")
 <style>
-    .block-item{
-        padding:7.5px 10px;
-    }
     #header .menu .menu-item{
         padding:0 20px;
         font-size:12px;
         font-weight:700;
     }
 </style>
-<div class="content">
+<div class="content en">
 
     <div class="index-top">
         <div class="img-area" style="height:366px;">
