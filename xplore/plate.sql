@@ -1,5 +1,5 @@
-use `xplore`
-
+CREATE DATABASE  IF NOT EXISTS `xplore` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `xplore`;
 -- MySQL dump 10.13  Distrib 5.6.17, for Win32 (x86)
 --
 -- Host: localhost    Database: xplore
@@ -83,7 +83,7 @@ DROP TABLE IF EXISTS `tbl_campus_cn`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tbl_campus_cn` (
   `id` int(32) NOT NULL AUTO_INCREMENT,
-  `region_id` int(11) DEFAULT NULL,
+  `country_id` int(11) DEFAULT NULL,
   `title` varchar(128) DEFAULT NULL,
   `Profile` text,
   `Facts` varchar(16384) DEFAULT NULL,
@@ -112,7 +112,7 @@ DROP TABLE IF EXISTS `tbl_campus_en`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tbl_campus_en` (
   `id` int(32) NOT NULL AUTO_INCREMENT,
-  `region_id` int(11) DEFAULT NULL,
+  `country_id` int(11) DEFAULT NULL,
   `title` varchar(128) DEFAULT NULL,
   `profile` text,
   `facts` varchar(16384) DEFAULT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE `tbl_campus_en` (
 
 LOCK TABLES `tbl_campus_en` WRITE;
 /*!40000 ALTER TABLE `tbl_campus_en` DISABLE KEYS */;
-INSERT INTO `tbl_campus_en` VALUES (1,1,'title','profile_1','facts_1','curadsf_1',100,'2015-03-12 06:24:12');
+INSERT INTO `tbl_campus_en` VALUES (1,1,'asdfsfasadsdfssafdsafsafsa','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(2,1,'2121342424142134','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(3,1,'asf','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(4,1,'1342314231421','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(5,1,'asfsdf','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(6,1,'421421421','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(7,1,'asdfsafdsfsafsafs','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06'),(8,1,'sdfsafs','profile_1','facts_1','curadsf_1',100,'2015-03-16 01:50:06');
 /*!40000 ALTER TABLE `tbl_campus_en` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,7 +212,7 @@ CREATE TABLE `tbl_perm` (
 
 LOCK TABLES `tbl_perm` WRITE;
 /*!40000 ALTER TABLE `tbl_perm` DISABLE KEYS */;
-INSERT INTO `tbl_perm` VALUES (1,'list','公司业绩',NULL,1,'2014-12-22 22:04:05',1),(2,'list','图片新闻',NULL,1,'2014-12-24 10:49:21',3),(3,'list','轮播图',NULL,1,'2014-12-23 23:11:55',4),(4,'list','视频',NULL,1,'2014-12-24 12:14:33',5),(5,'add','视频',NULL,1,'2014-12-24 12:14:33',5),(6,'list','查看企业文化',NULL,1,'2014-12-23 22:19:37',7),(7,'edit','编辑公司业绩',NULL,1,'2014-12-22 22:04:05',1),(9,'del','删除公司业绩',NULL,1,'2014-12-22 22:04:05',1),(10,'add','新增管理员',NULL,1,'2014-11-22 02:19:57',1),(11,'list','行业建设列表',NULL,1,'2014-12-23 22:51:50',8),(12,'edit','编辑行业建设',NULL,1,'2014-12-23 22:51:50',8),(13,'list','公司动态',NULL,1,'2014-12-22 23:12:47',2),(14,'list','服务项目列表',NULL,1,'2014-12-23 22:47:29',6),(15,'add','新增服务项目',NULL,1,'2014-12-23 22:47:29',6),(16,'edit','编辑服务项目',NULL,1,'2014-12-23 22:47:29',6),(17,'del','删除服务项目',NULL,1,'2014-12-23 22:47:29',6),(20,'list','在线咨询',NULL,1,'2014-12-24 10:08:51',9),(21,'del','在线咨询',NULL,1,'2014-12-24 10:08:51',9),(24,'edit','编辑企业文化',NULL,1,'2014-12-23 22:19:37',7),(25,'del','删除企业文化',NULL,1,'2014-12-23 22:19:37',7),(26,'add','新增公司动态',NULL,1,'2014-12-22 23:12:47',2),(27,'edit','编辑公司动态',NULL,1,'2014-12-22 23:12:47',2),(28,'del','删除公司动态',NULL,1,'2014-12-22 23:12:47',2),(29,'add','新增企业文化',NULL,1,'2014-12-01 21:13:34',7),(30,'add','新增行业建设',NULL,1,'2014-11-23 20:44:20',8),(31,'del','删除行业建设',NULL,1,'2014-11-23 20:44:20',8),(32,'add','轮播图',NULL,1,'2014-11-17 23:19:02',4),(33,'del','轮播图',NULL,1,'2014-11-17 23:19:02',4),(34,'edit','轮播图',NULL,1,'2014-11-17 23:19:02',4),(35,'add','图片新闻',NULL,1,'2014-12-24 10:49:21',3),(36,'edit','图片新闻',NULL,1,'2014-12-24 10:49:21',3),(37,'del','图片新闻',NULL,1,'2014-12-24 10:49:21',3),(38,'del','视频',NULL,1,'2014-11-18 00:09:07',5),(39,'edit','视频',NULL,1,'2014-11-18 00:09:07',5),(40,'add','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(41,'edit','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(42,'del','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(43,'list','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(44,'add','党政建设',NULL,1,'2014-12-27 23:38:50',11),(45,'del','党政建设',NULL,1,'2014-12-27 23:38:50',11),(46,'edit','党政建设',NULL,1,'2014-12-27 23:38:50',11),(47,'list','党政建设',NULL,1,'2014-12-27 23:38:50',11);
+INSERT INTO `tbl_perm` VALUES (1,'list','添加轮播图',NULL,1,'2015-03-16 03:10:05',1),(2,'list','文章',NULL,1,'2015-03-16 03:18:02',3),(3,'list','校园',NULL,1,'2015-03-16 03:18:02',4),(4,'list','校园',NULL,1,'2015-03-16 03:18:02',5),(5,'add','添加校园',NULL,1,'2015-03-16 03:13:58',5),(6,'list','查看企业文化',NULL,1,'2014-12-23 22:19:37',7),(7,'edit','编辑轮播图',NULL,1,'2015-03-16 03:10:05',1),(9,'del','删除轮播图',NULL,1,'2015-03-16 03:10:05',1),(10,'add','新增轮播图',NULL,1,'2015-03-16 03:10:05',1),(11,'list','行业建设列表',NULL,1,'2014-12-23 22:51:50',8),(12,'edit','编辑行业建设',NULL,1,'2014-12-23 22:51:50',8),(13,'list','文章',NULL,1,'2015-03-16 03:18:02',2),(14,'list','服务项目列表',NULL,1,'2014-12-23 22:47:29',6),(15,'add','新增服务项目',NULL,1,'2014-12-23 22:47:29',6),(16,'edit','编辑服务项目',NULL,1,'2014-12-23 22:47:29',6),(17,'del','删除服务项目',NULL,1,'2014-12-23 22:47:29',6),(20,'list','在线咨询',NULL,1,'2014-12-24 10:08:51',9),(21,'del','在线咨询',NULL,1,'2014-12-24 10:08:51',9),(24,'edit','编辑企业文化',NULL,1,'2014-12-23 22:19:37',7),(25,'del','删除企业文化',NULL,1,'2014-12-23 22:19:37',7),(26,'add','添加文章',NULL,1,'2015-03-16 03:10:05',2),(27,'edit','编辑文章',NULL,1,'2015-03-16 03:10:05',2),(28,'del','删除文章',NULL,1,'2015-03-16 03:10:05',2),(29,'add','新增企业文化',NULL,1,'2014-12-01 21:13:34',7),(30,'add','新增行业建设',NULL,1,'2014-11-23 20:44:20',8),(31,'del','删除行业建设',NULL,1,'2014-11-23 20:44:20',8),(32,'add','添加校园',NULL,1,'2015-03-16 03:13:58',4),(33,'del','删除校园',NULL,1,'2015-03-16 03:13:58',4),(34,'edit','编辑校园',NULL,1,'2015-03-16 03:13:58',4),(35,'add','添加文章',NULL,1,'2015-03-16 03:11:34',3),(36,'edit','编辑文章',NULL,1,'2015-03-16 03:11:34',3),(37,'del','删除文章',NULL,1,'2015-03-16 03:11:34',3),(38,'del','删除校园',NULL,1,'2015-03-16 03:13:58',5),(39,'edit','编辑校园',NULL,1,'2015-03-16 03:13:58',5),(40,'add','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(41,'edit','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(42,'del','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(43,'list','公司荣誉',NULL,1,'2014-12-24 13:00:37',10),(44,'add','党政建设',NULL,1,'2014-12-27 23:38:50',11),(45,'del','党政建设',NULL,1,'2014-12-27 23:38:50',11),(46,'edit','党政建设',NULL,1,'2014-12-27 23:38:50',11),(47,'list','党政建设',NULL,1,'2014-12-27 23:38:50',11);
 /*!40000 ALTER TABLE `tbl_perm` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -293,7 +293,7 @@ CREATE TABLE `tbl_resource` (
   `rec_st` int(32) DEFAULT NULL,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -302,7 +302,7 @@ CREATE TABLE `tbl_resource` (
 
 LOCK TABLES `tbl_resource` WRITE;
 /*!40000 ALTER TABLE `tbl_resource` DISABLE KEYS */;
-INSERT INTO `tbl_resource` VALUES (1,'轮播图','slider',NULL,80,'首页管理',1,'2015-03-11 05:24:31'),(2,'详情页','plateChinese',NULL,100,'中文管理',1,'2015-03-11 05:24:31'),(3,'详情页','plateEnglish',NULL,100,'英文管理',1,'2015-03-11 05:24:31');
+INSERT INTO `tbl_resource` VALUES (1,'轮播图','slider',NULL,80,'首页管理',1,'2015-03-11 05:24:31'),(2,'文章管理','plateChinese',NULL,100,'中文管理',1,'2015-03-16 03:12:47'),(3,'文章管理','plateEnglish',NULL,100,'英文管理',1,'2015-03-16 03:12:47'),(4,'校园管理','campusChinese',NULL,100,'中文管理',1,'2015-03-16 03:12:47'),(5,'校园管理','campusEnglish',NULL,100,'英文管理',1,'2015-03-16 03:12:47');
 /*!40000 ALTER TABLE `tbl_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,4 +399,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-03-13 17:01:45
+-- Dump completed on 2015-03-16 11:20:00
