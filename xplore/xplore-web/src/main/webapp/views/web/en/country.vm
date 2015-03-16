@@ -18,7 +18,7 @@
         <div class="campus-detail-area list" style="">
             <ul class="campus-list" >
                 #foreach($campus in $campusList)
-                    <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
+                    <li><a href="$cPath/web/en/campus/$country/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
                 #end
             </ul>
         </div>
