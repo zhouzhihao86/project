@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>东晨</title>
+    <title>Xplore</title>
     #set($cPath = "#cPath")
     <link rel="stylesheet" href="$cPath/resources/css/font-awesome.min.css" type="text/css"/>
     <link href="$cPath/resources/css/jquery.datetimepicker.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 </div>
 <div id="side-bar">
     <div class="" style="margin-top: -18px;text-align: center;margin-bottom: 27px;">
-        东晨后台管理
+        Xplore后台管理
     </div>
     <ul id="main-nav" class="open-active">
         #foreach($item in $menu.entrySet())

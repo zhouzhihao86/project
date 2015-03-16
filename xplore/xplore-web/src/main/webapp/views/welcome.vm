@@ -1,7 +1,7 @@
 #set($layout = "layout/welcomeLayout.vm")
 <div class="welcome-container">
     <div id="login-card" class="card">
-        <h1>东晨后台管理</h1>
+        <h1>Xplore后台管理</h1>
 
         <form action="login" method="post" id="login-form">
             <input type="text" class="login-username" name="username" placeholder="用户名"/>
@@ -13,12 +13,12 @@
     </div>
     <div class="footer">
         <div class="footer-wrapper">
-            <p class="company">东晨市容清洁服务有限公司</p>
+            <p class="company">Xplore</p>
 
             <p class="copyright">
                 <span style="margin-right:20px;">关于</span>
                 <span style="margin-right:20px;">联系我们</span>
-                <span>版权所有2009-2014</span>
+                <span>版权所有2009-2015</span>
             </p>
         </div>
     </div>
