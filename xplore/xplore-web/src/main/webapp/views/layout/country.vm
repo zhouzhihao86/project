@@ -1,7 +1,7 @@
 <div class="banner-img" style="margin-top:25px;position: relative">
     <img src="$cPath/resources/img/xuanzeback.png">
-    <a href="$cPath/web/$lan/campus/britain"><img class="country-pin" src="$cPath/resources/img/UK.png" style="left:30px;"></a>
-    <a href="$cPath/web/$lan/campus/america"><img class="country-pin" src="$cPath/resources/img/US.png" style="left:200px;"></a>
-    <a href="$cPath/web/$lan/campus/germany"><img class="country-pin" src="$cPath/resources/img/DG.png" style="left:370px;"></a>
-    <a href="$cPath/web/$lan/campus/china"><img class="country-pin" src="$cPath/resources/img/CA.png" style="left:546px;"></a>
+    <a href="$cPath/web/$lan/campus/britain"><img class="country-pin" src="$cPath/resources/img/england.png" style="left:60px;"></a>
+    <a href="$cPath/web/$lan/campus/america"><img class="country-pin" src="$cPath/resources/img/america.png" style="left:294px;"></a>
+##    <a href="$cPath/web/$lan/campus/germany"><img class="country-pin" src="$cPath/resources/img/DG.png" style="left:370px;"></a>
+    <a href="$cPath/web/$lan/campus/china"><img class="country-pin" src="$cPath/resources/img/china.png" style="left:516px;"></a>
 </div>

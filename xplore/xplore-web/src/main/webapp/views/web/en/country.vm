@@ -8,9 +8,9 @@
 </style>
 <div class="content en">
     <div class="campus detail">
-        <div class="banner" style="background-image:url($cPath/resources/img/T-UK.png);">
+        <div class="banner" style="background-image:url($cPath/resources/img/T-${country}.png);">
             <span style="margin-right:10px;">$countryName</span>
-            <img src="$cPath/resources/img/UK.png" style="position:absolute;left:-14px;bottom:-30px;">
+            <img src="$cPath/resources/img/${country}.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">
             <img src="$cPath/resources/img/tu2.jpg">
@@ -30,6 +30,8 @@
 <script>
 
     $(document).ready(function () {
-
+        #if($country != "england")
+            $(".campus-list:even").css("margin-right","15px");
+        #end
     });
 </script>

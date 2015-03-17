@@ -1,7 +1,7 @@
 <div style="float:left;width:100%;"><img style="float:right;margin-bottom:15px;" src="$cPath/resources/img/${country}Ditu.png"></div>
 
-#if($campusList.size() > 0)
 
+#if($campusList.size() > 0)
 
     #set($max = $campusList.size() - 1)
 
@@ -22,11 +22,10 @@
 
     <ul class="campus-list" style="float:left;width:332px;margin-bottom:40px;border-top:1px solid #C71041;">
         #foreach($i in [$start .. $end])
-            <li style="width:327px;"><a
-                    href="$cPath/web/$lan/campus/england/$campusList.get($i).getId()">$campusList.get($i).getTitle()<i
-                    class="line" style="width:332px;"></i></a></li>
+            <li style="width:327px;"><a href="$cPath/web/$lan/campus/england/$campusList.get($i).getId()">$campusList.get($i).getTitle()<i class="line" style="width:332px;"></i></a></li>
         #end
     </ul>
 
     #end
+
 #end

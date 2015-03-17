@@ -1,4 +1,4 @@
-<ul class="campus-list" style="float:left;width:50%;" >
+<ul class="campus-list" style="float:left;width:341px;" >
     #foreach($campus in $campusList)
         <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
     #end
