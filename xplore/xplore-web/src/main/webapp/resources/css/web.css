@@ -441,7 +441,7 @@ a {
     width: 682px;
     margin-top: 10px;
     min-height:250px;
-    background:url(../img/xditu.jpg) no-repeat right;
+    /*background:url(../img/xditu.jpg) no-repeat right;*/
 }
 
 .campus-list{

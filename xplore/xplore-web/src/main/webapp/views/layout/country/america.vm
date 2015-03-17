@@ -1,0 +1,26 @@
+<div style="float:left;width:100%;"><img style="float:right" src="$cPath/resources/img/CAditu.png"></div>
+
+#set($max = $campusList.size() - 1)
+
+#set($qty = $campusList.size()/10)
+
+#set($remain = $campusList.size()%10)
+
+#foreach($i in [0 .. $qty])
+
+    #set($start = $i*10)
+    #set($cur = $velocityCount - 1)
+
+    #if($i == $qty)
+        #set($end = $remain + $start - 1)
+    #else
+        #set($end = $start + 10 - 1)
+    #end
+
+<ul class="campus-list" style="float:left;width:50%;margin-bottom:40px;">
+    #foreach($i in [$start .. $end])
+        <li><a href="$cPath/web/en/campus/england/$campusList.get($i).getId()">$campusList.get($i).getTitle()<i class="line"></i></a></li>
+    #end
+</ul>
+
+#end

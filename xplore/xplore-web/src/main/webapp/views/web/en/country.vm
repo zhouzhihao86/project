@@ -16,11 +16,8 @@
             <img src="$cPath/resources/img/tu2.jpg">
         </div>
         <div class="campus-detail-area list" style="">
-            <ul class="campus-list" >
-                #foreach($campus in $campusList)
-                    <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
-                #end
-            </ul>
+            #set($fileName = $country + ".vm")
+            #parse("/layout/country/$fileName")
         </div>
         #parse("/layout/country.vm")
     </div>
