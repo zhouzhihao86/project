@@ -76,4 +76,10 @@ public class PlateService {
 
 		return menuDao.get(plateId);
     }
+
+	public List<Menu> getAllMenu() {
+
+		return menuDao.getAll();
+
+	}
 }

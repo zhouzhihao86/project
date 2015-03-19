@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -100,5 +101,42 @@ public class IndexController extends BaseController {
         model.addAttribute("detail", detail);
 
         return getVm("campusDetail", lan);
+    }
+
+    @RequestMapping(value = "slider/{id}", method = RequestMethod.GET)
+    public String slider(@PathVariable Integer id, @PathVariable String lan, Model model) {
+
+        boolean useChineseFlags = isChinese(lan);
+
+        List<Menu> menuList = plateService.getAllMenu();
+
+        // 7 3 4 5 6
+        List<Menu> obj = new ArrayList<Menu>();
+
+        obj.add(menuList.get(menuList.size() - 1));
+
+        Menu current = null;
+
+        for(Menu menu : menuList){
+
+            if(id == menu.getId()){
+                current = menu;
+
+            }
+
+            if(menu.getId() == 1 || menu.getId() == 2 || menu.getId() == 7) continue;
+
+            obj.add(menu);
+
+        }
+
+        model.addAttribute("current", current);
+
+        // sliderService to get Pics;
+
+
+        model.addAttribute("menus", obj);
+
+        return getVm("slider", lan);
     }
 }
