@@ -8,19 +8,16 @@
 </style>
 <div class="content cn">
     <div class="campus detail">
-        <div class="banner" style="background-image:url($cPath/resources/img/T-england.png);">
+        <div class="banner" style="background-image:url($cPath/resources/img/T-${country}.png);">
             <span style="margin-right:10px;">$countryName</span>
-            <img src="$cPath/resources/img/england.png" style="position:absolute;left:-14px;bottom:-30px;">
+            <img src="$cPath/resources/img/${country}.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">
             <img src="$cPath/resources/img/tu2.jpg">
         </div>
-        <div class="campus-detail-area list $counrty" style="">
-            <ul class="campus-list" >
-                #foreach($campus in $campusList)
-                    <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
-                #end
-            </ul>
+        <div class="campus-detail-area list" style="">
+            #set($fileName = $country + ".vm")
+            #parse("/layout/country/$fileName")
         </div>
         #parse("/layout/country.vm")
     </div>
@@ -33,6 +30,8 @@
 <script>
 
     $(document).ready(function () {
-
+        #if($country != "england")
+            $(".campus-list:even").css("margin-right","15px");
+        #end
     });
 </script>

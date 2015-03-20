@@ -13,11 +13,11 @@
     <div class="index-top">
         <div class="img-area" style="height:366px;">
             <ul class="bxslider">
-                <li><img src="$cPath/resources/img/index-1.jpg"></li>
-                <li><img src="$cPath/resources/img/index-1.jpg"></li>
-                <li><img src="$cPath/resources/img/index-1.jpg"></li>
-                <li><img src="$cPath/resources/img/index-1.jpg"></li>
-                <li><img src="$cPath/resources/img/index-1.jpg"></li>
+                <li><a href="$cPath/web/$lan/slider/7"><img src="$cPath/resources/img/G1.jpg"></a></li>
+                <li><a href="$cPath/web/$lan/slider/3"><img src="$cPath/resources/img/G2.jpg"></a></li>
+                <li><a href="$cPath/web/$lan/slider/4"><img src="$cPath/resources/img/G3.jpg"></a></li>
+                <li><a href="$cPath/web/$lan/slider/5"><img src="$cPath/resources/img/G4.jpg"></a></li>
+                <li><a href="$cPath/web/$lan/slider/6"><img src="$cPath/resources/img/G5.jpg"></a></li>
             </ul>
             <div class="bx-pager">
                 <a data-slide-index="0" href=""><span>语言和活动营</span></a>
@@ -51,13 +51,13 @@
             <div class="block-img-area" data-ref="0" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">常规全年活动</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
+                <img src="$cPath/resources/img/H1.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
             <div class="block-img-area" data-ref="2" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">量身定制</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
+                <img src="$cPath/resources/img/H3.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
         </div>
@@ -65,13 +65,13 @@
             <div class="block-img-area" data-ref="1" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">夏令营</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
+                <img src="$cPath/resources/img/H2.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
             <div class="block-img-area" data-ref="4" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">代理专区</span>
-                <img src="$cPath/resources/img/index-small-3.jpg">
+                <img src="$cPath/resources/img/H4.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
         </div>
@@ -79,7 +79,7 @@
             <div class="block-img-area big" data-ref="3">
                 <div class="title"></div>
                 <span class="name">MY CHOICE 中学</span>
-                <img src="$cPath/resources/img/index-bottom-right.jpg">
+                <img src="$cPath/resources/img/H5.jpg">
                 <div class="overlay hide"><div class="overlay-content" style="width:253px;height:317px;"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore “MyChoice” represents our high school division, offering global partners long-term study placements for students wishing to study in England and the USA (F1). Our dedicated in-house guardianship teams provide first-rate service ensuring the very best educational and cultural study experiences.</span></div></div>
             </div>
         </div>

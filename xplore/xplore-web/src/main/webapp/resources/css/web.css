@@ -47,6 +47,13 @@ img{border:none}
     border-right:1px solid #FFFFFF;
 }
 
+#header .menu .menu-item{
+    padding:0 20px;
+    font-size:12px;
+    font-weight:700;
+}
+
+
 #header .menu .menu-item:last-child {
     border-right:none
 }

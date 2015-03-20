@@ -6,6 +6,6 @@
 <a href="$cPath/web/$lan/bookingOnline"><p class="block-item">Agents Zone</p></a>
 
 <p class="block-title" style="margin-top:10px">About Xplore</p>
-#foreach($plate in $plateRecent7)
+#foreach($plate in $plateRecent6)
 <a href="$cPath/web/en/articles/$plate.getId()"><p class="block-item">$plate.getTitle()</p></a>
 #end

@@ -23,11 +23,16 @@
 </head>
 <body>
 <style>
-
+    #header .menu .menu-item{
+        padding:0 20px;
+        font-size:12px;
+        font-weight:700;
+    }
 </style>
 <div id="header">
     <div class="header-top">
         <div class="header-wrapper">
+            <img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px">
             <div style="position:absolute;right:0;top:20px;">
                 <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">choose a language</span>
                 <a href="$cPath/web/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
@@ -65,7 +70,7 @@
                             </div>
                         </div>
                         <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/index-small-3.jpg">
+                            <img src="$cPath/resources/img/H1.jpg">
                         </div>
                     </div>
                 </div>
@@ -87,7 +92,7 @@
                             </div>
                         </div>
                         <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/index-small-3.jpg">
+                            <img src="$cPath/resources/img/H2.jpg">
                         </div>
                     </div>
                 </div>
@@ -111,7 +116,7 @@
                             </div>
                         </div>
                         <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/index-small-3.jpg">
+                            <img src="$cPath/resources/img/H3.jpg">
                         </div>
                     </div>
                 </div>
@@ -135,7 +140,7 @@
                             </div>
                         </div>
                         <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/index-small-3.jpg">
+                            <img src="$cPath/resources/img/H5x.jpg">
                         </div>
                     </div>
                 </div>
@@ -157,7 +162,7 @@
                             </div>
                         </div>
                         <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/index-small-3.jpg">
+                            <img src="$cPath/resources/img/H4.jpg">
                         </div>
                     </div>
                 </div>
