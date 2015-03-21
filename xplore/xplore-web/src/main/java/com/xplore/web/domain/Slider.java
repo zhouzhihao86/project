@@ -1,8 +1,5 @@
 package com.xplore.web.domain;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-import javax.annotation.Generated;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -21,10 +18,10 @@ public class Slider {
     private Integer plateId;
 
     @Column(name = "big_url")
-    private String bigUrl;
+    private String bigImg;
 
     @Column(name = "small_url")
-    private String smallUrl;
+    private String smallImg;
 
     @Column(name = "brief_cn")
     private String briefChinese;
@@ -56,20 +53,20 @@ public class Slider {
         this.plateId = plateId;
     }
 
-    public String getBigUrl() {
-        return bigUrl;
+    public String getBigImg() {
+        return bigImg;
     }
 
-    public void setBigUrl(String bigUrl) {
-        this.bigUrl = bigUrl;
+    public void setBigImg(String bigImg) {
+        this.bigImg = bigImg;
     }
 
-    public String getSmallUrl() {
-        return smallUrl;
+    public String getSmallImg() {
+        return smallImg;
     }
 
-    public void setSmallUrl(String smallUrl) {
-        this.smallUrl = smallUrl;
+    public void setSmallImg(String smallImg) {
+        this.smallImg = smallImg;
     }
 
     public String getBriefChinese() {

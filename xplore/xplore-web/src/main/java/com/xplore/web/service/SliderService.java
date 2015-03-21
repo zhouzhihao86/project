@@ -17,6 +17,10 @@ public class SliderService {
     @Autowired
     SliderDao sliderDao;
 
+    public Slider getById(Integer id){
+
+        return sliderDao.get(id);
+    }
 
     public Page<Slider> pagedList(Page<Slider> page, boolean b) {
 
@@ -29,5 +33,10 @@ public class SliderService {
     public void save(Slider slider) {
 
         sliderDao.save(slider);
+    }
+
+    public void del(Integer id) {
+
+        sliderDao.delete(id);
     }
 }

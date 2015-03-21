@@ -1,0 +1,41 @@
+<div id="content-header">
+    <h1>$currentResource.getName()</h1>
+</div>
+<style>
+
+</style>
+<div id="operation-container">
+
+    <a href="./list"><span class="oper-btn add">返回列表页</span></a>
+
+</div>
+
+<div id="content-container">
+
+    <form action="add" enctype="multipart/form-data" method="post">
+        <p>中文摘要</p>
+        <input type="text" placeholder="中文摘要" name="briefChinese" style="width:98%">
+        <p>英文摘要</p>
+        <input type="text" placeholder="英文摘要" name="briefEnglish" style="width:98%">
+        <p>权重</p>
+        <input type="text" placeholder="权重" name="weight">
+        <p>所属菜单</p>
+        <select name="plateId">
+            <option value=""></option>
+            #foreach($a in $menuList)
+                <option value="$a.getId()">
+                    $a.getCnName() : $a.getEnName()
+                </option>
+            #end
+        </select>
+        <p>上传大图</p>
+        <p><input type="file" name="upload_bigImg" /></p>
+        <p>上传小图</p>
+        <p><input type="file" name="upload_smallImg" /></p>
+        <button class="submit-bottom">提交</button>
+
+    </form>
+
+</div>
+#parse('layout/script.vm')
+<script type="text/javascript" src="$cPath/resources/js/admin.js"></script>
