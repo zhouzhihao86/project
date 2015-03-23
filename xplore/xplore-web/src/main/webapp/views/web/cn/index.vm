@@ -14,11 +14,11 @@
     <div class="index-top">
         <div class="img-area" style="height:366px;">
             <ul class="bxslider">
-                <li><a href="$cPath/web/$lan/slider/7"><img src="$cPath/resources/img/G1.jpg"></a></li>
-                <li><a href="$cPath/web/$lan/slider/3"><img src="$cPath/resources/img/G2.jpg"></a></li>
-                <li><a href="$cPath/web/$lan/slider/4"><img src="$cPath/resources/img/G3.jpg"></a></li>
-                <li><a href="$cPath/web/$lan/slider/5"><img src="$cPath/resources/img/G4.jpg"></a></li>
-                <li><a href="$cPath/web/$lan/slider/6"><img src="$cPath/resources/img/G5.jpg"></a></li>
+                #foreach($s in $mainSlider)
+
+                    <li><a href="$cPath/web/$lan/slider/$s.getPlateId()"><img src="$s.getBigImg()" style="width:686px;height:366px;"></a></li>
+
+                #end
             </ul>
             <div class="bx-pager">
                 <a data-slide-index="0" href=""><span>语言和活动营</span></a>
