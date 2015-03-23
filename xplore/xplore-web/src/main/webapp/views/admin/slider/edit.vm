@@ -13,16 +13,16 @@
 <div id="content-container">
     <form action="edit" enctype="multipart/form-data" method="post">
         <p>中文摘要</p>
-        <input type="text" placeholder="中文摘要" name="briefChinese" style="width:98%" value="$!slider.getBriefChinese()">
+        <input type="text" placeholder="中文摘要" name="briefChinese" style="width:98%" value="$!domain.getBriefChinese()">
         <p>英文摘要</p>
-        <input type="text" placeholder="英文摘要" name="briefEnglish" style="width:98%" value="$!slider.getBriefEnglish()">
+        <input type="text" placeholder="英文摘要" name="briefEnglish" style="width:98%" value="$!domain.getBriefEnglish()">
         <p>权重</p>
-        <input type="text" placeholder="权重" name="weight" value="$!slider.getWeight()">
+        <input type="text" placeholder="权重" name="weight" value="$!domain.getWeight()">
         <p>所属菜单</p>
         <select name="plateId">
             <option value=""></option>
             #foreach($a in $menuList)
-                #if("$a.getId()" == "$!slider.getPlateId()")
+                #if("$a.getId()" == "$!domain.getPlateId()")
                     <option selected="selected" value="$a.getId()">$a.getCnName() : $a.getEnName()</option>
                 #else
                     <option value="$a.getId()">$a.getCnName() : $a.getEnName()</option>
@@ -30,17 +30,17 @@
             #end
         </select>
         <p>上传大图</p>
-        <input type="hidden"  name="bigImg" value="$!slider.getBigImg()">
+        <input type="hidden"  name="bigImg" value="$!domain.getBigImg()">
         <p><input type="file" name="upload_bigImg" />
-            <img src="$!slider.getBigImg()" style="max-width:20%;max-height:20%;">
+            <img src="$!domain.getBigImg()" style="max-width:20%;max-height:20%;">
         </p>
 
         <p>上传小图</p>
-        <input type="hidden"  name="smallImg" value="$!slider.getSmallImg()">
+        <input type="hidden"  name="smallImg" value="$!domain.getSmallImg()">
         <p><input type="file" name="upload_smallImg" />
-            <img src="$!slider.getSmallImg()" style="max-width:20%;max-height:20%;">
+            <img src="$!domain.getSmallImg()" style="max-width:20%;max-height:20%;">
         </p>
-        <input type="hidden"  name="id" value="$!slider.getId()">
+        <input type="hidden"  name="id" value="$!domain.getId()">
         <button class="submit-bottom">提交</button>
 
     </form>
