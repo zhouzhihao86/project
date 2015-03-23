@@ -1,6 +1,5 @@
 #set($layout="layout/web-default.vm")
 #set($cPath = "#cPath")
-<link href='$cPath/resources/css/slider/css.css' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="$cPath/resources/css/slider/base/advanced-slider-base.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="$cPath/resources/css/slider/glossy-square/gray/glossy-square-gray.css" media="screen"/>
