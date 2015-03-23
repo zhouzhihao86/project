@@ -1,5 +1,6 @@
 #set($layout="layout/web-default-en.vm")
 #set($cPath = "#cPath")
+<link href='$cPath/resources/css/slider/css.css' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="$cPath/resources/css/slider/base/advanced-slider-base.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="$cPath/resources/css/slider/glossy-square/gray/glossy-square-gray.css" media="screen"/>
@@ -26,14 +27,62 @@ body{
             <div class="advanced-slider" id="responsive-slider" style="margin-top:66px;">
                 <ul class="slides">
 
-                    #foreach($slider in $sliders)
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image1.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb1.jpg" alt="Slide 1"/>
+                    </li>
 
-                        <li class="slide">
-                            <img class="image" src="$slider.getBigImg()" alt=""/>
-                            <img class="thumbnail" src="$slider.getSmallImg()" alt="Slide 1"/>
-                        </li>
+                    <li class="slide rounded-caption">
+                        <img class="image" src="$cPath/resources/img/slider/image2.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb2.jpg" alt="Slide 2"/>
 
-                    #end
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image3.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb3.jpg" alt="Slide 3"/>
+
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image4.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb4.jpg" alt="Slide 4"/>
+
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image5.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb5.jpg" alt="Slide 5"/>
+
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image6.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb6.jpg" alt="Slide 6"/>
+
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image7.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb7.jpg" alt="Slide 7"/>
+                    </li>
+
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image8.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb8.jpg" alt="Slide 8"/>
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image9.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb9.jpg" alt="Slide 9"/>
+
+                    </li>
+
+                    <li class="slide">
+                        <img class="image" src="$cPath/resources/img/slider/image10.jpg" alt=""/>
+                        <img class="thumbnail" src="$cPath/resources/img/slider/thumbnails/thumb10.jpg" alt="Slide 10"/>
+                    </li>
 
                 </ul>
             </div>

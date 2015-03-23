@@ -1,13 +1,11 @@
 $(document).ready(function () {
 
-    if($(".bxslider").length == 1){
-        $('.bxslider').bxSlider({
-            pagerCustom: '.bx-pager',
-            pager:true,
-            controls:false,
-            auto:true
-        });
-    }
+    $('.bxslider').bxSlider({
+        pagerCustom: '.bx-pager',
+        pager:true,
+        controls:false,
+        auto:true
+    });
 
 
 

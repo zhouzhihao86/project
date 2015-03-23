@@ -4,10 +4,6 @@ import com.xplore.web.constants.enums.Country;
 import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
-import com.xplore.web.domain.Slider;
-import com.xplore.web.service.SliderService;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,19 +19,11 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "web/{lan}")
-public class IndexController extends BaseController implements InitializingBean{
+public class IndexController extends BaseController {
 
-    @Autowired
-    SliderService sliderService;
-
-    private static List<Integer> currentSliderIds = new ArrayList<Integer>();
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String welcome(@PathVariable String lan, HttpServletRequest request, Model model) {
-
-        List<Slider> mainSlider = sliderService.getFirstImgForEachSlider(currentSliderIds);
-
-        model.addAttribute("mainSlider", mainSlider);
 
         return getVm("index", lan);
     }
@@ -145,24 +133,10 @@ public class IndexController extends BaseController implements InitializingBean{
         model.addAttribute("current", current);
 
         // sliderService to get Pics;
-        List<Slider> sliders = sliderService.getByMenuId(current.getId());
 
-        model.addAttribute("sliders", sliders);
 
         model.addAttribute("menus", obj);
 
         return getVm("slider", lan);
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-
-        currentSliderIds.add(7);
-        currentSliderIds.add(3);
-        currentSliderIds.add(4);
-        currentSliderIds.add(5);
-        currentSliderIds.add(6);
-
-
     }
 }

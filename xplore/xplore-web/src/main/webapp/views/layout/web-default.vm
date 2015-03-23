@@ -222,6 +222,7 @@
     <div class="copyright">This site and all contents are copyright @ 2014 Xplore</div>
 </div>
 </body>
+<script type="text/javascript" src="$cPath/resources/js/common/jquery.bxslider.min.js"></script>
 <script>
 
     $(document).ready(function () {
