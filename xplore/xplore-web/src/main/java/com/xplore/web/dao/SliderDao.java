@@ -46,4 +46,5 @@ public class SliderDao extends HibernateBaseDao<Slider, Serializable>{
         criteria.addOrder(Order.desc("weight"));
         return criteria.list();
     }
+
 }

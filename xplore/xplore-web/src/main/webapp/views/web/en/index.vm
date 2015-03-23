@@ -1,5 +1,6 @@
 #set($layout="layout/web-default-en.vm")
 #set($cPath = "#cPath")
+<script type="text/javascript" src="$cPath/resources/js/common/jquery.bxslider.min.js"></script>
 <style>
 
 </style>
@@ -13,6 +14,11 @@
                 <li><a href="$cPath/web/$lan/slider/4"><img src="$cPath/resources/img/G3.jpg"></a></li>
                 <li><a href="$cPath/web/$lan/slider/5"><img src="$cPath/resources/img/G4.jpg"></a></li>
                 <li><a href="$cPath/web/$lan/slider/6"><img src="$cPath/resources/img/G5.jpg"></a></li>
+                #foreach($s in $mainSlider)
+
+                    <li><a href="$cPath/web/$lan/slider/$s.getPlateId()"><img src="$s.getBigImg()" style="width:686px;height:366px;"></a></li>
+
+                #end
             </ul>
             <div class="bx-pager">
                 <a data-slide-index="0" href=""><span style="display:block;line-height:14px;margin-top:13px;">Language &</br> Activity Camps</span></a>
