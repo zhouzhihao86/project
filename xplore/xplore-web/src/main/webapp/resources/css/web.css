@@ -329,7 +329,7 @@ a {
 }
 .detail-nav .detail-nav-item{
     float:left;
-    word-wrap:break-word;overflow:hidden;
+    white-space: nowrap;
     text-align:center;
     line-height:40px;
     margin-top:25px;
@@ -339,10 +339,18 @@ a {
 }
 .detail-nav-item a{
     border-right:1px solid #111111;
-    padding:0 20px;
+    padding:0;
     color:#666666;
 }
+.temp.detail-nav .detail-nav-item{
+    border-top:1px solid #E5E5E5;
+    border-bottom:1px solid #E5E5E5;
+}
 
+.temp.detail-nav .detail-nav-item a{
+    color:#E5E5E5;
+    border-right:#E5E5E5;
+}
 
 .banner{
     width:100%;

@@ -15,9 +15,9 @@
 
 
 <style>
-body{
-    background-color:#FFFFFF
-}
+    body{
+        background-color:#FFFFFF
+    }
 </style>
 <div class="content en">
     <div class="detail">
@@ -37,7 +37,7 @@ body{
 
                 </ul>
             </div>
-            <div class="detail-nav">
+            <div class="temp detail-nav">
                 #foreach($a in $menus)
                     <span class="detail-nav-item"><a href="$cPath/web/${lan}/slider/$a.getId()">$a.getEnName()</a></span>
                 #end

@@ -53,7 +53,7 @@ public class IndexController extends BaseController implements InitializingBean{
 
             PlateChinese plateChinese = (PlateChinese) plate;
 
-            model.addAttribute("current", model.asMap().get("plateRecent" + plateChinese.getPlateId()));
+            model.addAttribute("current", plateService.getPlate(plateChinese.getPlateId(), useChineseFlags));
 
             menu = plateService.getMenuByPlateId(plateChinese.getPlateId());
 
@@ -61,7 +61,7 @@ public class IndexController extends BaseController implements InitializingBean{
 
             PlateEnglish plateEnglish = (PlateEnglish) plate;
 
-            model.addAttribute("current", model.asMap().get("plateRecent" + plateEnglish.getPlateId()));
+            model.addAttribute("current", plateService.getPlate(plateEnglish.getPlateId(), useChineseFlags));
 
             menu = plateService.getMenuByPlateId(plateEnglish.getPlateId());
 
