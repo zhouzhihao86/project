@@ -24,7 +24,7 @@
 <body>
 <style>
     #header .menu .menu-item{
-        padding:0 20px;
+        padding:0 15px;
         font-size:12px;
         font-weight:700;
     }
@@ -32,7 +32,7 @@
 <div id="header">
     <div class="header-top">
         <div class="header-wrapper">
-            <img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px">
+            <a href="$cPath/web/cn"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
             <div style="position:absolute;right:0;top:20px;">
                 <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">choose a language</span>
                 <a href="$cPath/web/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
@@ -56,7 +56,6 @@
             <li class="menu-item">
                 <a href="javascript:void(0)">ALL YEAR ROUND GROUPS</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent1)
@@ -64,21 +63,17 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H1.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H1.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0)">SUMMER CAMPS</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent2)
@@ -86,15 +81,12 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H2.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H2.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item" style="height:54px;line-height:15px;padding-top:13px;">
@@ -102,7 +94,6 @@
                 TAILOR MADE EDUCATION</br>
                 PACKAGES FOR GROUPS</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent3)
@@ -110,15 +101,12 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 At Xplore we pride ourselves in our flexible and dedicated group travel service, creating and inspiring opportunities for young people to discover, learn and share. Using our knowledge and experience we work alongside clients to design itineraries suited to their specific requirements. From schools looking for class based education and culture tours to agents requiring a variety of travel packages, the Xplore group travel team is here to help provide the ultimate travel, cultural and learning experience!
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H3.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H3.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item" style="">
@@ -126,7 +114,6 @@
                     MY CHOICE HIGH SCHOLL PROGRAMS
                 </a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 <li class="article" data-target=""><a href="$cPath/web/en/campus/england">England</a></li>
@@ -134,21 +121,17 @@
                                 <li class="article" data-target=""><a href="$cPath/web/en/campus/china">China</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore “MyChoice” represents our high school division, offering global partners long-term study placements for students wishing to study in England and the USA (F1). Our dedicated in-house guardianship teams provide first-rate service ensuring the very best educational and cultural study experiences.
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H5.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H5x.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0)">AGENTS ZONE</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent4)
@@ -156,15 +139,12 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 At Xplore we are always looking to expand and develop new programmes and are keen to build new partnerships within our industry. We hope this brochure inspires you to get in contact with us as we would very much like to hear from you to discuss either one of our existing programmes or indeed something new!
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H4.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H4.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
         </ul>
@@ -181,8 +161,8 @@
                 <a target="new" href="javascript:void(0)">12 Bury Street</a>
                 <a target="new" href="javascript:void(0)">Stowmarket</a>
                 <a target="new" href="javascript:void(0)">Suffolk, IP14 1HA</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+44 (0) 1449742700</p>
             </div>
@@ -192,8 +172,8 @@
                 <a target="new" href="javascript:void(0)">22761, Hamburg</a>
                 <a target="new" href="javascript:void(0)">Germany</a>
                 <a target="new" href="javascript:void(0)"></a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+49 (0) 40 429 336 00</p>
             </div>
@@ -206,7 +186,7 @@
                 <a target="new" href="javascript:void(0)">Suite 204,</a>
                 <a target="new" href="javascript:void(0)">Asheville, NC 28803,</a>
                 <a target="new" href="javascript:void(0)">United States</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+1 (828) 651 8502</p>
             </div>
@@ -228,6 +208,20 @@
 <script>
 
     $(document).ready(function () {
+
+        $(".dropdown-menu").each(function(){
+
+            var height = $(this).height();
+
+            if(height < 139){
+                height = 139;
+            }
+
+            $(this).find(".dropdown-menu-right").height(height);
+
+
+        })
+
 
         $(".menu .menu-item").hover(function () {
             $(this).find(".dropdown-menu").toggleClass("hide");

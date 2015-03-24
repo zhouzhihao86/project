@@ -4,7 +4,7 @@
 <style>
     *{font-weight:700}
     .bx-pager a, .index-bottom .block-img-area .name{
-        font-size:14px;
+        font-size:12px;
         top:15px;
     }
 
@@ -13,6 +13,7 @@
 
     <div class="index-top">
         <div class="img-area" style="height:366px;">
+            <div style="position:absolute;top:0;left:25px;z-index:10"><img src="$cPath/resources/img/tubiaocn.png"></div>
             <ul class="bxslider">
                 #foreach($s in $mainSlider)
 
@@ -32,10 +33,10 @@
             <p class="block-title" style="border-bottom:none">尊敬的家长朋友：</p>
 
             <p style="word-wrap:break-word;overflow:hidden;font-size:12px;">
-                欢迎光临Xplore，我们在青少年旅行方面拥有丰富的经验，并致力于为青少年在安全、愉快的环境中提供精彩有趣且充满互动的语言学习活动。</br>
+                欢迎光临Xplore，我们在青少年旅行方面拥有丰富的经验，并致力于为青少年在安全、愉快的环境中提供精彩有趣且充满互动的语言学习活动。</br></br>
 
-                我们的目标是为学生提供一个令人兴奋且多样化的语言学习体验，将来自各国的学生融入小班学习，同时为他们提供一流的支持和关怀。在我们的营地中学习英语，学生们会完全沉浸于周围的文化和历史氛围中，与当地学生一起尽享丰富多彩的团队活动。这种结合了运动课程、精彩的晚间娱乐节目、名胜古迹游览以及学校访问的行程，让英语变得更加生动，创造一种独特的方式去体会语言的美妙。</br></br>
-                我们期待在不久的将来，您小朋友的光临！</br>
+                我们的目标是为学生提供一个令人兴奋且多样化的语言学习体验，将来自各国的学生融入小班学习，同时为他们提供一流的支持和关怀。在我们的营地中学习英语，学生们会完全沉浸于周围的文化和历史氛围中，与当地学生一起尽享丰富多彩的团队活动，创造一种独特的方式去体会语言的美妙。</br></br>
+                在不久的将来，期待您小朋友的光临！</br>
 
                 致以最美好的祝愿，</br>
                 <span style="float:right;">Xplore团队</span>
@@ -52,13 +53,13 @@
             <div class="block-img-area" data-ref="0" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">常规全年活动</span>
-                <img src="$cPath/resources/img/H1.jpg">
+                <img src="$cPath/resources/img/b1.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
             <div class="block-img-area" data-ref="2" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">量身定制</span>
-                <img src="$cPath/resources/img/H3.jpg">
+                <img src="$cPath/resources/img/b3.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
         </div>
@@ -66,13 +67,13 @@
             <div class="block-img-area" data-ref="1" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">夏令营</span>
-                <img src="$cPath/resources/img/H2.jpg">
+                <img src="$cPath/resources/img/b2.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
             <div class="block-img-area" data-ref="4" style="margin-bottom:10px;">
                 <div class="title"></div>
                 <span class="name">代理专区</span>
-                <img src="$cPath/resources/img/H4.jpg">
+                <img src="$cPath/resources/img/b4.jpg">
                 <div class="overlay hide"><div class="overlay-content"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>2343232423</span></div></div>
             </div>
         </div>
@@ -80,7 +81,7 @@
             <div class="block-img-area big" data-ref="3">
                 <div class="title"></div>
                 <span class="name">MY CHOICE 中学</span>
-                <img src="$cPath/resources/img/H5.jpg">
+                <img src="$cPath/resources/img/b5.jpg">
                 <div class="overlay hide"><div class="overlay-content" style="width:253px;height:317px;"><div style="position:absolute;right:10px;bottom:4px;color:#FFFFFF">more></div><span>Xplore “MyChoice” represents our high school division, offering global partners long-term study placements for students wishing to study in England and the USA (F1). Our dedicated in-house guardianship teams provide first-rate service ensuring the very best educational and cultural study experiences.</span></div></div>
             </div>
         </div>

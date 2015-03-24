@@ -30,7 +30,7 @@
 <div id="header">
     <div class="header-top">
         <div class="header-wrapper">
-            <img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px">
+            <a href="$cPath/web/cn"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
             <div style="position:absolute;right:0;top:20px;">
                 <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">选择一种语言</span>
                 <a href="$cPath/web/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
@@ -38,8 +38,7 @@
             </div>
             <div style="position:absolute;right:0;bottom:10px;">
                 <span style="float:left;font-size:14px;color:#838486;margin-top:1px;font-weight:700">+44 (0)1449 742700</span>
-                <img src="$cPath/resources/img/SJ1.png" style="margin-left:10px;">
-                <img src="$cPath/resources/img/SJ2.png" style="margin-left:10px;">
+                <img src="$cPath/resources/img/SJ4.png" style="margin-left:10px;">
                 <img src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
             </div>
 
@@ -54,7 +53,6 @@
             <li class="menu-item">
                 <a href="javascript:void(0)">常规全年活动</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent1)
@@ -62,21 +60,17 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
-                            <div class="menu-absract" style="">
+                        <div style="" class="dropdown-menu-right">
+                            <div class="menu-absract">
                                 Xplore语言营为6至18岁间的学生提供语言，活动和文化项目。”国际性融合”的营队专为全球学生设计，提供加强学习和文化交流的经验，是我们最大特色。
                             </div>
+                            <img class="dropdown-menu-img"  src="$cPath/resources/img/H1.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H1.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0)">夏令营</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent2)
@@ -84,22 +78,18 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore语言营为6至18岁间的学生提供语言，活动和文化项目。”国际性融合”的营队专为全球学生设计，提供加强学习和文化交流的经验，是我们最大特色。
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H2.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H2.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item" style="">
                 <a href="javascript:void(0)">量身定制</a>
 
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent3)
@@ -107,15 +97,12 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore素来为年轻朋友提供弹性的团体旅游服务，并创造机会让年轻朋友去探索，学习和分享。我们利用自身专业知识和经验为客户私人定制行程。无论是寻求教育和文化课程之旅的学校，还是需要多样旅游套装服务的代理，Xolore团队都愿为您提供最好的旅游，文化和学习体验。
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H3.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H3.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item" style="">
@@ -123,7 +110,6 @@
                     MY CHOICE 中学
                 </a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 <li class="article" data-target=""><a href="$cPath/web/cn/campus/england">英国</a></li>
@@ -131,21 +117,17 @@
                                 <li class="article" data-target=""><a href="$cPath/web/cn/campus/china">中国</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore“我的选择”为Xplore的高中留学项目，向全球合作伙伴提供为计划到英国和美国（F1）留学的学生的做长期学习安排。Xplore专职监护人团队将提供一流服务，保证学生获得最好的教育和文化学习体验。
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H5.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H5x.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0)">代理专区</a>
                 <div class="dropdown-menu hide">
-                    <div class="dropdown-menu-inner-wrapper">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent4)
@@ -153,15 +135,12 @@
 			                    #end
                             </ul>
                         </div>
-                        <div class="dropdown-menu-content-wrapper middle">
+                        <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
                                 Xplore致力于扩展新业务项目，并愿与新的合作伙伴建立良好的业务合作关系。希望透过这份手册让您了解Xplore并与我们联系商讨现有业务或开展新业务。
                             </div>
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H4.jpg">
                         </div>
-                        <div class="dropdown-menu-content-wrapper">
-                            <img src="$cPath/resources/img/H4.jpg">
-                        </div>
-                    </div>
                 </div>
             </li>
         </ul>
@@ -178,8 +157,8 @@
                 <a target="new" href="javascript:void(0)">12 Bury Street</a>
                 <a target="new" href="javascript:void(0)">Stowmarket</a>
                 <a target="new" href="javascript:void(0)">Suffolk, IP14 1HA</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+44 (0) 1449742700</p>
             </div>
@@ -189,8 +168,8 @@
                 <a target="new" href="javascript:void(0)">22761, Hamburg</a>
                 <a target="new" href="javascript:void(0)">Germany</a>
                 <a target="new" href="javascript:void(0)"></a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+49 (0) 40 429 336 00</p>
             </div>
@@ -203,7 +182,7 @@
                 <a target="new" href="javascript:void(0)">Suite 204,</a>
                 <a target="new" href="javascript:void(0)">Asheville, NC 28803,</a>
                 <a target="new" href="javascript:void(0)">United States</a>
-                <a target="new" href="javascript:void(0)" style="color:transparent">placeholder</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
 
                 <p class="links-name tel">T:+1 (828) 651 8502</p>
             </div>
@@ -226,7 +205,25 @@
 
     $(document).ready(function () {
 
+
+        $(".dropdown-menu").each(function(){
+
+            var height = $(this).height();
+
+            if(height < 139){
+                height = 139;
+            }
+
+            $(this).find(".dropdown-menu-right").height(height);
+
+
+        })
+
+
         $(".menu .menu-item").hover(function () {
+
+
+
             $(this).find(".dropdown-menu").toggleClass("hide");
 
         }, function () {
@@ -234,6 +231,10 @@
             $(this).find(".dropdown-menu").toggleClass("hide");
 
         })
+
+
+
+
 
 
     });

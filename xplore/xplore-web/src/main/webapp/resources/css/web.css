@@ -48,7 +48,7 @@ img{border:none}
 }
 
 #header .menu .menu-item{
-    padding:0 20px;
+    padding:0 12px;
     font-size:12px;
     font-weight:700;
 }
@@ -400,28 +400,32 @@ a {
 .dropdown-menu{
     position:absolute;
     top:171px;
-    left:0;
-    right:0;
-    z-index: 9999;
-}
-.dropdown-menu-inner-wrapper{
+    left:50%;
+    margin-left:-480px;
     width:940px;
-    margin:0 auto;
+    z-index: 9999;
     background:#E5E5E5;
-    height:178px;
     padding:10px;
+    color:#666666
 }
 .dropdown-menu-content-wrapper{
     float:left;
     position:relative;
 
 }
-.dropdown-menu-content-wrapper.middle{
-    padding:0 10px;width:504px;height:171px;
+
+.dropdown-menu .menu-absract{
+    position:absolute;width:485px;bottom:0;line-height:18px;text-align:left;color:#666666
 }
-.dropdown-menu-content-wrapper.middle .menu-absract{
-    position:absolute;bottom:0;left:10px;right:10px;line-height:23px;text-align: left;color:#666666;
+
+.dropdown-menu .dropdown-menu-right{
+    float:left;position:relative;width:740px;
 }
+.dropdown-menu .dropdown-menu-img{
+    float:left;position:absolute;bottom:0;right:0;padding:2px;
+    background:#FFFFFF;
+}
+
 .dropdown-menu-content-wrapper .article{
     float:left;
     width:100%;

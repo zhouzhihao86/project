@@ -49,9 +49,9 @@ public class PlateService {
 		int maxResults = 5;
 
 		if(useChineseFlags)
-			return plateChineseDao.getPlate(plateId, 5);
+			return plateChineseDao.getPlate(plateId, 99);
 		else
-			return plateEnglishDao.getPlate(plateId, 5);
+			return plateEnglishDao.getPlate(plateId, 99);
 	}
 
 	public void save(PlateChinese plateChinese) {
