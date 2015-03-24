@@ -44,11 +44,11 @@ public class CampusChinese {
         this.id = id;
     }
 
-    public Integer getRegionId() {
+    public Integer getCountryId() {
         return countryId;
     }
 
-    public void setRegionId(Integer regionId) {
+    public void setCountryId(Integer regionId) {
         this.countryId = regionId;
     }
 

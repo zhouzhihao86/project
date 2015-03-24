@@ -14,6 +14,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
 /**
  * Created by 琳 on 2015/3/14.
  */
@@ -50,6 +53,13 @@ public class CampusChineseController extends BaseController {
         return "admin/campus/list";
     }
 
+    @RequestMapping(value = "list", method = RequestMethod.POST)
+    public String doList(@ModelAttribute("form") CampusChinese campusChinese){
+
+        campusService.save(campusChinese);
+
+        return "redirect:list";
+    }
 
     @RequestMapping(value = "add", method = RequestMethod.GET)
     public String add() {
@@ -65,16 +75,52 @@ public class CampusChineseController extends BaseController {
     }
 
     @RequestMapping(value = "edit", method = RequestMethod.GET)
-    public String edit(@RequestParam(value = "id", required = false) Integer id, Model model) {
+    public String edit(@RequestParam(value = "id", required = false) Integer id, @RequestParam(value = "type", required = false) String type, Model model) {
 
         CampusChinese campusChinese = (CampusChinese) campusService.getById(id, true);
         model.addAttribute("domain", campusChinese);
+
+        if(type.equals("profile")){
+            model.addAttribute("pageTitle", "profile");
+            model.addAttribute("pageContent", campusChinese.getProfile());
+
+        } else if(type.equals("facts")) {
+            model.addAttribute("pageTitle", "facts");
+            model.addAttribute("pageContent", campusChinese.getFacts());
+
+        } else if(type.equals("curriculum")) {
+            model.addAttribute("pageTitle", "curriculum");
+            model.addAttribute("pageContent", campusChinese.getCurriculum());
+
+        } else {
+            return "admin/campus/list";
+        }
 
         return "admin/campus/edit";
     }
 
     @RequestMapping(value = "edit", method = RequestMethod.POST)
-    public String doEdit(@ModelAttribute("form") CampusChinese campusChinese) {
+    public String doEdit(HttpServletRequest request) {
+
+        Map<String, String[]> params = request.getParameterMap();
+        Integer id = Integer.valueOf(params.get("id")[0]);
+        String contentType = params.get("contentType")[0];
+        String content = params.get("content")[0];
+
+        CampusChinese campusChinese = (CampusChinese) campusService.getById(id, true);
+        if(contentType.equals("profile")){
+            campusChinese.setProfile(content);
+
+        } else if(contentType.equals("facts")) {
+            campusChinese.setFacts(content);
+
+        } else if(contentType.equals("curriculum")) {
+            campusChinese.setCurriculum(content);
+
+        } else {
+            return "redirect:list";
+        }
+
         campusService.save(campusChinese);
 
         return "redirect:list";

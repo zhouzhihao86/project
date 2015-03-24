@@ -6,3 +6,4 @@
 <script type="text/javascript" src="$cPath/resources/js/common/jquery.twbsPagination.min.js"></script>
 <script type="text/javascript" src="$cPath/resources/js/common/jquery.datetimepicker.js"></script>
 <script type="text/javascript" src="$cPath/resources/js/pt-base.js"></script>
+<script type="text/javascript" src="$cPath/resources/js/common/jquery.divbox.js"></script>

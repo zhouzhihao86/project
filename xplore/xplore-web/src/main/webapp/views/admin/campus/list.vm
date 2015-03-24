@@ -5,7 +5,7 @@
 
 <div id="operation-container">
 
-    <a href="$cPath/admin/$currentResource.getUri()/add"><span class="oper-btn add">新增$currentPerm.getName()</span></a>
+    <a href="javascript:openDiv()"><span class="oper-btn add">新增$currentPerm.getName()</span></a>
 
 </div>
 
@@ -15,11 +15,13 @@
         <thead>
         <tr>
             <th>编号</th>
-            <th>标题</th>
-            <th>摘要</th>
-            <th>日期</th>
+            <th>名称</th>
+            <th>国家</th>
             <th>权重</th>
-            <th>所属板块</th>
+            <th>Profile</th>
+            <th>Facts</th>
+            <th>Curriculum</th>
+            <th>日期</th>
             <th>操作</th>
         </tr>
         </thead>
@@ -28,12 +30,44 @@
             <tr>
                 <td>$!domain.getId()</td>
                 <td>$!domain.getTitle()</td>
-                <td>$!domain.getBrief()</td>
-                <td>$!domain.getCreateTime()</td>
+                <td>$!domain.getCountryId()</td>
                 <td>$!domain.getWeight()</td>
-                <td>$!domain.getPlateId()</td>
                 <td>
-                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
+                    #if(!$!domain.getProfile() || $!domain.getProfile().length() == 0)
+                        <span style="color:#ff0000">空</span>
+                    #else
+                        <a href='javascript:showDiv("$!domain.getProfile()")' class="btn btn-oper edit"">显示<i
+                            class="fa fa-chevron-right"></i></a>
+                    #end
+                    &nbsp;&nbsp;
+                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()&type=profile" class="btn btn-oper edit"">编辑<i
+                            class="fa fa-chevron-right"></i></a>
+                </td>
+                <td>
+                    #if(!$!domain.getFacts() || $!domain.getFacts().length() == 0)
+                        <span style="color:#ff0000">空</span>
+                    #else
+                        <a href='javascript:showDiv("$!domain.getFacts()")' class="btn btn-oper edit"">显示<i
+                            class="fa fa-chevron-right"></i></a>
+                    #end
+                    &nbsp;&nbsp;
+                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()&type=facts" class="btn btn-oper edit"">编辑<i
+                        class="fa fa-chevron-right"></i></a>
+                </td>
+                <td>
+                    #if(!$!domain.getCurriculum() || $domain.getCurriculum().length() == 0)
+                        <span style="color:#ff0000">空</span>
+                    #else
+                        <a href='javascript:showDiv("$!domain.getCurriculum()")' class="btn btn-oper edit"">显示<i
+                            class="fa fa-chevron-right"></i></a>
+                    #end
+                    &nbsp;&nbsp;
+                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()&type=curriculum" class="btn btn-oper edit"">编辑<i
+                        class="fa fa-chevron-right"></i></a>
+                </td>
+                <td>$!domain.getCreateTime()</td>
+                <td>
+                    <a href="javascript:openDiv($!domain.getId())" class="btn btn-oper edit"">编辑<i
                             class="fa fa-chevron-right"></i></a>
                     <a href="javascript:;" class="btn btn-oper del" data-model="$currentResource.getUri()" data-ref="$domain.getId()">删除<i
                             class="fa fa-chevron-right"></i></a>
@@ -43,8 +77,38 @@
 
         </tbody>
     </table>
+
     <div class="pagination"></div>
 </div>
+<div id="divSCA" class="">
+    <form action="list" method="post">
+        <p>名称</p>
+        <input type="text" placeholder="名称" name="title" value="">
+        <p>权重</p>
+        <input type="text" placeholder="权重" name="weight" value="">
+        <p>国家</p>
+        <select name="countryId" >
+            <option value=""></option>
+            <option value="1">英国:England</option>
+            <option value="2">中国:China</option>
+            <option value="3">美国:America</option>
+        </select>
+
+        <input type="hidden" id="domainId">
+
+        <div style="margin-top:100px">
+            <a class="btn btn-oper" href="javascript:closeDiv()">取消</a>
+            <button class="btn btn-oper">提交</button>
+        </div>
+    </form>
+</div>
+<div id="divShow">
+    <p id="showContent">
+
+    </p>
+    <a class="btn btn-oper" href="javascript:closeShowDiv()">取消</a>
+</div>
+
 #parse('layout/script.vm')
 
 <script type="text/javascript" src="$cPath/resources/js/admin.js"></script>
@@ -64,4 +128,38 @@
         });
         #end
     });
+
+    function openDiv(id) {
+        $("#domainId").val(id);
+        $("#title").val(id);
+        $("#divSCA").OpenDiv();
+    }
+
+    function showDiv(content) {
+        $("#showContent").html(content);
+        $("#divShow").OpenDiv();
+    }
+
+    function closeDiv() {
+        $("#divSCA").CloseDiv();
+    }
+
+    function closeShowDiv(){
+        $("#divShow").CloseDiv();
+    }
+
 </script>
+<style>
+    #divSCA,#divShow
+    {
+        position: absolute;
+        width: 700px;
+        height: 500px;
+        font-size: 12px;
+        background: #fff;
+        border: 0px solid #000;
+        padding: 10px;
+        z-index: 10001;
+        display: none;
+    }
+</style>

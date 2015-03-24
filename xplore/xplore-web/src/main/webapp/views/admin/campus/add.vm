@@ -13,24 +13,35 @@
 <div id="content-container">
 
     <form action="add" method="post">
-        <p>标题</p>
+        <p>名称</p>
         <input type="text" placeholder="标题" name="title">
-        <p>摘要</p>
-        <input type="text" placeholder="标题" name="brief" style="width:98%">
+        <p>国家</p>
+        <select name="countryId">
+            <option selected="selected" value="">请选择</option>
+            <option value="1">英国 : BRITAIN</option>
+            <option value="2">美国 : AMERICA</option>
+            <option value="3">德国 : GERMANY</option>
+            <option value="4">中国 : CHINA</option>
+        </select>
         <p>权重</p>
         <input type="text" placeholder="权重" name="weight">
-        <p>所属菜单</p>
-        <select name="plateId">
-            <option value=""></option>
-            #foreach($a in $menuList)
-                <option value="$a.getId()">
-                    $a.getCnName() : $a.getEnName()
-                </option>
-            #end
-        </select>
         <p>正文</p>
         <!-- 加载编辑器的容器 -->
-        <script id="container" name="content" type="text/plain">
+        <script id="container" name="profile" type="text/plain">
+        在这里输入内容
+
+
+        </script>
+        <p>正文</p>
+        <!-- 加载编辑器的容器 -->
+        <script id="container1" name="facts" type="text/plain">
+        在这里输入内容
+
+
+        </script>
+        <p>正文</p>
+        <!-- 加载编辑器的容器 -->
+        <script id="container3" name="curriculum" type="text/plain">
         在这里输入内容
 
 
