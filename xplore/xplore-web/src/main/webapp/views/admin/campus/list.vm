@@ -111,7 +111,7 @@
     <div class="pagination"></div>
 </div>
 <div id="divSCA" class="">
-    <form action="list" method="post">
+    <form action="$currentResource.getUri()/list" method="post">
         <p>名称</p>
         <input type="text" placeholder="名称" name="title" value="">
         <p>权重</p>
@@ -160,7 +160,6 @@
     });
 
     function openDiv(id, count) {
-        alert("edit");
         $("#domainId").val(id);
 
         $("input[name='title']").val($(".domain-"+count).find(".domain-title").html());
@@ -170,7 +169,6 @@
     }
 
     function openAddDiv(){
-        alert("add");
 
         $("#domainId").val("");
         $("input[name='title']").val("");
