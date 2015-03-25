@@ -56,20 +56,7 @@ public class CampusEnglishController extends BaseController{
     }
 
     @RequestMapping(value = "list", method = RequestMethod.POST)
-    public String doList(@ModelAttribute("form") CampusEnglish campusEnglish, @ModelAttribute("adminSession") AdminSession adminSession){
-
-        campusService.save(campusEnglish);
-
-        return "redirect:list";
-    }
-
-    @RequestMapping(value = "add", method = RequestMethod.GET)
-    public String add() {
-        return "admin/campus/add";
-    }
-
-    @RequestMapping(value = "add", method = RequestMethod.POST)
-    public String doAdd(@ModelAttribute("form") CampusEnglish campusEnglish) {
+    public String doList(@ModelAttribute("form") CampusEnglish campusEnglish){
 
         campusService.save(campusEnglish);
 

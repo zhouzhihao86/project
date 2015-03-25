@@ -31,7 +31,10 @@
                 <td>$!domain.getBrief()</td>
                 <td>$!domain.getCreateTime()</td>
                 <td>$!domain.getWeight()</td>
-                <td>$!domain.getPlateId()</td>
+                <td plateId="$!domain.getPlateId()">
+                    $!domain.getEnName()<br/>
+                    $!domain.getCnName()
+                </td>
                 <td>
                     <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
                             class="fa fa-chevron-right"></i></a>

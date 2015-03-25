@@ -21,7 +21,7 @@
         <input type="text" placeholder="权重" name="weight">
         <p>所属菜单</p>
         <select name="plateId">
-            <option value=""></option>
+            <option value="">请选择</option>
             #foreach($a in $menuList)
                 <option value="$a.getId()">
                     $a.getCnName() : $a.getEnName()

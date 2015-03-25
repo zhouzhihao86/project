@@ -61,19 +61,6 @@ public class CampusChineseController extends BaseController {
         return "redirect:list";
     }
 
-    @RequestMapping(value = "add", method = RequestMethod.GET)
-    public String add() {
-        return "admin/campus/add";
-    }
-
-    @RequestMapping(value = "add", method = RequestMethod.POST)
-    public String doAdd(@ModelAttribute("form") CampusChinese campusChinese) {
-
-        campusService.save(campusChinese);
-
-        return "redirect:list";
-    }
-
     @RequestMapping(value = "edit", method = RequestMethod.GET)
     public String edit(@RequestParam(value = "id", required = false) Integer id, @RequestParam(value = "type", required = false) String type, Model model) {
 

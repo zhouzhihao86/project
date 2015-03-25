@@ -1,5 +1,8 @@
 package com.xplore.web.domain;
 
+import com.xplore.web.service.MenuService;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Date;
 
 import javax.persistence.*;
@@ -89,4 +92,5 @@ public class PlateEnglish {
 	public void setPlateId(Integer plateId) {
 		this.plateId = plateId;
 	}
+
 }

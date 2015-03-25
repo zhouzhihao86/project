@@ -20,7 +20,7 @@
         <input type="text" placeholder="权重" name="weight" value="$!domain.getWeight()">
         <p>所属菜单</p>
         <select name="plateId" >
-            <option value=""></option>
+            <option value="">请选择</option>
             #foreach($a in $menuList)
                 #if("$a.getId()" == "$!domain.getPlateId()")
                     <option selected="selected" value="$a.getId()">$a.getCnName() : $a.getEnName()</option>

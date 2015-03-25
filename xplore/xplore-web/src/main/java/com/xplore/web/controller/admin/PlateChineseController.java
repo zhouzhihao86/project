@@ -8,6 +8,7 @@ import com.xplore.web.exception.AdminException;
 import com.xplore.web.service.PlateService;
 import com.xplore.web.util.Page;
 import com.xplore.web.utils.ResponseCodesHelper;
+import com.xplore.web.vo.PlateVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -44,7 +45,7 @@ public class PlateChineseController extends BaseController {
             page.setPageNo(pageNo);
         }
 
-        Page detailList = plateService.pagedList(page, true);
+        Page<PlateVo> detailList = plateService.pagedList(menuService, page, true);
 
         model.addAttribute("domainList", detailList);
 

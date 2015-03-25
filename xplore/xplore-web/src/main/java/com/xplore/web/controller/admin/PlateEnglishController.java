@@ -9,6 +9,7 @@ import com.xplore.web.exception.AdminException;
 import com.xplore.web.service.PlateService;
 import com.xplore.web.util.Page;
 import com.xplore.web.utils.ResponseCodesHelper;
+import com.xplore.web.vo.PlateVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,7 +34,7 @@ public class PlateEnglishController extends BaseController {
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public String list(@RequestParam(value = "p", required = false) Integer pageNo, Model model) {
 
-        Page<PlateEnglish> page = new Page<PlateEnglish>();
+        Page page = new Page();
 
         Integer pageSize = AdminConfig.getInt(AdminConfig.KEY_PAGE_SIZE);
 
@@ -45,7 +46,7 @@ public class PlateEnglishController extends BaseController {
             page.setPageNo(pageNo);
         }
 
-        Page detailList = plateService.pagedList(page, false);
+        Page<PlateVo> detailList = plateService.pagedList(menuService, page, false);
 
         model.addAttribute("domainList", detailList);
 

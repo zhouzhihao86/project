@@ -32,7 +32,10 @@
                 <td><a target="_blank" style="color:#111111;text-decoration: underline;" href="$!domain.getBigImg()">$!domain.getBigImg()</td>
                 <td>$!domain.getBriefChinese()</td>
                 <td>$!domain.getBriefEnglish()</td>
-                <td>$!domain.getPlateId()</td>
+                <td plateId="$!domain.getPlateId()">
+                    $!menuList.getMenu($!domain.getPlateId()).getCnName()<br/>
+                    $!menuList.getMenu($!domain.getPlateId()).getEnName()
+                </td>
                 <td>$!domain.getWeight()</td>
                 <td>
                     <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
