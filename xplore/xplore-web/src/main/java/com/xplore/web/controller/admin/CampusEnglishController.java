@@ -60,7 +60,7 @@ public class CampusEnglishController extends BaseController{
 
         campusService.save(campusEnglish);
 
-        return "redirect:/admin/" + adminSession.getCurrentResource().getUri();
+        return "redirect:list";
     }
 
     @RequestMapping(value = "add", method = RequestMethod.GET)
