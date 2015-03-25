@@ -1,5 +1,7 @@
 package com.xplore.web.domain;
 
+import com.xplore.web.constants.enums.Country;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -42,6 +44,10 @@ public class CampusChinese {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getCountryName(){
+        return Country.parse(this.countryId).display("cn");
     }
 
     public Integer getCountryId() {

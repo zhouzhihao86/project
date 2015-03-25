@@ -5,7 +5,7 @@
 
 <div id="operation-container">
 
-    <a href="javascript:openDiv()"><span class="oper-btn add">新增$currentPerm.getName()</span></a>
+    <a href="javascript:openAddDiv()"><span class="oper-btn add">新增$currentPerm.getName()</span></a>
 
 </div>
 
@@ -27,11 +27,11 @@
         </thead>
         <tbody>
             #foreach($domain in $domainList.getResult())
-            <tr>
-                <td>$!domain.getId()</td>
-                <td>$!domain.getTitle()</td>
-                <td>$!domain.getCountryId()</td>
-                <td>$!domain.getWeight()</td>
+            <tr class="domain-$velocityCount">
+                <td class="domain-id">$!domain.getId()</td>
+                <td class="domain-title">$!domain.getTitle()</td>
+                <td class="domain-countryId" countryId="$!domain.getCountryId()">$!domain.getCountryName()</td>
+                <td class="domain-weight">$!domain.getWeight()</td>
                 <td>
                     #if(!$!domain.getProfile() || $!domain.getProfile().length() == 0)
                         <span style="color:#ff0000">空</span>
@@ -67,7 +67,7 @@
                 </td>
                 <td>$!domain.getCreateTime()</td>
                 <td>
-                    <a href="javascript:openDiv($!domain.getId())" class="btn btn-oper edit"">编辑<i
+                    <a href="javascript:openDiv($!domain.getId(), $velocityCount)" class="btn btn-oper edit">编辑<i
                             class="fa fa-chevron-right"></i></a>
                     <a href="javascript:;" class="btn btn-oper del" data-model="$currentResource.getUri()" data-ref="$domain.getId()">删除<i
                             class="fa fa-chevron-right"></i></a>
@@ -88,13 +88,13 @@
         <input type="text" placeholder="权重" name="weight" value="">
         <p>国家</p>
         <select name="countryId" >
-            <option value=""></option>
-            <option value="1">英国:England</option>
-            <option value="2">中国:China</option>
-            <option value="3">美国:America</option>
+            <option value="">请选择</option>
+            #foreach($a in $countryList)
+                <option value="$a.getCountryId()">$a.display("en") : $a.display("cn")</option>
+            #end
         </select>
 
-        <input type="hidden" id="domainId">
+        <input type="hidden" name="id" id="domainId">
 
         <div style="margin-top:100px">
             <a class="btn btn-oper" href="javascript:closeDiv()">取消</a>
@@ -129,9 +129,24 @@
         #end
     });
 
-    function openDiv(id) {
+    function openDiv(id, count) {
+        alert("edit");
         $("#domainId").val(id);
-        $("#title").val(id);
+
+        $("input[name='title']").val($(".domain-"+count).find(".domain-title").html());
+        $("input[name='weight']").val($(".domain-"+count).find(".domain-weight").html());
+        $("select[name='countryId']").val($(".domain-"+count).find(".domain-countryId").attr("countryId"));
+        $("#divSCA").OpenDiv();
+    }
+
+    function openAddDiv(){
+        alert("add");
+
+        $("#domainId").val("");
+        $("input[name='title']").val("");
+        $("input[name='weight']").val("");
+        $("select[name='countryId']").val("");
+
         $("#divSCA").OpenDiv();
     }
 

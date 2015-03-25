@@ -1,5 +1,6 @@
 package com.xplore.web.controller.admin;
 
+import com.xplore.web.constants.enums.Country;
 import com.xplore.web.service.MenuService;
 import com.xplore.web.vo.AdminSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,7 @@ public class BaseController {
         model.addAttribute("currentResource", adminSession.getCurrentResource());
         model.addAttribute("currentPerm", adminSession.getCurrentPerm());
         model.addAttribute("menuList", menuService.getAll());
+        model.addAttribute("countryList", Country.getAll());
 
         return adminSession;
     }

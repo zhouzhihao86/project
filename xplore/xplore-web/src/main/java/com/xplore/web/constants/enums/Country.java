@@ -2,6 +2,8 @@ package com.xplore.web.constants.enums;
 
 import com.xplore.web.util.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -29,7 +31,7 @@ public enum Country {
     public static Country parse(Integer op) {
 
         for (Country opEnum : values()) {
-            if (opEnum.name().equals(op)) {
+            if (opEnum.countryId.equals(op)) {
                 return opEnum;
             }
         }
@@ -47,4 +49,14 @@ public enum Country {
         return ResourceBundle.getBundle("i18n/placeholder", Locale.CHINESE).getString(key.name());
     }
 
+    public static List<Country> getAll() {
+
+        List<Country> countryList = new ArrayList<Country>();
+
+        for (Country opEnum : values()) {
+            countryList.add(opEnum);
+        }
+
+        return countryList;
+    }
 }
