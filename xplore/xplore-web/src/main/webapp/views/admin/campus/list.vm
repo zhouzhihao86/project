@@ -111,7 +111,7 @@
     <div class="pagination"></div>
 </div>
 <div id="divSCA" class="">
-    <form action="$currentResource.getUri()/list" method="post">
+    <form action="$cPath/admin/$currentResource.getUri()/list" method="post">
         <p>名称</p>
         <input type="text" placeholder="名称" name="title" value="">
         <p>权重</p>

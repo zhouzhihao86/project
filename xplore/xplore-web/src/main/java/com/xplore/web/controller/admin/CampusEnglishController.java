@@ -10,6 +10,7 @@ import com.xplore.web.exception.AdminException;
 import com.xplore.web.service.CampusService;
 import com.xplore.web.util.Page;
 import com.xplore.web.utils.ResponseCodesHelper;
+import com.xplore.web.vo.AdminSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -55,11 +56,11 @@ public class CampusEnglishController extends BaseController{
     }
 
     @RequestMapping(value = "list", method = RequestMethod.POST)
-    public String doList(@ModelAttribute("form") CampusEnglish campusEnglish){
+    public String doList(@ModelAttribute("form") CampusEnglish campusEnglish, @ModelAttribute("adminSession") AdminSession adminSession){
 
         campusService.save(campusEnglish);
 
-        return "redirect:list";
+        return "redirect:/admin/" + adminSession.getCurrentResource().getUri();
     }
 
     @RequestMapping(value = "add", method = RequestMethod.GET)
