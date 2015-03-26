@@ -1,5 +1,5 @@
 <ul class="campus-list" style="float:left;width:684px;min-height:383px;background:url($cPath/resources/img/UKditu.png) no-repeat 0 0;" >
     #foreach($campus in $campusList)
-        <li><a href="$cPath/web/en/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
+        <li><a href="$cPath/web/$lan/campus/england/$campus.getId()">$!campus.getTitle()<i class="line"></i></a></li>
     #end
 </ul>

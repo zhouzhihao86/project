@@ -38,6 +38,9 @@ img{border:none}
     color: #FFF
 }
 
+#header .dropdown-menu a{
+    color:#666666
+}
 
 #header .menu .menu-item {
     list-style-type: none;
@@ -325,6 +328,7 @@ a {
 .detail-nav{
     width:100%;
     float:left;
+    font-size:12px;
 
 }
 .detail-nav .detail-nav-item{
@@ -338,7 +342,7 @@ a {
 
 }
 .detail-nav-item a{
-    border-right:1px solid #111111;
+    border-right:1px solid #666666;
     padding:0;
     color:#666666;
 }
@@ -448,14 +452,13 @@ a {
     margin:0;
     padding:0;
 }
-.dropdown-menu-content-wrapper .article a{
-    color:#666666 !important;
+#header .article a{
+    color:#666666;
     font-weight: 700;
 }
 
 
 .campus-detail-area.list{
-    padding: 10px 0 0 0;
     border-top: 1px solid #E5E5E5;
     width: 682px;
     margin-top: 10px;

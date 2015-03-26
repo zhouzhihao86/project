@@ -10,7 +10,6 @@ $(document).ready(function () {
     }
 
 
-
     $(".block-img-area").hover(function(){
         $(this).find(".overlay").toggleClass("hide")
 
@@ -21,7 +20,7 @@ $(document).ready(function () {
 
     $(".block-img-area").click(function(){
 
-        var widget = $(".dropdown-menu-inner-wrapper").get($(this).attr("data-ref"));
+        var widget = $(".dropdown-menu-content-wrapper").get($(this).attr("data-ref"));
 
         var url = $(widget).find(".article a:first").attr("href");
 
@@ -138,5 +137,16 @@ $(document).ready(function () {
     }
 
     $(".temp.detail-nav").remove();
+
+
+    $(".detail-nav-item a").hover(function(){
+
+        $(this).css("color", "#C71041");
+
+    },function(){
+
+        $(this).css("color", "#666666");
+
+    });
 
 });

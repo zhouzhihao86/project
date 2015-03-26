@@ -37,7 +37,7 @@
                 <a href="$cPath/web/cn"><img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;"></a>
             </div>
             <div style="position:absolute;right:0;bottom:10px;">
-                <span style="float:left;font-size:14px;color:#838486;margin-top:1px;font-weight:700">+44 (0)1449 742700</span>
+                <span style="float:left;font-size:14px;color:#838486;margin-top:1px;font-weight:700">+86(0)21 6058 7560</span>
                 <img src="$cPath/resources/img/SJ4.png" style="margin-left:10px;">
                 <img src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
             </div>
@@ -115,6 +115,11 @@
                                 <li class="article" data-target=""><a href="$cPath/web/cn/campus/england">英国</a></li>
                                 <li class="article" data-target=""><a href="$cPath/web/cn/campus/america">美国</a></li>
                                 <li class="article" data-target=""><a href="$cPath/web/cn/campus/china">中国</a></li>
+                                <ul>
+                                    #foreach($plate in $plateRecent4)
+                                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                    #end
+                                </ul>
                             </ul>
                         </div>
                         <div class="dropdown-menu-right">
@@ -130,7 +135,7 @@
                 <div class="dropdown-menu hide">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                #foreach($plate in $plateRecent4)
+                                #foreach($plate in $plateRecent5)
 			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
 			                    #end
                             </ul>
@@ -205,7 +210,6 @@
 
     $(document).ready(function () {
 
-
         $(".dropdown-menu").each(function(){
 
             var height = $(this).height();
@@ -222,20 +226,40 @@
 
         $(".menu .menu-item").hover(function () {
 
+            $(this).css("background","#E5E5E5");
 
+            $(this).find("a:first").css("color","#AA0D37");
 
             $(this).find(".dropdown-menu").toggleClass("hide");
 
         }, function () {
 
+            $(this).css("background","#AA0D37");
+
+            $(this).find("a:first").css("color","#E5E5E5");
+
             $(this).find(".dropdown-menu").toggleClass("hide");
 
         })
 
+        $(".dropdown-menu .article").hover(function(){
+
+            $(this).css("background","#AA0D37").css("color", "#E5E5E5");
+
+            $(this).find("a").css("color","#FFFFFF");
 
 
+        },function(){
+
+            $(this).css("background","#E5E5E5").css("color", "#E5E5E5");
+
+            $(this).find("a").css("color","#E5E5E5");
 
 
+        })
+
+
+        $(".block-item:last").css("border-bottom","none");
 
     });
 </script>
