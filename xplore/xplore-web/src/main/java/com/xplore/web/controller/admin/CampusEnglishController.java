@@ -58,7 +58,14 @@ public class CampusEnglishController extends BaseController{
     @RequestMapping(value = "list", method = RequestMethod.POST)
     public String doList(@ModelAttribute("form") CampusEnglish campusEnglish){
 
-        campusService.save(campusEnglish);
+        if(campusEnglish.getId() != null) {
+            CampusEnglish  campusEnglish1 = (CampusEnglish) campusService.getById(campusEnglish.getId(), false);
+            campusEnglish1.setTitle(campusEnglish.getTitle());
+            campusEnglish1.setWeight(campusEnglish.getWeight());
+            campusEnglish1.setCountryId(campusEnglish.getCountryId());
+            campusService.save(campusEnglish1);
+        } else
+            campusService.save(campusEnglish);
 
         return "redirect:list";
     }
