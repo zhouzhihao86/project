@@ -23,14 +23,6 @@ public class MenuService {
         return menuDao.getAll();
     }
 
-    public Map<Integer, Menu> getMap(){
-        Map<Integer, Menu> menuMap = new HashMap<Integer, Menu>();
-        for(Menu menu : menuDao.getAll()){
-            menuMap.put(menu.getId(), menu);
-        }
-
-        return menuMap;
-    }
 
     public Menu getById(Integer id) {
         return menuDao.get(id);
