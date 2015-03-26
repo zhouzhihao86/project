@@ -23,6 +23,11 @@
 </head>
 <body>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Microsoft Yahei', 'heiti', 'songti';
+    }
     .menu-item{
         width:163px;
     }
@@ -32,7 +37,7 @@
         <div class="header-wrapper">
             <a href="$cPath/web/cn"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
             <div style="position:absolute;right:0;top:20px;">
-                <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">选择一种语言</span>
+                <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">choose a language</span>
                 <a href="$cPath/web/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
                 <a href="$cPath/web/cn"><img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;"></a>
             </div>
@@ -56,7 +61,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent1)
-			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                    <a class="drop-down-a" href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -74,7 +79,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent2)
-			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                    <a class="drop-down-a" href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -93,7 +98,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent3)
-			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                    <a class="drop-down-a"  href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -112,12 +117,12 @@
                 <div class="dropdown-menu hide">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/england">英国</a></li>
-                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/america">美国</a></li>
-                                <li class="article" data-target=""><a href="$cPath/web/cn/campus/china">中国</a></li>
+                                <a class="drop-down-a"  href="$cPath/web/cn/campus/england"><li class="article" data-target="">英国</li></a>
+                                <a class="drop-down-a"  href="$cPath/web/cn/campus/america"><li class="article" data-target="">美国</li></a>
+                                <a class="drop-down-a"  href="$cPath/web/cn/campus/china"><li class="article" data-target="">中国</li></a>
                                 <ul>
                                     #foreach($plate in $plateRecent4)
-                                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                        <a class="drop-down-a"  href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
                                     #end
                                 </ul>
                             </ul>
@@ -126,7 +131,7 @@
                             <div class="menu-absract" style="">
                                 Xplore“我的选择”为Xplore的高中留学项目，向全球合作伙伴提供为计划到英国和美国（F1）留学的学生的做长期学习安排。Xplore专职监护人团队将提供一流服务，保证学生获得最好的教育和文化学习体验。
                             </div>
-                            <img class="dropdown-menu-img" src="$cPath/resources/img/H5.jpg">
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H4.jpg">
                         </div>
                 </div>
             </li>
@@ -136,7 +141,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent5)
-			                        <li class="article" data-target="$!plate.getId()"><a href="$cPath/web/cn/articles/$plate.getId()">$plate.getTitle()</a></li>
+                                    <a class="drop-down-a"   href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -144,7 +149,7 @@
                             <div class="menu-absract" style="">
                                 Xplore致力于扩展新业务项目，并愿与新的合作伙伴建立良好的业务合作关系。希望透过这份手册让您了解Xplore并与我们联系商讨现有业务或开展新业务。
                             </div>
-                            <img class="dropdown-menu-img" src="$cPath/resources/img/H4.jpg">
+                            <img class="dropdown-menu-img" src="$cPath/resources/img/H5.jpg">
                         </div>
                 </div>
             </li>
@@ -236,7 +241,7 @@
 
             $(this).css("background","#AA0D37");
 
-            $(this).find("a:first").css("color","#E5E5E5");
+            $(this).find("a:first").css("color","#FFFFFF");
 
             $(this).find(".dropdown-menu").toggleClass("hide");
 
@@ -246,14 +251,14 @@
 
             $(this).css("background","#AA0D37").css("color", "#E5E5E5");
 
-            $(this).find("a").css("color","#FFFFFF");
+            $(this).find(".drop-down-a").css("color","#FFFFFF");
 
 
         },function(){
 
-            $(this).css("background","#E5E5E5").css("color", "#E5E5E5");
+            $(this).css("background","#E5E5E5").css("color", "#666666");
 
-            $(this).find("a").css("color","#E5E5E5");
+            $(this).find(".drop-down-a").css("color","#666666");
 
 
         })

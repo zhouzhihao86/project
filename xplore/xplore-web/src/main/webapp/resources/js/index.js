@@ -22,7 +22,7 @@ $(document).ready(function () {
 
         var widget = $(".dropdown-menu-content-wrapper").get($(this).attr("data-ref"));
 
-        var url = $(widget).find(".article a:first").attr("href");
+        var url = $(widget).find(".drop-down-a").attr("href");
 
         window.location.href = url;
 

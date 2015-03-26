@@ -2,7 +2,7 @@
 #set($cPath = "#cPath")
 <script type="text/javascript" src="$cPath/resources/js/common/jquery.bxslider.min.js"></script>
 <style>
-    *{font-weight:700}
+    *{font-weight:bolder}
     .bx-pager a, .index-bottom .block-img-area .name{
         font-size:12px;
         top:15px;
