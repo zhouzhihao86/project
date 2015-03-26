@@ -27,6 +27,7 @@ public class BaseController {
         model.addAttribute("currentResource", adminSession.getCurrentResource());
         model.addAttribute("currentPerm", adminSession.getCurrentPerm());
         model.addAttribute("menuList", menuService.getAll());
+        model.addAttribute("menuMap", menuService.getMap());
         model.addAttribute("countryList", Country.getAll());
 
         return adminSession;

@@ -20,28 +20,20 @@ public class MenuService {
 
     public List<Menu> getAll() {
 
-        List<Menu> menuList = new MyList<Menu>();
+        return menuDao.getAll();
+    }
 
+    public Map<Integer, Menu> getMap(){
+        Map<Integer, Menu> menuMap = new HashMap<Integer, Menu>();
         for(Menu menu : menuDao.getAll()){
-            menuList.add(menu);
+            menuMap.put(menu.getId(), menu);
         }
-        //menuList.addAll(menuDao.getAll());
-        //return menuDao.getAll();
-        return menuList;
+
+        return menuMap;
     }
 
     public Menu getById(Integer id) {
         return menuDao.get(id);
     }
 
-    private class MyList<T> extends ArrayList<Menu> {
-
-        public Menu getMenu(int id){
-            for(Menu menu : this){
-                if(menu.getId() == id)
-                    return menu;
-            }
-            return null;
-        }
-    }
 }
