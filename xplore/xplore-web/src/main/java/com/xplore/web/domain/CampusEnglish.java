@@ -48,7 +48,11 @@ public class CampusEnglish {
     }
 
     public String getCountryName(){
-        return Country.parse(this.countryId).display("en");
+        Country country = Country.parse(this.countryId);
+        if(country ==null)
+            return "";
+        else
+            return country.display("en");
     }
 
     public Integer getCountryId() {

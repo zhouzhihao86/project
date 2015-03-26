@@ -47,7 +47,12 @@ public class CampusChinese {
     }
 
     public String getCountryName(){
-        return Country.parse(this.countryId).display("cn");
+
+        Country country = Country.parse(this.countryId);
+        if(country == null)
+            return "";
+        else
+            return country.display("cn");
     }
 
     public Integer getCountryId() {
