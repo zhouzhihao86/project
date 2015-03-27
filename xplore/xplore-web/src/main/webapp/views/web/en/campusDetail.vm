@@ -8,9 +8,9 @@
 </style>
 <div class="content en">
     <div class="campus detail">
-        <div class="banner" style="background-image:url($cPath/resources/img/T-england.png);">
-            <span style="margin-right:10px;">UNITED_KINDOM(UK)</span>
-            <img src="$cPath/resources/img/england.png" style="position:absolute;left:-14px;bottom:-30px;">
+        <div class="banner" style="background-image:url($cPath/resources/img/T-${country}.png);">
+            <span style="margin-right:10px;">$!detail.getCountryName()</span>
+            <img src="$cPath/resources/img/${country}.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">
             <img src="$cPath/resources/img/tu2.jpg">
