@@ -372,13 +372,13 @@ a {
     text-align: right;
 }
 .campus-name{
-    color:#C71041;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
+    font-weight:bolder;color:#C71041;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
 }
 .campus-detail-area{
     width:662px;
     float:left;
-    margin-bottom:25px;
     padding:10px;
+    padding-top:0;
 }
 .campus-title{
     float:left;
