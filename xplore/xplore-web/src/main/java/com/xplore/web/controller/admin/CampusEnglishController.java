@@ -10,6 +10,7 @@ import com.xplore.web.exception.AdminException;
 import com.xplore.web.service.CampusService;
 import com.xplore.web.util.Page;
 import com.xplore.web.utils.ResponseCodesHelper;
+import com.xplore.web.utils.UploadUtil;
 import com.xplore.web.vo.AdminSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -56,17 +57,26 @@ public class CampusEnglishController extends BaseController{
     }
 
     @RequestMapping(value = "list", method = RequestMethod.POST)
-    public String doList(@ModelAttribute("form") CampusEnglish campusEnglish){
+    public String doList(HttpServletRequest request){
 
-        if(campusEnglish.getId() != null) {
+        CampusEnglish campusEnglish = new CampusEnglish();
+
+        UploadUtil.handleFormField(request, campusEnglish);
+
+
+        if(campusEnglish.getId() != null && campusEnglish.getId() != 0) {
             CampusEnglish  campusEnglish1 = (CampusEnglish) campusService.getById(campusEnglish.getId(), false);
             campusEnglish1.setTitle(campusEnglish.getTitle());
             campusEnglish1.setWeight(campusEnglish.getWeight());
             campusEnglish1.setCountryId(campusEnglish.getCountryId());
-            campusService.save(campusEnglish1);
-        } else
-            campusService.save(campusEnglish);
+            campusEnglish1.setImg(campusEnglish.getImg());
 
+            campusService.save(campusEnglish1);
+        } else {
+            campusEnglish.setId(null);
+
+            campusService.save(campusEnglish);
+        }
         return "redirect:list";
     }
 

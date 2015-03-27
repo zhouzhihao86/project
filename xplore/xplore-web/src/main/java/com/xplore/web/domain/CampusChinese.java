@@ -31,6 +31,9 @@ public class CampusChinese {
     @Column(name = "curriculum")
     private String curriculum;
 
+    @Column(name = "img")
+    private String img;
+
     @Column(name = "weight")
     private Integer weight;
 
@@ -109,5 +112,13 @@ public class CampusChinese {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

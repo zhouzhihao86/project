@@ -51,6 +51,7 @@
             <th>Profile</th>
             <th>Facts</th>
             <th>Curriculum</th>
+            <th>图片</th>
             <th>日期</th>
             <th>操作</th>
         </tr>
@@ -97,6 +98,7 @@
                     <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()&type=curriculum" class="btn btn-oper edit"">编辑<i
                         class="fa fa-chevron-right"></i></a>
                 </td>
+                <td class="domain-img" ><a target="_blank" style="color:#111111;text-decoration: underline;" href="$!domain.getImg()">$!domain.getImg()</td>
                 <td>$!domain.getCreateTime()</td>
                 <td>
                     <a href="javascript:openDiv($!domain.getId(), $velocityCount)" class="btn btn-oper edit">编辑<i
@@ -113,7 +115,7 @@
     <div class="pagination"></div>
 </div>
 <div id="divSCA" class="">
-    <form action="$cPath/admin/$currentResource.getUri()/list" method="post">
+    <form action="$cPath/admin/$currentResource.getUri()/list" enctype="multipart/form-data"  method="post">
         <p>名称</p>
         <input type="text" placeholder="名称" name="title" value="">
         <p>权重</p>
@@ -124,6 +126,11 @@
                 <option value="$a.getCountryId()">$a.display("en") : $a.display("cn")</option>
             #end
         </select>
+        <p>上传图片</p>
+        <input type="hidden"  name="img" value="">
+        <p><input type="file" name="upload_img" />
+            <img name="img" src="" style="max-width:20%;max-height:20%;">
+        </p>
 
         <input type="hidden" name="id" id="domainId">
 
@@ -174,6 +181,8 @@
         $("input[name='title']").val($(".domain-"+count).find(".domain-title").html());
         $("input[name='weight']").val($(".domain-"+count).find(".domain-weight").html());
         $("select[name='countryId']").val($(".domain-"+count).find(".domain-countryId").attr("countryId"));
+        $("input[name='img']").val($(".domain-"+count).find(".domain-img").find("a").html());
+        $("img[name='img']").attr("src", $(".domain-"+count).find(".domain-img").find("a").html());
         $("#divSCA").OpenDiv();
     }
 
@@ -183,6 +192,8 @@
         $("input[name='title']").val("");
         $("input[name='weight']").val("");
         $("select[name='countryId']").val("");
+        $("input[name='img']").val("");
+        $("img[name='img']").attr("src", "");
 
         $("#divSCA").OpenDiv();
     }

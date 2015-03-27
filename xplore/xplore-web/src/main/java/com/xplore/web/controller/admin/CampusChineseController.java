@@ -9,6 +9,7 @@ import com.xplore.web.exception.AdminException;
 import com.xplore.web.service.CampusService;
 import com.xplore.web.util.Page;
 import com.xplore.web.utils.ResponseCodesHelper;
+import com.xplore.web.utils.UploadUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -53,17 +54,30 @@ public class CampusChineseController extends BaseController {
         return "admin/campus/list";
     }
 
+    /**
+     * 处理list页面上add/edit的post事件
+     * */
     @RequestMapping(value = "list", method = RequestMethod.POST)
-    public String doList(@ModelAttribute("form") CampusChinese campusChinese){
+    public String doList(HttpServletRequest request){
 
-        if(campusChinese.getId() != null) {
+        CampusChinese campusChinese = new CampusChinese();
+
+        UploadUtil.handleFormField(request, campusChinese);
+
+
+        if(campusChinese.getId() != null && campusChinese.getId() != 0) {
             CampusChinese  campusChinese1 = (CampusChinese) campusService.getById(campusChinese.getId(), true);
             campusChinese1.setTitle(campusChinese.getTitle());
             campusChinese1.setWeight(campusChinese.getWeight());
             campusChinese1.setCountryId(campusChinese.getCountryId());
+            campusChinese1.setImg(campusChinese.getImg());
+
             campusService.save(campusChinese1);
-        } else
+        } else {
+            campusChinese.setId(null);
+
             campusService.save(campusChinese);
+        }
 
         return "redirect:list";
     }
@@ -93,6 +107,9 @@ public class CampusChineseController extends BaseController {
         return "admin/campus/edit";
     }
 
+    /**
+     * 处理edit页面上的post事件
+     * */
     @RequestMapping(value = "edit", method = RequestMethod.POST)
     public String doEdit(HttpServletRequest request) {
 
