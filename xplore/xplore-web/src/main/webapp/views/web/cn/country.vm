@@ -16,6 +16,7 @@
             <img src="$cPath/resources/img/tu1.jpg">
         </div>
         <div class="campus-detail-area list" style="">
+            #set($countryImg = $countryDomain.getImg1())
             #set($fileName = $country + ".vm")
             #parse("/layout/country/$fileName")
         </div>

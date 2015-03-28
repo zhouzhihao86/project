@@ -179,7 +179,7 @@
                 <p class="links-name tel">T:+44 (0) 1449742700</p>
             </div>
             <div class="column">
-                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Hamburg, Berlin & Cologne</span></p>
+                <p class="links-name">Xplore(Germany)</br><span style="font-size:12px;">Hamburg, Berlin & Cologne</span></p>
                 <a target="new" href="javascript:void(0)">Theodorstr, 48</a>
                 <a target="new" href="javascript:void(0)">22761, Hamburg</a>
                 <a target="new" href="javascript:void(0)">Germany</a>
@@ -193,7 +193,7 @@
         </div>
         <div class="links">
             <div class="column">
-                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Asheville, N.Carolina</span></p>
+                <p class="links-name">Xplore(USA)</br><span style="font-size:12px;">Asheville, N.Carolina</span></p>
                 <a target="new" href="javascript:void(0)">One Town, Square Bvld.</a>
                 <a target="new" href="javascript:void(0)">Suite 204,</a>
                 <a target="new" href="javascript:void(0)">Asheville, NC 28803,</a>
@@ -202,15 +202,16 @@
 
                 <p class="links-name tel">T:+1 (828) 651 8502</p>
             </div>
-            <div class="column">
-                <p class="links-name">Xplore(UK)</br><span style="font-size:12px;">Shenzhen</span></p>
-                <a target="new" href="javascript:void(0)">Room 720, 7th Floor, Tagen</a>
-                <a target="new" href="javascript:void(0)">Chuangye Building, No.7</a>
-                <a target="new" href="javascript:void(0)">Shangbao Road, Futian District,</a>
-                <a target="new" href="javascript:void(0)">Shenzhen, Guangdong, 518034</a>
-                <a target="new" href="javascript:void(0)">China</a>
 
-                <p class="links-name tel">T:+1 (828) 651 8502</p>
+            <div class="column">
+                <p class="links-name">Xplore(China)</br><span style="font-size:12px;">Shanghai</span></p>
+                <a target="new" href="javascript:void(0)">23D, Building C,CCIG International Plaza,</a>
+                <a target="new" href="javascript:void(0)">No.375, North Caoxi Road, </a>
+                <a target="new" href="javascript:void(0)">Xuhui District, Shanghai, 200030,PRC</a>
+                <a target="new" href="javascript:void(0)">China</a>
+                <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
+
+                <p class="links-name tel">T:+86 21 60857560/60857550</p>
             </div>
         </div>
     </div>

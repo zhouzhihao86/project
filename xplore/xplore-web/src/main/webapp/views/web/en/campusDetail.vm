@@ -13,7 +13,7 @@
             <img src="$cPath/resources/img/${country}.png" style="position:absolute;left:-14px;bottom:-30px;">
         </div>
         <div class="banner-img" style="margin-top:4px;">
-            <img src="$cPath/resources/img/tu2.jpg">
+            <img src="$!detail.getImg()">
         </div>
         <p class="campus-name">$!detail.getTitle()</p>
         <div class="campus-detail-area">

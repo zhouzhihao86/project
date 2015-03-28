@@ -5,6 +5,7 @@ import com.xplore.web.domain.Menu;
 import com.xplore.web.domain.PlateChinese;
 import com.xplore.web.domain.PlateEnglish;
 import com.xplore.web.domain.Slider;
+import com.xplore.web.service.CountryService;
 import com.xplore.web.service.SliderService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,9 @@ public class IndexController extends BaseController implements InitializingBean{
 
     @Autowired
     SliderService sliderService;
+
+    @Autowired
+    CountryService countryService;
 
     private static List<Integer> currentSliderIds = new ArrayList<Integer>();
 
@@ -96,6 +100,10 @@ public class IndexController extends BaseController implements InitializingBean{
         model.addAttribute("campusList", campusList);
 
         model.addAttribute("country", country);
+
+        com.xplore.web.domain.Country countryDomain = countryService.getById(country.getCountryId());
+
+        model.addAttribute("countryDomain", countryDomain);
 
         model.addAttribute("countryName", country.display(lan));
 

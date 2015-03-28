@@ -7,7 +7,7 @@
     <div class="detail">
         <div class="detail-wrapper">
             <div class="nav-name">$menu.getEnName()/$article.getTitle()</div>
-            <div><img src="$cPath/resources/img/PHT.jpg"></div>
+            <div><img src="$menu.getImg()"></div>
             <p class=""
                style="font-size:18px;margin:25px 0;border-bottom:1px solid #C71041;padding-bottom:10px;font-weight: 700">$menu.getEnName()</p>
 

@@ -13,8 +13,8 @@
         <tr>
             <th>编号</th>
             <th>名称</th>
-            <th>图片1</th>
-            <th>图片2</th>
+            <th>中文图片</th>
+            <th>英文图片</th>
             <th>操作</th>
         </tr>
         </thead>
