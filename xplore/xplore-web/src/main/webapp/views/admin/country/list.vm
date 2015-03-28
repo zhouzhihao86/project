@@ -1,0 +1,58 @@
+#set($cPath = "#cPath")
+<div id="content-header">
+    <h1>$currentResource.getName()</h1>
+</div>
+
+<div id="operation-container">
+</div>
+
+<div id="content-container">
+
+    <table class="pt-table">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>图片1</th>
+            <th>图片2</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+            #foreach($domain in $domainList.getResult())
+            <tr>
+                <td>$!domain.getId()</td>
+                <td>$!domain.getTitle()</td>
+                <td><a target="_blank" style="color:#111111;text-decoration: underline;" href="$!domain.getImg1()">$!domain.getImg1()</td>
+                <td><a target="_blank" style="color:#111111;text-decoration: underline;" href="$!domain.getImg2()">$!domain.getImg2()</td>
+                <td>
+                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
+                            class="fa fa-chevron-right"></i></a>
+                </td>
+            </tr>
+            #end
+
+        </tbody>
+    </table>
+    <div class="pagination"></div>
+</div>
+#parse('layout/script.vm')
+
+<script type="text/javascript" src="$cPath/resources/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+
+        #if($domainList.getTotalPages() > 0)
+
+        $('.pagination').twbsPagination({
+            totalPages: $domainList.getTotalPages(),
+            visiblePages: 7,
+            startPage : $domainList.getPageNo(),
+            hrefVariable : "{{number}}",
+            href: window.app.cPath + "/$currentResource.getUri()" +"?p={{number}}",
+            onPageClick: function (event, page) {
+            }
+        });
+        #end
+    });
+</script>

@@ -20,6 +20,9 @@ public class Menu {
     @Column(name = "en_name")
     private String enName;
 
+    @Column(name = "img")
+    private String img;
+
     @Column(name = "create_time")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
@@ -54,5 +57,13 @@ public class Menu {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

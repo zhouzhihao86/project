@@ -19,11 +19,11 @@ import java.io.InputStream;
  */
 public class FileUploadUtil {
 
-    private static final Integer UPLOAD_MAX_SIZE = 955360;
+    private static final Integer UPLOAD_MAX_SIZE = 2 * 1024 * 1024;
 
     public static final String UPLOAD_RELATIVE_PATH = "resources/img/uploads/";
 
-    private static String processFilename(String filename){
+    private static String processFilename(String filename) {
 
         int index = filename.lastIndexOf("\\");
         filename = filename.substring(index + 1, filename.length());

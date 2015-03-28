@@ -1,0 +1,65 @@
+#set($cPath = "#cPath")
+<div id="content-header">
+    <h1>$currentResource.getName()</h1>
+</div>
+
+<div id="operation-container">
+
+    <a href="$cPath/admin/$currentResource.getUri()/add"><span class="oper-btn add">新增$currentPerm.getName()</span></a>
+
+</div>
+
+<div id="content-container">
+
+    <table class="pt-table">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>中文名</th>
+            <th>英文名</th>
+            <th>图片</th>
+            <th>日期</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+            #foreach($domain in $domainList.getResult())
+            <tr>
+                <td>$!domain.getId()</td>
+                <td>$!domain.getCnName()</td>
+                <td>$!domain.getEnName()</td>
+                <td><a target="_blank" style="color:#111111;text-decoration: underline;" href="$!domain.getImg()">$!domain.getImg()</td>
+                <td>$!domain.getCreateTime()</td>
+                <td>
+                    <a href="$cPath/admin/$currentResource.getUri()/edit?id=$domain.getId()" class="btn btn-oper edit"">编辑<i
+                            class="fa fa-chevron-right"></i></a>
+                    <a href="javascript:;" class="btn btn-oper del" data-model="$currentResource.getUri()" data-ref="$domain.getId()">删除<i
+                            class="fa fa-chevron-right"></i></a>
+                </td>
+            </tr>
+            #end
+
+        </tbody>
+    </table>
+    <div class="pagination"></div>
+</div>
+#parse('layout/script.vm')
+
+<script type="text/javascript" src="$cPath/resources/js/admin.js"></script>
+<script>
+    $(document).ready(function () {
+
+        #if($domainList.getTotalPages() > 0)
+
+        $('.pagination').twbsPagination({
+            totalPages: $domainList.getTotalPages(),
+            visiblePages: 7,
+            startPage : $domainList.getPageNo(),
+            hrefVariable : "{{number}}",
+            href: window.app.cPath + "/$currentResource.getUri()" +"?p={{number}}",
+            onPageClick: function (event, page) {
+            }
+        });
+        #end
+    });
+</script>
