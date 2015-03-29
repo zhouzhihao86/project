@@ -22,7 +22,7 @@
 
     <ul class="campus-list" style="float:left;width:332px;margin-bottom:40px;border-top:1px solid #C71041;">
         #foreach($i in [$start .. $end])
-            <li style="width:327px;"><a href="$cPath/web/$lan/campus/england/$campusList.get($i).getId()">$campusList.get($i).getTitle()<i class="line" style="width:332px;"></i></a></li>
+            <li style="width:327px;"><a href="$cPath/web/$lan/campus/china/$campusList.get($i).getId()">$campusList.get($i).getTitle()<i class="line" style="width:332px;"></i></a></li>
         #end
     </ul>
 

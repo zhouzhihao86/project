@@ -35,8 +35,15 @@
         font-size:12px;
         font-weight:700;
     }
+
 </style>
 <div id="header">
+    <div class="backup">
+        <div class="overlay hide"></div>
+        <img class="linkedIn-img hide" src="$cPath/resources/img/zaixian_10.png">
+        <img class="facebook-img hide" src="$cPath/resources/img/zaixian-02.png">
+        <img class="emailEn-img hide" src="$cPath/resources/img/zaixian_10.png">
+    </div>
     <div class="header-top">
         <div class="header-wrapper">
             <a href="$cPath/web/en"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
@@ -46,10 +53,10 @@
                 <a href="$cPath/web/cn"><img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;"></a>
             </div>
             <div style="position:absolute;right:0;bottom:10px;">
-                <span style="float:left;font-size:14px;color:#838486;margin-top:1px;font-weight:700">+86(0)21 6058 7560</span>
-                <img src="$cPath/resources/img/SJ1.png" style="margin-left:10px;">
-                <img src="$cPath/resources/img/SJ2.png" style="margin-left:10px;">
-                <img src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
+                <span style="float:left;font-size:18px;color:#838486;margin-top:-1px;font-weight:700">+86(0)21 6058 7560</span>
+                <img class="contact linkedIn" src="$cPath/resources/img/SJ1.png" style="margin-left:10px;">
+                <img class="contact facebook" src="$cPath/resources/img/SJ2.png" style="margin-left:10px;">
+                <img class="contact emailEn" src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
             </div>
 
             <a href="$cPath/web/en"><img src="$cPath/resources/img/logo.png"></a>
@@ -72,7 +79,7 @@
                         </div>
                         <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
-                                Xplore Language offers language, activity and culture programmes to all students aged between 6 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.
+                                Xplore Language offers language, activity and culture programmes to all students aged between 8 and 18 years. These internationally ‘integrated’ camps are designed specifically to provide an enhanced learning and cultural experience for students from all over the world.
                             </div>
                             <img class="dropdown-menu-img" src="$cPath/resources/img/H1.jpg">
                         </div>
@@ -205,8 +212,8 @@
 
             <div class="column">
                 <p class="links-name">Xplore(China)</br><span style="font-size:12px;">Shanghai</span></p>
-                <a target="new" href="javascript:void(0)">23D, Building C,CCIG International Plaza,</a>
-                <a target="new" href="javascript:void(0)">No.375, North Caoxi Road, </a>
+                <a target="new" href="javascript:void(0)">23D, Building C,CCIG International</a>
+                <a target="new" href="javascript:void(0)">Plaza, No.375, North Caoxi Road, </a>
                 <a target="new" href="javascript:void(0)">Xuhui District, Shanghai, 200030,PRC</a>
                 <a target="new" href="javascript:void(0)">China</a>
                 <a target="new" href="javascript:void(0)" style="color:#333333 !important;">placeholder</a>
@@ -270,6 +277,33 @@
         })
 
         $(".block-item:last").css("border-bottom","none");
+
+        $(".contact").click(function(){
+
+            $(".backup .overlay").removeClass("hide");
+
+            $(".backup img").addClass("hide");
+
+            if($(this).hasClass("linkedIn")){
+
+                $(".backup").find(".linkedIn-img").removeClass("hide");
+
+            }else if($(this).hasClass("facebook")){
+
+                $(".backup").find(".facebook-img").removeClass("hide");
+
+            }else if($(this).hasClass("emailEn")){
+
+                $(".backup").find(".emailEn-img").removeClass("hide");
+
+            }
+
+        })
+
+        $(".backup .overlay").click(function(){
+            $(this).addClass("hide");
+            $(".backup img").addClass("hide");
+        })
 
     });
 </script>

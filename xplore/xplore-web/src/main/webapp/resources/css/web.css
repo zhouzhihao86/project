@@ -251,7 +251,8 @@ a {
     position: absolute;
     background: #111111;
     filter: alpha(opacity=50);
-    opacity: 0.5
+    opacity: 0.5;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .index-bottom .block-img-area .name {
@@ -372,7 +373,7 @@ a {
     text-align: right;
 }
 .campus-name{
-    font-weight:bolder;color:#C71041;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
+    font-weight:bolder;color:#AA0D37;border-bottom:1px solid #C71041;font-size:16px;height:30px;line-height: 30px;width:100%;float:left;margin-top:0;text-indent:10px;
 }
 .campus-detail-area{
     width:662px;
@@ -491,4 +492,25 @@ a {
     height:1px;left:-22px;width:342px;position:absolute;background: #C71041;bottom:-7px;
     /*right:-20px;*/
     /*left:-14px;*/
+}
+
+.backup img{
+    position: absolute;
+    left: 50%;
+    width: 557px;
+    margin-left: -278px;
+    top: 50%;
+    height:286px;
+    margin-top:-143px;
+    z-index:99999;
+}
+.backup .overlay{
+    background: #111111;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
