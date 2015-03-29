@@ -40,11 +40,11 @@
     </div>
     <div class="header-top">
         <div class="header-wrapper">
-            <a href="$cPath/web/cn"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
+            <a href="$cPath/cn"><img src="$cPath/resources/img/logobeijing.png" style="position:absolute;left:90px;top:0;height:117px"></a>
             <div style="position:absolute;right:0;top:20px;">
                 <span style="float:left;font-size:12px;color:#838486;margin-top:2px;">choose a language</span>
-                <a href="$cPath/web/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
-                <a href="$cPath/web/cn"><img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;"></a>
+                <a href="$cPath/en"><img src="$cPath/resources/img/guojia-UK.jpg" style="margin-left:10px;"></a>
+                <a href="$cPath/cn"><img src="$cPath/resources/img/guojia-CN.jpg" style="margin-left:10px;"></a>
             </div>
             <div style="position:absolute;right:0;bottom:10px;">
                 <span style="float:left;font-size:18px;color:#838486;margin-top:-3px;font-weight:700">+86(0)21 6058 7560</span>
@@ -52,7 +52,7 @@
                 <img class="contact emailCn" src="$cPath/resources/img/SJ3.png" style="margin-left:10px;">
             </div>
 
-            <a href="$cPath/web/cn"><img src="$cPath/resources/img/logo.png"></a>
+            <a href="$cPath/cn"><img src="$cPath/resources/img/logo.png"></a>
         </div>
         <div style="float:left;margin-left:190px;"></div>
 
@@ -66,7 +66,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent1)
-                                    <a class="drop-down-a" href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
+                                    <a class="drop-down-a" href="$cPath/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -84,7 +84,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent2)
-                                    <a class="drop-down-a" href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
+                                    <a class="drop-down-a" href="$cPath/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -103,7 +103,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent3)
-                                    <a class="drop-down-a"  href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
+                                    <a class="drop-down-a"  href="$cPath/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
@@ -122,12 +122,12 @@
                 <div class="dropdown-menu hide">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
-                                <a class="drop-down-a"  href="$cPath/web/cn/campus/england"><li class="article" data-target="">英国</li></a>
-                                <a class="drop-down-a"  href="$cPath/web/cn/campus/america"><li class="article" data-target="">美国</li></a>
-                                <a class="drop-down-a"  href="$cPath/web/cn/campus/china"><li class="article" data-target="">中国</li></a>
+                                <a class="drop-down-a"  href="$cPath/cn/campus/england"><li class="article" data-target="">英国</li></a>
+                                <a class="drop-down-a"  href="$cPath/cn/campus/america"><li class="article" data-target="">美国</li></a>
+                                <a class="drop-down-a"  href="$cPath/cn/campus/china"><li class="article" data-target="">中国</li></a>
                                 <ul>
                                     #foreach($plate in $plateRecent4)
-                                        <a class="drop-down-a"  href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
+                                        <a class="drop-down-a"  href="$cPath/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
                                     #end
                                 </ul>
                             </ul>
@@ -146,7 +146,7 @@
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
                             <ul>
                                 #foreach($plate in $plateRecent5)
-                                    <a class="drop-down-a"   href="$cPath/web/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
+                                    <a class="drop-down-a"   href="$cPath/cn/articles/$plate.getId()"><li class="article" data-target="$!plate.getId()">$plate.getTitle()</li></a>
 			                    #end
                             </ul>
                         </div>
