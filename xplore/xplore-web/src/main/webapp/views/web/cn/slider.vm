@@ -30,7 +30,7 @@
 
                         <li class="slide">
                             <img class="image" src="$slider.getBigImg()" alt=""/>
-                            <img class="thumbnail" src="$slider.getSmallImg()" alt="Slide 1"/>
+                            <img class="thumbnail" src="$slider.getSmallImg()"/>
                         </li>
 
                     #end
