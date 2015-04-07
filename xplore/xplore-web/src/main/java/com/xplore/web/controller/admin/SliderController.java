@@ -56,7 +56,7 @@ public class SliderController extends BaseController {
             page.setPageNo(pageNo);
         }
 
-        Page<Slider> sliderList = sliderService.pagedList(page, true);
+        Page<Slider> sliderList = sliderService.pagedList(page);
 
         model.addAttribute("domainList", sliderList);
 

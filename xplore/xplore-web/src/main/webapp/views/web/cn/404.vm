@@ -10,7 +10,7 @@
 
     <div class="hint cn " style="color:#666666">
         <p style="text-align:center;font-size:32px;margin-top:100px;">这个页面被外星人带走啦</p>
-        <p style="text-align:center;font-size:24px;"><a href="$cPath/web/en" style="color:#666666;text-decoration: underline">回家</a></p>
+        <p style="text-align:center;font-size:24px;"><a href="$cPath/en" style="color:#666666;text-decoration: underline">回家</a></p>
     </div>
 </div>
 <script>

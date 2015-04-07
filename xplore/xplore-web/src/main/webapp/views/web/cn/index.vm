@@ -17,7 +17,7 @@
             <ul class="bxslider">
                 #foreach($s in $mainSlider)
 
-                    <li><a href="$cPath/web/$lan/slider/$s.getPlateId()"><img src="$s.getBigImg()" style="width:686px;height:366px;"></a></li>
+                    <li><a href="$cPath/$lan/slider/$s.getPlateId()"><img src="$s.getBigImg()" style="width:686px;height:366px;"></a></li>
 
                 #end
             </ul>

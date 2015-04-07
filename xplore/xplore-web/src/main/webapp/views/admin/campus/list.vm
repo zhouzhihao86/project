@@ -1,4 +1,4 @@
-#set($cPath = "#cPath")
+#set($cPath = "http://121.42.45.249:8020/xplore-web")
 <style>
     #divSCA, #divShow{
         margin-left:-240px;

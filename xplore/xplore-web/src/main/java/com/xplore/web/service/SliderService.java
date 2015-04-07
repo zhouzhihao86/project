@@ -25,7 +25,7 @@ public class SliderService {
         return sliderDao.get(id);
     }
 
-    public Page<Slider> pagedList(Page<Slider> page, boolean b) {
+    public Page<Slider> pagedList(Page<Slider> page) {
 
         page.setResult(sliderDao.pagedList(page).getResult());
         page.setTotalCount(sliderDao.getTotalCount());

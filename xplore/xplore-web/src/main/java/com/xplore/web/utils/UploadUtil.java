@@ -27,7 +27,7 @@ import java.util.Map;
  */
 public class UploadUtil {
 
-    private static final Integer UPLOAD_MAX_SIZE = 1955360;
+    private static final Integer UPLOAD_MAX_SIZE = 2 * 1024 * 1024;
 
     public static final String RES_PATH = "resources/img/uploads/";
     private static final String FILE_PLACEHOLDER = "myfile";

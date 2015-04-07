@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xplore-admin</title>
-    #set($cPath = "#cPath")
+    #set($cPath = "http://121.42.45.249:8020/xplore-web")
     <link rel="stylesheet" href="$cPath/resources/css/font-awesome.min.css" type="text/css"/>
 
     <link href="$cPath/resources/css/pt-base.css" rel="stylesheet">
