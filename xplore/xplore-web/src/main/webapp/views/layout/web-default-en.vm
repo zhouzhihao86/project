@@ -125,7 +125,7 @@
             </li>
             <li class="menu-item" style="">
                 <a href="javascript:void(0)">
-                    MY CHOICE HIGH SCHOLL PROGRAMS
+                    MYCHOICE HIGH SCHOOL PROGRAMES
                 </a>
                 <div class="dropdown-menu hide">
                         <div class="dropdown-menu-content-wrapper" style="width:196px;">
@@ -142,7 +142,7 @@
                         </div>
                         <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
-                                Xplore “MyChoice” represents our high school division, offering global partners long-term study placements for students wishing to study in England and the USA (F1). Our dedicated in-house guardianship teams provide first-rate service ensuring the very best educational and cultural study experiences.
+                                Xplore “MyChoice” represents our high school division, offering global partners long-term study placements for students wishing to study in England and the USA (F1). Our dedicated in-house guardianship teams provide first-rate service, ensuring the very best educational and cultural study experiences.
                             </div>
                             <img class="dropdown-menu-img" src="$cPath/resources/img/H4.jpg">
                         </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="dropdown-menu-right">
                             <div class="menu-absract" style="">
-                                At Xplore we are always looking to expand and develop new programmes and are keen to build new partnerships within our industry. We hope this brochure inspires you to get in contact with us as we would very much like to hear from you to discuss either one of our existing programmes or indeed something new!
+                                At Xplore we are always looking to expand and develop new programmes and are keen to build new partnerships within our industry. We hope this brochure website inspires you to get in contact with us as we would very much like to hear from you to discuss either one of our existing programmes or indeed something new!
                             </div>
                             <img class="dropdown-menu-img" src="$cPath/resources/img/H5.jpg">
                         </div>
@@ -209,7 +209,7 @@
         </div>
         <div class="links" style="width:41%">
             <div class="column" style="width:46%">
-                <p class="links-name">Xplore(USA)</br><span style="font-size:12px;">Asheville, N.Carolina</span></p>
+                <p class="links-name">Xplore(USA)</br><span style="font-size:12px;">Asheville, N. Carolina</span></p>
                 <a target="new" href="javascript:void(0)">One Town, Square Bvld.</a>
                 <a target="new" href="javascript:void(0)">Suite 204,</a>
                 <a target="new" href="javascript:void(0)">Asheville, NC 28803,</a>
@@ -242,7 +242,7 @@
             </div>
         </div>
     </div>
-    <div class="copyright">This site and all contents are copyright @ 2014 Xplore</div>
+    <div class="copyright">©2015 Xplore Site and Content All Rights Reserved.</div>
 </div>
 </body>
 <script>
