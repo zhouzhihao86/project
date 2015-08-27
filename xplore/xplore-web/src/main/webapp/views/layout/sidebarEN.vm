@@ -2,7 +2,7 @@
 
 <a href="$cPath/$lan/bookingOnline"><p class="block-item">Language & Activity Camps</p></a>
 <a href="$cPath/$lan/bookingOnline"><p class="block-item">Tailor Made Education Packages for Groups</p></a>
-<a href="$cPath/$lan/bookingOnline"><p class="block-item">My choice High School Programs</p></a>
+<a href="$cPath/$lan/bookingOnline"><p class="block-item">Mychoice High School Programs</p></a>
 <a href="$cPath/$lan/bookingOnline"><p class="block-item">Agents Zone</p></a>
 
 <p class="block-title" style="margin-top:10px">About Xplore</p>
